@@ -1,11 +1,93 @@
+/* 일반 */
+
+.c-black {
+    color: black;
+}
+
+.c-white {
+    color: white;
+}
+
+
+
+/* 하나은행 공식 */
+
+.c-h-green {
+    color: #008485;
+}
+
+.c-h-red {
+    color: #E90061;
+}
+
+.c-h-gold {
+    color: #AD9A5F;
+}
+
+.c-h-silver {
+    color: #B5B5B5;
+}
+
+.c-h-black {
+    color: #000000;
+}
+
+
+
+/* 하나원큐에서 추출한 색깔 */
+
+.c-red1{
+    color: #ED6A9E;
+}
+
+.c-red2{
+    color: #F25871;
+}
+
+.c-brown1{
+    color: #D99459;
+}
+
+.c-brown2{
+    color: #C0633A;
+}
+
 .c-green1{
     color: #67C8C1;
 }
 
+.c-green2{
+    color: #9ED5C0;
+}
+
+.c-green3{
+    color: #31D1A0;
+}
+
 .c-blue1{
+    color: #95B0E5;
+}
+
+.c-blue2{
     color: #6A78B5;
+}
+
+.c-blue3{
+    color: #5067E7;
 }
 
 .c-violet1{
     color: #C39FF7;
+}
+
+.c-violet2{
+    color: #9C65FF;
+}
+
+.c-gray1{
+    color: #8A9BAD;
+}
+
+.c-black1{
+    color: #373A4D;
 }
