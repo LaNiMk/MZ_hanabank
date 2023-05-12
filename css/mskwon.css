@@ -1,0 +1,43 @@
+.card-example {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  gap: 0.25rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.card-example:hover {
+  background-color: lightsteelblue;
+}
+
+.card-example img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.card-example div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-example div span:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.card-example div span:nth-child(2) {
+  font-size: 1rem;
+}
+
+.card-example-container {
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .card-example-container {
+    grid-template-columns: 1fr;
+  }
+}
