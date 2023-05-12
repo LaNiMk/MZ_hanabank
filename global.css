@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
+@import "./css/button.css";
+@import "";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.f-sm {
+  font-size: 1rem;
+}
+
+.f-base {
+  font-size: 1.5rem;
+}
+
+.f-lg {
+  font-size: 2rem;
+}
+
+.f-200 {
+  font-weight: 200;
+}
+
+.f-400 {
+  font-weight: 400;
+}
+
+.f-600 {
+  font-weight: 600;
+}
+
+.f-800 {
+  font-weight: 800;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.icon-2 {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid grey;
+}
+
+.icon-4 {
+  width: 4rem;
+  height: 4rem;
+  /* border: 1px solid grey; */
+}
+
+.card-sm {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  gap: 0.25rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.card-sm:hover {
+  background-color: lightsteelblue;
+}
+
+.card-sm span {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: grid;
+  gap: 0.25rem;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

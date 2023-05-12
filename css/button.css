@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 12px;
+    gap: 8px;
+    border-radius: 6px;
+    border: none;
+
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.btn-primary {
+    background: #18A0FB;
+}
+
+.btn-danger {
+    background: #FF4B4B;
+}
