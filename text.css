@@ -1,0 +1,89 @@
+/* font size */
+
+.f-xxs {
+    font-size: 0.1rem;
+}
+
+.f-xs {
+    font-size: 0.5rem;
+}
+
+.f-s {
+    font-size: 1rem;
+}
+
+.f-m {
+    font-size: 1.5rem;
+}
+
+.f-l {
+    font-size: 2rem;
+}
+
+.f-xl {
+    font-size: 2.5rem;
+}
+
+.f-xxl {
+    font-size: 2.7rem;
+}
+
+
+
+/* font weight */
+
+.f-400 {
+    font-weight: 400;
+}
+
+.f-500 {
+    font-weight: 500;
+}
+
+.f-600 {
+    font-weight: 600;
+}
+
+.f-700 {
+    font-weight: 700;
+}
+
+.f-800 {
+    font-weight: 800;
+}
+
+.f-900 {
+    font-weight: 900;
+}
+
+
+
+/* font color */
+
+.f-black {
+    color: black;
+}
+
+.f-white {
+    color: white;
+}
+
+.f-h-green {
+    color: #008485;
+}
+
+.f-h-red {
+    color: #E90061;
+}
+
+.f-h-gold {
+    color: #AD9A5F;
+}
+
+.f-h-silver {
+    color: #B5B5B5;
+}
+
+.f-h-black {
+    color: #000000;
+}
