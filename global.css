@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
+@import "./css/mskwon.css";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
