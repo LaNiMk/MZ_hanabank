@@ -1,40 +1,10 @@
-.btn {
-    display: flex;
-    width: fit-content;
-    text-decoration: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 7px 12px;
-    gap: 8px;
-    border-radius: 6px;
-    border: none;
-    background: rgb(76, 240, 186);
-    color: white;
-    margin: 20px;
-}
-
-.btn:hover {
-    background-color: #65bf97;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: #18A0FB;
-    cursor: pointer;
-}
-
-.btn-danger {
-    background: #FF4B4B;
-    cursor: pointer;
-}
-
 .w-btn {
     position: relative;
     border: none;
     display: inline-block;
     padding: 15px 30px;
     border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     font-weight: 600;

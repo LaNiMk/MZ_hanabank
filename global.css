@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
 @import "./css/mskwon.css";
+@import "./btn.css";
 
 body {
   font-family: "Noto Sans KR", sans-serif;
