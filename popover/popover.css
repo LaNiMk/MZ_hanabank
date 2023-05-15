@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: lightgray;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #777;
+  margin: 0 20px;
+  border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+ul li:hover {
+  background: #008485;
+  box-shadow: 0 0 0 1px #333, 0 0 0 3px #008485;
+}
+ul li .content {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  margin-top: 5px;
+  bottom: 55px;
+  width: 400px;
+  background-color: #fff;
+  padding: 13px 33px 13px 13px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  border: solid 1px #cfdce6;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: 0.4s;
+  transform: translateX(-50%) translateY(-50px);
+}
+
+ul li:hover .content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0px);
+  font-size: 13px;
+  padding-top: 2px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.8px;
+  color: #96a1aa;
+}
+ul li .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.8px;
+  color: #7b8994;
+}
