@@ -1,0 +1,110 @@
+.card {
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card > img {
+  width: auto;
+  height: 25rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 10px;
+}
+
+.card-content > div:nth-child(1) {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card-content > div:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-content > div:nth-child(3) {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.card-desc {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  gap: 30px;
+  background-color: white;
+  color: black;
+  padding: 60px 30px;
+  border-radius: 20px;
+}
+
+.card-desc > img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.card-desc > div:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-desc > div:nth-child(2) {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.card-desc > div:nth-child(3) {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.card-m {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.card-m > img {
+  width: auto;
+  height: 4rem;
+}
+
+.card-m-content {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 10px;
+}
+
+.card-m-content > div:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-m-content > div:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-m:hover {
+  background-color: white;
+}
+
+.border-test {
+  border: 1px solid black;
+}
