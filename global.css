@@ -3,6 +3,7 @@
 @import "./css/mskwon.css";
 @import "./css/color.css";
 @import "./css/text.css";
+@import "./component/card.css";
 
 body {
   font-family: "Noto Sans KR", sans-serif;
