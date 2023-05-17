@@ -46,6 +46,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* opacity: 0;
+  transition: all 0.5s; */
 }
 .white-background {
   background-color: white;
@@ -53,6 +55,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: all 2s;
 }
 
 .text-overlay {
