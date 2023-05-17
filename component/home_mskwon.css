@@ -1,0 +1,166 @@
+body {
+  margin: 0px;
+}
+
+img {
+  border: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+/* 여기부터 ~ */
+.bg-bluegrey {
+  background-color: #333d4b;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #4593fc;
+  color: white;
+}
+
+.bg-darkblue {
+  background-color: #191f28;
+  color: white;
+}
+
+.bg-pink {
+  background-color: #f66570;
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.bg-h-green {
+  background-color: #008485;
+  color: white;
+}
+
+.bg-h-red {
+  background-color: #e90061;
+  color: white;
+}
+
+.bg-h-silver {
+  background-color: #b5b5b5;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 60px;
+  padding-top: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-lg {
+  width: 88%;
+  padding: 48px 6%;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-lg img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.card-lg .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card-lg .desc .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-lg-m {
+  width: 36%;
+  padding: 48px 6%;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-lg-m img {
+  width: 12vw;
+  height: 12vw;
+}
+
+.card-lg-m .desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-lg-m .desc .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 50%;
+}
+
+.mini-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 380px) {
+  .card-lg img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-lg-m {
+    width: 88%;
+  }
+  .mini-card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
