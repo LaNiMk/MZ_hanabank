@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.black-background {
+  background-color: black;
+  top: 60px;
+  height: calc(100vh-60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.black-section {
+  background-color: black;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  opacity: 1;
+  margin: auto;
+}
+img {
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  -webkit-user-drag: none;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black-background2 {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white-background {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 166px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  font-size: 4vw;
+  width: 661.79px;
+  height: 166px;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .text-overlay {
+    white-space: normal;
+  }
+}
+
+.text-overlay div {
+  letter-spacing: -3px;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; /* 애니메이션 시작 시 투명도 0 */
+  }
+  100% {
+    opacity: 1; /* 애니메이션 종료 시 투명도 1 */
+  }
+}
+.white-text {
+  color: white;
+  text-align: center;
+  font-size: 56px;
+}
+.black-text {
+  color: black;
+  text-align: center;
+  font-size: 56px;
+}
