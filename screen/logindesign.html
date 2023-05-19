@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/logindesign.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css" type="text/css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!--
+        1. html Tag
+        2. css 작성법(문법 : 선택자,속성)
+
+        과제선택
+        1.로그인 페이지
+    -->
+    <wrap class="wrap">
+        <header class="header">
+            <div class="header-info">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <div class="my-page">
+                    <a href="../index.html">
+                        <a href="" class="icon icon--settings icon--black icon--spin"></a>
+                    </a>
+                </div>
+                <select class="language-selector">
+                    <option value="">한국어</option>
+                    <option value="">English</option>
+                    <option value="">中文(简体)</option>
+                    <option value="">中文(台灣)</option>
+                </select>
+            </div>
+        </header>
+        <div class="container">
+            <div class="login-card" id="a">
+                <ul class="categories" id="category_container">
+                    <li>
+                        <a href="index.html" class="category--login">
+                            <span>
+                                <span class="login--img category-img"></span>
+                                <span>ID 로그인</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="one.html" class="category--one">
+                            <span>
+                                <span class="one--img category-img"></span>
+                                <span>하나원큐</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="qr.html" class="category--qr">
+                            <span>
+                                <span class="qr--img category-img"></span>
+                                <span>공동인증서</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="login-form">
+                    <div class="username">
+                        <div class="username--icon"></div>
+                        <input type="text" id="username_inp" placeholder="아이디" />
+                    </div>
+                    <div class="password">
+                        <div class="password--icon"></div>
+                        <input type="password" id="password_inp" placeholder="비밀번호" />
+                    </div>
+                    <div class="check-cookie">
+                        <div class="keep-login">
+                            <input id="check_box" type="checkbox" />
+                            <label for="check_box">✔</label>
+                            <span id="kepp-login--label">로그인 상태 유지</span>
+                        </div>
+                        <div class="secure-ip">
+                            <span>키보드보안</span>
+                            <div class="switch" id="ip_switch">
+                                <div class="switch-toggle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-btn_wrap">
+                        <button type="submit" class="text-btn-4">로그인</button>
+                    </div>
+                </form>
+            </div>
+            <ul class="find-wrap">
+
+                <li>
+                    <a href="https://www.kebhana.com/common/join/index.do" target="_blank">회원가입</a>
+                </li>
+            </ul>
+            <a href="https://www.youtube.com/@HanabankNewBiz" target="_blank">
+                <img class="img-model" src="../img/hanabank_model.jpg" />
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="footer-info">
+                <ul class="footer__link">
+                    <li>
+                        <a target="_blank" href="https://policy.naver.com/rules/service.html">이용약관</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.kebhana.com/cont/customer/customer06/customer0604/index.jsp?_menuNo=98946">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://policy.naver.com/rules/disclaimer.html">콜센터</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://help.naver.com/support/service/main.help?serviceNo=532">이메일상담</a>
+                    </li>
+                </ul>
+                <div class="footer__copy-right">
+                    <a target="_blank" href="https://www.kebhana.com/">HANABANK</a>
+                    <span>Copyright</span>
+                    <span></span>
+                    <span>All Rights Reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </wrap>
+</body>
+
+</html>
