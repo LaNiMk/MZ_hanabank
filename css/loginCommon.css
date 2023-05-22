@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media all and (min-width: 742px) {
+    .header>.header-info {
+        width: 743px;
+        margin: 0 auto;
+    }
+
+    .container>.login-card {
+        width: 430px;
+    }
+}
+
+@media all and (max-width: 742px) {
+    .header>.header-info {
+        width: auto;
+        margin: 0 40px;
+    }
+}
+
+.wrap {
+    letter-spacing: -0.5px;
+
+}
+
+.wrap a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+.header {
+    padding-bottom: 30px;
+}
+
+.header>.header-info {
+    position: relative;
+    text-align: center;
+}
+
+.header>.header-info>a {
+    display: inline-block;
+    margin-top: 80px;
+    /* 수직 정렬 사용*/
+    vertical-align: bottom;
+}
+
+.header>.header-info>a>.title {
+    display: inline;
+    font-size: 2.5em;
+}
+
+.header>.header-info>.language-selector {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    padding: 0.5em 0;
+    opacity: 0.5;
+    border: 1px solid #999;
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+.header>.header-info>.my-page {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    padding: 0.5em 0;
+    opacity: 0.5;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.container>.login-card {
+    margin: 0 auto;
+    border: 1px solid #c6c6c6;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 432px;
+}
+
+
+.container>.login-card>.login-form {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 12px 28px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.container>.login-card>.categories {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    list-style: none;
+    text-align: center;
+}
+
+.container>.login-card>.categories>li {
+    display: table-cell;
+    width: 30%;
+    height: 45px;
+    vertical-align: middle;
+    /*수직정렬*/
+}
+
+.container>.login-card>.categories>li>a {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    height: 100%;
+}
+
+.container>.find-wrap {
+    padding: 10px 0 35px 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.container>.find-wrap>li {
+    display: inline-block;
+    line-height: 17px;
+}
+
+.container>.find-wrap>li>a {
+    font-size: 0.8em;
+}
+
+.img-model {
+    height: 137px;
+}
+
+.container>.find-wrap:not(:first-child)::before {
+
+    display: inline-block;
+    width: 25px;
+    color: gray;
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+
+.footer {
+    margin: 40px 40px;
+    box-sizing: border-box;
+    padding: 33px 0 32px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info>.footer__link {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-info>.footer__link>li {
+    display: inline-block;
+}
+
+.footer-info>.footer__link>li>a {
+    font-size: 0.7em;
+}
+
+.footer-info>.footer__link>li:not(:first-child)::before {
+    content: "|";
+    display: inline-block;
+    width: 7px;
+    color: gray;
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+.footer>.footer-info>.footer__copy-right {
+    margin-top: 3px;
+}
+
+
+.footer>footer-info>.footer__copy-right>a {
+    font-weight: 1000;
+}
+
+.footer>.footer-info>.footer__copy-right>span {
+    font-size: 0.7em;
+}
+
+.footer>.footer-info>.footer__copy-right :nth-child(2n) {
+    color: gray;
+}
+
+.category-img {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.categories .login--img {
+    background-image: url("../img/icon-navigation-bar-menu-all-10.png");
+}
+
+.categories .one--img {
+    background-image: url("../img/hanaoneq.png");
+}
+
+.categories .qr--img {
+    background-image: url("../img/icon-navigation-bar-menu-all-20.png");
+}
+
+.home--img {
+    background-image: url("../img/icon-navigation-bar-menu-all-14.png");
+}
