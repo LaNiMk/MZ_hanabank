@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../css/loginCommon.css">
+    <link rel="stylesheet" href="../css/loginId.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css" type="text/css">
+    <script src="../index.js"></script>
+    <style>
+        h2 {
+            display: block;
+
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 700;
+            color: #323438;
+
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .kakao {
+            box-sizing: border-box;
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #FEE500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            margin-top: 16px;
+        }
+
+        .toss {
+            box-sizing: border-box;
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #1877F2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <wrap class="wrap">
+        <header class="header">
+            <div class="header-info">
+                <a href="loginId.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <p>
+                    <b>하나은행은 회원님의 익명성을 보장하기 위해</b>
+                    <br>
+                    <b>어떠한 개인정보도 노출하지 않습니다.</b>
+                </p>
+
+            </div>
+        </header>
+        <div class="container">
+            <div class="login-card" id="a">
+                <ul class="categories" id="category_container">
+                    <li>
+                        <a href="" class="category--login">
+                            <span>
+                                <span class="login--img category-img"></span>
+                                <span>개인 회원</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="category--one">
+                            <span>
+                                <span class="qr--img category-img"></span>
+                                <span>기업 회원</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="login-form">
+                    <h2>회원가입</h2>
+                    <section>
+                        <a class="kakao" href="">카카오로 시작하기</a>
+                    </section>
+                    <section>
+                        <a class="toss" href="">토스뱅크로 시작하기</a>
+                    </section>
+                    <hr>
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="아이디" />
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password_inp" placeholder="비밀번호" />
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password_inp" placeholder="비밀번호 확인" />
+                    </div>
+                    <hr>
+                    <div class="login-btn_wrap">
+                        <button type="submit" class="text-btn-4">이메일로 가입하기</button>
+                    </div>
+                </form>
+            </div>
+            <ul class="find-wrap">
+                <li>
+                    <a href="https://www.kebhana.com/common/join/index.do" target="_blank">이미 회원이세요?</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </wrap>
+</body>
+
+</html>
