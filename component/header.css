@@ -1,10 +1,10 @@
 header {
   position: fixed;
   width: 100%;
-  height: 60px;
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: #fff;
 }
 
 /* header:after {
@@ -60,11 +60,11 @@ header .gnb > li.w2 {
 }
 
 header .gnb > li:hover > a {
-  color: #e6223e;
+  color: #008485;
 }
 
 header .gnb > li:hover > div {
-  background: #fff;
+  background: #008485;
 }
 
 header .gnb > li > a {
@@ -79,7 +79,7 @@ header .gnb > li > div {
   display: none;
   position: absolute;
   left: 0;
-  z-index: 3;
+  z-index: 99;
   width: 100%;
   padding: 16px 20px;
   box-sizing: border-box;
@@ -103,6 +103,11 @@ header .gnb > li > div > div > ul > li > a {
   color: #222;
 }
 
+header .gnb > li:hover > div > div > ul > li > a {
+  font-size: 15px;
+  color: #fff;
+}
+
 header .gnb > li > div > div > ul > li > ul {
   padding: 0 0 8px;
 }
@@ -116,6 +121,11 @@ header .gnb > li > div > div > ul > li > ul > li a {
   color: #6a6a6a;
 }
 
+header .gnb > li:hover > div > div > ul > li > ul > li a {
+  font-size: 13px;
+  color: #d7d7d7;
+}
+
 header .gnb > li.w2 > div > div {
   float: left;
   width: 50%;
@@ -123,12 +133,12 @@ header .gnb > li.w2 > div > div {
 
 .bg_gnb {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 90px;
-  z-index: 2;
-  background: #ececec;
+  z-index: 98;
+  background: #fff; /* ececec */
   border-top: 1px solid #d7d7d7;
 }
 
@@ -139,6 +149,7 @@ header .gnb > li.w2 > div > div {
   right: 0;
   bottom: 0;
   border-top: 1px solid #d7d7d7;
+  background-color: #043285;
 }
 
 .ie9 header:after {
@@ -153,7 +164,7 @@ header .hamburger {
 header .hamburger button {
   width: 49px;
   height: 58px;
-  background: url("./images/btn_nav4.png") no-repeat center;
+  background: url("../img/btn_nav4.png") no-repeat center;
   color: #043285;
   vertical-align: middle;
 }
@@ -222,7 +233,7 @@ header .hamburger button {
   header .gnb > li a .arrow {
     width: 10px;
     height: 10px;
-    background: url("./images/bu_arrow_down.png") no-repeat center;
+    background: url("../img/bu_arrow_down.png") no-repeat center;
     color: #043285;
     vertical-align: middle;
   }
