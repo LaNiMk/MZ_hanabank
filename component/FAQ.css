@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 120px 70px;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+  }
+
+.container {
+    text-align: center;
+}
+  
+h1 {
+    margin-bottom: 60px;
+    letter-spacing: -2px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #333d4b;
+}
+  
+.search-container {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.search-container input {
+    padding: 10px;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+.search-container .search-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .2s;
+    color: #999;
+}
+
+.search-container input:focus + .search-label,
+.search-container input:not(:placeholder-shown) + .search-label {
+  top: -15px;
+  font-size: 12px;
+  color: #333;
+}
+  
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.accordion-item {
+    border-style: none;
+}
+
+.accordion-title {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.accordion-title:hover {
+    background-color: #f2f2f2;
+    border-radius: 7px;
+}
+  
+.accordion-content {
+    background-color: rgb(182, 220, 182);
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    display: none;
+}
+  
+.accordion-content.active {
+    max-height: fit-content;
+    display: flex;
+    clear: both;
+    flex-direction: column
+}
+
+.accordion-title {
+    display: flex;
+    padding: 12px 16px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #4e5968;
+    text-decoration: none;
+}
+
+.bottom {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 306px;
+    overflow: hidden;
+    background-color: #eef6f3;
+}
+
+div, p, span {
+    word-break: keep-all;
+}
+
+div, img, p, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.bottom_content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    padding: 0 24px;
+}
+
+.bottom_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 372px;
+    height: 372px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.bottom_content_box {
+    position: relative;
+}
+
+.bottom_title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    color: rgba(0, 12, 30, 0.8);
+    margin-bottom: 8px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+br {
+    font-family: initial!important;
+}
+
+.alltime {
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 150%;
+    color: rgba(0, 19, 43, 0.58);
+    margin-bottom: 40px;
+}
+
+.small_content {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.small_under {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: fit-content;
+    height: 54px;
+    border-radius: 6px;
+}
+
+.small_under_under {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.small_title {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(0, 19, 43, 0.58);
+}
+
+.tel {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 150%;
+    color: rgba(3, 18, 40, 0.7);
+}
+
+.middle-bar {
+    width: 1px;
+    height: 54px;
+    margin: 0 32px;
+    background-color: rgba(0, 27, 55, 0.1);
+}
