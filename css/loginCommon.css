@@ -32,28 +32,28 @@ body {
 }
 
 
-.header- {
+.header-s {
     padding-bottom: 30px;
 }
 
-.header->.header-info {
+.header-s>.header-info {
     position: relative;
     text-align: center;
 }
 
-.header->.header-info>a {
+.header-s>.header-info>a {
     display: inline-block;
     margin-top: 80px;
     /* 수직 정렬 사용*/
     vertical-align: bottom;
 }
 
-.header->.header-info>a>.title {
+.header-s>.header-info>a>.title {
     display: inline;
     font-size: 2.5em;
 }
 
-.header>.header-info>.language-selector {
+.header-s>.header-info>.language-selector {
     position: absolute;
     right: 0px;
     top: 20px;
@@ -64,7 +64,7 @@ body {
     border-radius: 0px;
 }
 
-.header->.header-info>.my-page {
+.header-s>.header-info>.my-page {
     position: absolute;
     left: 0px;
     top: 20px;

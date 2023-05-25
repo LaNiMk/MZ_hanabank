@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="../../css/loginCommon.css">
+    <link rel="stylesheet" href="../../css/signUp.css">
+    <link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css" type="text/css">
+    <style>
+        .signup_guide {
+            display: block;
+            margin-top: 16px;
+        }
+
+        .txt_wrap {
+            display: block;
+            background: #ECF6FE;
+            border-radius: 8px;
+            margin-top: 0px;
+            padding: 9px 19px;
+        }
+
+        .ico_guide_tip {
+            display: block;
+            position: relative;
+            font-size: 14px;
+            color: #2196F3;
+            margin-right: 3px;
+        }
+
+        .tool_tip {
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: -20px;
+            z-index: 10;
+            display: none;
+            min-width: 298px;
+            font-size: 14px;
+            color: #2196F3;
+        }
+
+        .tip_text {
+            display: block;
+            font-size: 12px;
+            color: #323438;
+            background: #FFFFFF;
+            border: 1px solid #E5E6E9;
+            box-shadow: 0px 6px 48px rgba(30, 40, 58, 0.08);
+            border-radius: 8px;
+            padding: 12px 16px;
+        }
+
+        .txt_head {
+            font-size: 12px;
+            color: #323438;
+        }
+
+        .categories>li:first-child {
+            border-right: 2px solid #d4d4d4;
+        }
+
+        .categories>li:not(:first-child) {
+            border-bottom: 1.5px solid #d4d4d4;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <wrap class="wrap">
+        <div class="header-s">
+            <div class="header-info">
+                <a href="loginId.html">
+                    <img src="../../img/logo.png" alt="">
+                </a>
+                <p>
+                    <b>하나은행은 회원님의 익명성을 보장하기 위해</b>
+                    <br>
+                    <b>어떠한 개인정보도 노출하지 않습니다.</b>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="login-card" id="a">
+                <ul class="categories" id="category_container">
+                    <li>
+                        <a href="signUp.html" class="category--login">
+                            <span>
+                                <span class="login--img category-img"></span>
+                                <span>개인 회원</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signUpMember.html" class="category--login">
+                            <span>
+                                <span class="login--img category-img"></span>
+                                <span>기업 회원</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="login-form">
+                    <p><strong>회원가입</strong></p>
+                    <div class="signup_guide">
+                        <div class="txt_wrap">
+                            <span class="ico_guide_tip">
+                                <div class="tool_tip">
+                                    <div class="tip_text">
+                                        <p class="txt_head">
+                                            * 이메일 하단의 서명용 명함은 인증이 불가합니다.
+                                            <br>
+                                            명함을 스캔하시거나 사진을 찍어서 첨부하세요.
+                                            <br>
+                                        </p>
+                                        <p class="txt_head">
+                                            * 명함이 없을 경우
+                                            <br>
+                                            현재 페이지에서 임의의 이미지를 첨부하여 가입절차를 진행하신 후,
+                                            <br>
+                                            <span>하나은행으로 문의 바랍니다.</span>
+                                        </p>
+                                        <br>
+                                        <ol>
+                                            <li>1. 재직증명서 첨부</li>
+                                            <li>2. 기업회원으로 가입한 이메일 주소를 발신자로 하여 메일 전송</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="txt1">명함에 기재된 이메일로 가입해주세요</span>
+                        </div>
+                    </div>
+                    <div class="ector"></div>
+
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="명함에 기재된 주소" />
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password_inp" placeholder="비밀번호(10자리 이상)" />
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password_inp" placeholder="비밀번호 확인" />
+                    </div>
+                    <div class="ector"></div>
+
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="기업명" />
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password_inp" placeholder="비밀번호(10자리 이상)" />
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password_inp" placeholder="비밀번호 확인" />
+                    </div>
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="사업자등록번호(- 제외하고 입력)" />
+                    </div>
+                    <div class="ector"></div>
+
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="담당자 이름" />
+                    </div>
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="연락처" />
+                    </div>
+                    <div class="username">
+                        <input type="text" id="username_inp" placeholder="명함 이미지" />
+                    </div>
+                    <div class="ector"></div>
+
+                    <div class="login-btn_wrap">
+                        <button type="submit" class="text-btn-4">기업회원 가입하기</button>
+                    </div>
+                </form>
+            </div>
+            <ul class="find-wrap">
+                <li>
+                    <a target="_blank">이미 기업회원이세요?</a>
+                    <a href="loginId.html"><b>로그인</b></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </wrap>
+</body>
+
+</html>

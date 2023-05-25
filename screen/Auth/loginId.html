@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="../css/loginCommon.css">
-    <link rel="stylesheet" href="../css/loginCertificate.css">
+    <link rel="stylesheet" href="../../global.css">
+
+    <link rel="stylesheet" href="../../css/loginCommon.css">
+    <link rel="stylesheet" href="../../css/loginId.css">
     <link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css" type="text/css">
     <script src="../index.js"></script>
 </head>
 
 <body>
     <wrap class="wrap">
-        <header class="header">
+        <div class="header-s">
             <div class="header-info">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="">
+                <a href="loginId.html">
+                    <img src="../../img/logo.png" alt="">
                 </a>
 
                 <select class="language-selector">
@@ -28,7 +29,7 @@
                     <option value="">中文(台灣)</option>
                 </select>
             </div>
-        </header>
+        </div>
         <div class="container">
             <div class="login-card" id="a">
                 <ul class="categories" id="category_container">
@@ -56,18 +57,28 @@
                             </span>
                         </a>
                     </li>
-
                 </ul>
                 <form class="login-form">
-                    <div class="one-explain">
-                        <p>
-                            하나은행 앱
-                            <strong>메뉴>설정<span class="setting--icon"></span>>로그인 아이디
-                                관리<br />>일회용 로그인 번호 받기</strong>에 보이는 번호를 입력해 주세요.
-                        </p>
+                    <div class="username">
+                        <a class="icon icon--share icon--black"></a>
+                        <input type="text" id="username_inp" placeholder="아이디" />
                     </div>
-                    <div class="input-one">
-                        <input id="one-text" class="one--text" type="text" placeholder="번호를 입력하세요." />
+                    <div class="password">
+                        <div class="icon icon--lock-on icon--black"></div>
+                        <input type="password" id="password_inp" placeholder="비밀번호" />
+                    </div>
+                    <div class="check-cookie">
+                        <div class="keep-login">
+                            <input id="check_box" type="checkbox" />
+                            <label for="check_box">✔</label>
+                            <span id="kepp-login--label">로그인 상태 유지</span>
+                        </div>
+                        <div class="secure-ip">
+                            <span>키보드보안</span>
+                            <div class="switch" id="ip_switch">
+                                <div class="switch-toggle"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="login-btn_wrap">
                         <button type="submit" class="text-btn-4">로그인</button>
@@ -80,10 +91,10 @@
                 </li>
             </ul>
             <a href="https://www.youtube.com/@HanabankNewBiz" target="_blank">
-                <img class="img-model" src="../img/hanabank_model.jpg" />
+                <img class="img-model" src="../../img/hanabank_model.jpg" />
             </a>
         </div>
-        <footer class="footer">
+        <div class="footer">
             <div class="footer-info">
                 <ul class="footer__link">
                     <li>
@@ -108,7 +119,7 @@
                     <span>All Rights Reserved.</span>
                 </div>
             </div>
-        </footer>
+        </div>
     </wrap>
 </body>
 
