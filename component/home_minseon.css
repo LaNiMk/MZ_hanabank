@@ -12,7 +12,7 @@ header {
   height: 60px;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #9c65ff;
   z-index: 10;
 }
 
@@ -78,7 +78,7 @@ header {
 }
 
 .card-lg {
-  width: 88%;
+  width: 100%;
   padding: 48px 6%;
   border-radius: 20px;
 
@@ -110,7 +110,7 @@ header {
 }
 
 .card-lg-m {
-  width: 36%;
+  width: 48%;
   padding: 48px 6%;
   border-radius: 20px;
 
@@ -120,8 +120,8 @@ header {
 }
 
 .card-lg-m img {
-  width: 12vw;
-  height: 12vw;
+  width: 10rem;
+  height: 10rem;
 }
 
 .card-lg-m .desc {
@@ -162,5 +162,9 @@ header {
   .mini-card-container {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .card-lg-m {
+    width: 100%;
   }
 }
