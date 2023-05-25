@@ -1,0 +1,284 @@
+.max-800 {
+  max-width: 800px;
+}
+
+.max-900 {
+  max-width: 900px;
+}
+
+.max-1000 {
+  max-width: 1000px;
+}
+
+.max-1100 {
+  max-width: 1100px;
+}
+
+.max-1200 {
+  max-width: 1200px;
+}
+
+.max-1300 {
+  max-width: 1300px;
+}
+
+/* card 1 */
+.mj-card1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin-top: 200px;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.mj-card1-media-box {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mj-card1-media {
+  width: 100%;
+}
+
+.mj-card1-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mj-card1-content-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #191f28;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  font-weight: 800;
+}
+
+.mj-card1-content-detail {
+  font-size: 1.5rem;
+  color: rgb(78, 89, 104);
+  margin-top: 17px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* card 2 */
+.mj-card2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.mj-card2-card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mj-card2-card-each {
+  display: flex;
+  max-width: 309px;
+  height: 72px;
+}
+
+.mj-card2-card-content {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  background-color: rgb(249, 250, 251);
+  border-radius: 14px;
+  width: 100%;
+}
+
+.mj-card2-card-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.mj-card2-card-detail {
+  margin-left: 24px;
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(51, 61, 75);
+}
+
+.mj-card2-word-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.mj-card2-word-title {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #191f28;
+  line-height: 1.3;
+  letter-spacing: 0px;
+}
+
+.mj-card2-word-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 41px;
+  gap: 50px;
+}
+
+.mj-card2-word-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mj-card2-word-inside:first-child {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1.3;
+  color: rgb(78, 89, 104);
+}
+
+.mj-card2-word-inside:nth-child(2) {
+  margin-top: 6px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: rgb(51, 61, 75);
+}
+
+.mj-card2-word-inside:nth-child(3) {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: rgb(139, 149, 161);
+}
+
+.innerbox3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerbox3Title {
+  margin-top: 16px;
+  font-size: 5rem;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.text-center {
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+.mj-bg-blue {
+  background-color: rgb(217, 229, 253);
+}
+
+.mj-bg-gray {
+  background-color: rgb(249, 250, 251);
+}
+
+.mj-bg-green {
+  background-color: rgb(223, 238, 229);
+}
+
+.mj-radius-48 {
+  border-radius: 48px;
+}
+
+/* 슬라이드 */
+.container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loop 60s linear infinite;
+}
+
+/* 애니메이션 스탑 */
+.container:hover > .slide-container {
+  animation-play-state: paused;
+}
+
+.slide-image {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* 이미지 hover시 커짐 */
+.slide-image:hover {
+  transform: scale(1.1);
+}
+
+.slide-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-css {
+    padding-top: 0px;
+  }
+
+  .mj-card1 {
+    margin-top: 134px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mj-card2 {
+    margin-top: 54px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mj-card2-card-box {
+    margin-top: 30px;
+  }
+
+  .card-reverse {
+    flex-direction: column-reverse;
+  }
+}
