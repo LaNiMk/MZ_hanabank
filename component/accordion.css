@@ -1,0 +1,105 @@
+.productAccordion {
+  display: flex;
+  justify-content: center;
+}
+
+.answerTitle {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 15.5px;
+  color: rgb(78, 89, 104);
+  line-height: 24px;
+}
+
+.answerTitleFirst {
+  margin-top: 0px;
+}
+
+.answerContent {
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(78, 89, 104);
+}
+
+.outerbox2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 1125px;
+  min-height: 876.98px;
+  width: 100%;
+}
+
+.law {
+  margin: 10px 40px 10px 40px;
+  font-weight: 400;
+  color: #4e5968;
+  font-size: 13px;
+}
+
+details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 10px;
+  max-width: 1044px;
+  width: 100%;
+}
+
+summary {
+  display: flex; /* 질문 문장과 + 아이콘을 가로로 배열하고, 기본 화살표 초기화 */
+  justify-content: start; /* 좌우 양 끝에 배치 */
+  align-items: center; /* 상하 중앙 배치 */
+  padding: 20px 30px;
+  font-size: 18px;
+  background-color: rgb(242, 244, 246);
+  border-radius: 10px;
+  cursor: pointer; /* 커서를 올렸을 때 pointer 표시 지정 */
+}
+
+summary::-webkit-details-marker {
+  /* webkit계열의 브라우저의 삼각형 화살표 초기화*/
+  display: none;
+}
+
+summary:hover,
+details[open] summary {
+  background-color: rgb(230, 232, 234);
+}
+
+summary::after {
+  /* + 아이콘을 의사 요소로 지정 */
+  content: "";
+  background-image: url(../img/down-arrow.png);
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+  margin-left: 30px;
+  color: #5b8f8f;
+  font-size: 21px;
+  transition: transform 0.5s; /*열릴 때의 애니메이션 지정*/
+}
+
+details[open] summary::after {
+  /* 열린 뒤의 + 아이콘 지정 */
+  transform: rotate(-180deg); /* 45도 회전 */
+}
+
+.answer {
+  padding: 20px;
+  line-height: 1.6;
+  background-color: rgb(249, 250, 251);
+}
+
+details[open] .answer {
+  animation: fadein 0.5s ease; /* 열린 뒤의 동작 지정 */
+}
+
+@keyframes fadein {
+  /* 불투명도를 0->1로 하여 페이드인 효과를 줌 */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
