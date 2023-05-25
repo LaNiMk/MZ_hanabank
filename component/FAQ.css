@@ -119,6 +119,7 @@ h1 {
     height: 306px;
     overflow: hidden;
     background-color: #eef6f3;
+    border-radius: 12px;
 }
 
 div, p, span {
@@ -143,6 +144,7 @@ div, img, p, span {
     max-width: 800px;
     height: 100%;
     padding: 0 24px;
+
 }
 
 .bottom_img {
