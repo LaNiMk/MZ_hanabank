@@ -1,0 +1,47 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.timeline .container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.timeline .container .year {
+  width: 4rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: black;
+}
+
+.timeline .container .item-row {
+  margin-top: 5px;
+}
+
+.timeline .container .item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline .container .item .month {
+  font-size: 1.25rem;
+  width: 3rem;
+  color: #969696;
+}
+
+.timeline .container .item .content {
+  font-size: 1.125rem;
+  color: black;
+}
+
+.timeline .container .item:not(:last-child) {
+  margin-bottom: 1rem;
+}
