@@ -13,18 +13,31 @@ img {
 
 .background-mj-white1 {
   background: #f1f4f6;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .background-mj-white2 {
   background-color: #ffffff;
 }
 
+.mj-card1 {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.container {
+  opacity: 0;
+  transition: all 1s;
+}
+
 .section-css {
   display: flex;
-  padding: 100px 80px;
+  padding: 100px 90px;
   justify-content: center;
   align-items: center;
   height: fit-content;
+  margin-top: 90px;
 }
 
 .outerbox1 {
