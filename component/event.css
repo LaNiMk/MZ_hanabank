@@ -1,0 +1,141 @@
+.container {
+  width: 300vw;
+  transition: transform 0.5s;
+}
+
+.inner {
+  width: 100vw;
+  float: left;
+}
+
+.inner img {
+  width: 100%;
+}
+
+#contents {
+  position: relative;
+  line-height: 21px;
+}
+
+.hana-contents {
+  float: left;
+  margin-left: 70px;
+  width: 800px;
+}
+
+.new_evt {
+  position: relative;
+  overflow: hidden;
+  font-family: "NotoSans_Regular";
+}
+
+h3 {
+  font: normal 38px NotoSans_Medium;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #000;
+  margin-bottom: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.new_evt .newsEventMenuWrap {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.newsEventMenuWrap {
+  margin-top: 2px;
+}
+
+.newsEventMenuWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.newsEventMenu {
+  float: left;
+  zoom: 1;
+  text-align: right;
+  margin-top: 0px;
+}
+
+.newsEventMenu li {
+  float: left;
+  width: 130px;
+  height: 35px;
+  margin-left: 3px;
+}
+
+.newsEventMenu li:first-child {
+  margin-left: 0px;
+}
+
+.newsEventMenu li a {
+  display: block;
+}
+
+.newsEventMenu li a span {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  font-family: NotoSans_Dl;
+}
+
+.newsEventMenu li.on a span,
+.newsEventMenu li a:hover span {
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/bg_newsEventMenuL.png)
+    no-repeat 0 0;
+  color: white;
+}
+
+.newsEventMenu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrap a span,
+#wrap button span {
+  cursor: pointer;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
