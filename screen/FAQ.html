@@ -1,149 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>FAQ 페이지</title>
-  <link rel="stylesheet" href="../component/FAQ.css">
-  <script src="https://kit.fontawesome.com/5f6a75f731.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ 페이지</title>
+    <link rel="stylesheet" href="../component/FAQ.css" />
+    <script
+      src="https://kit.fontawesome.com/5f6a75f731.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <h1>자주 묻는 질문</h1>
-  <div class="search-container">
-    <button id="search-button"><i class="fas fa-light fa-magnifying-glass"></i></button>
-    <input type="text" id="search-input" placeholder="무엇이든 찾아보세요">
-  </div>
-
-  <div class="accordion">
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> 퇴직연금 가입확인서는 어디서 출력할 수 있나요?</div>
-      <div class="accordion-content"><strong>A. </strong><p> 퇴직연금 계좌정보 거래에서 출력할 수 있습니다.<br>
-        거래 메뉴 경로는 다음과 같습니다.<br>
-        ※ 비대면 하나 원큐 이용안내<br>
-        * 전체메뉴 - 퇴직연금/개인형IRP - 나의퇴직연금 - 퇴직연금계좌정보<br>
-       <a href="https://www.hanabank.com/pension/retirement/wppns111_01i.do" target="_blank">바로가기 &gt;</a></p></div><br>
+  <body>
+    <h1>자주 묻는 질문</h1>
+    <div class="search-container">
+      <button id="search-button">
+        <i class="fas fa-light fa-magnifying-glass"></i>
+      </button>
+      <input type="text" id="search-input" placeholder="무엇이든 찾아보세요" />
     </div>
 
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> 입출금내역 문자서비스 어떻게 신청하면 되나요?</div>
-      <div class="accordion-content"><strong>A. </strong><p>입출금 문자알림 서비스는 하나원큐, 영업점, 인터넷뱅킹, 폰뱅킹에서 신청할 수 있습니다.</p>
-        <p class="contP"> <strong>하나원큐</strong> <br>
-          - 대상 : 전자금융서비스에 가입한 하나원큐 이용 손님 <br> - 신청방법 : 로그인 &gt; 전체메뉴 &gt; 설정 &gt; 문자알림 설정</p>
-          <p class="contP"> <strong>영업점</strong> <br>
-            - 개인 : 본인 실명증표 <br>
-            - 법인 : 대리인에 의해서도 신청 가능 <br>
-            1) 대표자신청시 - 사업자등록증원본, 등기사항전부증명서, 법인인감증명서, 대표자 신분증, 통장, 통장도장, 법인인감 <br> 2) 대리인신청시 - 사업자등록증원본, 등기사항전부증명서, 법인인감증명서, 법인인감 날인한 위임장, 대리인 신분증, 통장, 통장도장, 법인인감</p>
-            <p class="contP"> <strong>인터넷 뱅킹(하나은행 홈페이지(www.hanabank.com))</strong> <br>
-              - 대상손님 : 개인인터넷뱅킹 가입 개인손님(조회손님 및 법인손님불가) <br>
-              - 신청화면 : 로그인 &gt; 전체메뉴 &gt; 마이하나 &gt; 뱅킹관리 &gt; 통지서비스 &gt; 문자알리미서비스 <br></p>
-              <p class="contP"> <strong>폰뱅킹(개인손님만 가능)</strong> <br>
-                1) 폰뱅킹 - 1588-1111/1599-1111 &gt; (상담원연결) 0번 &gt; (상담선택) 4번 or 5번 <br>
-                2) SMS문자서비스 - 1599-1111 &gt; (상담원연결) 0번 &gt; (업무선택) 1번 <br> ※ 본인확인 : 손님계좌번호(수기/ARS)/비밀번호(ARS)/손님성함(수기)/주민번호 앞 6자리(수기/ARS)</p><br>      
-          </div><br>
-    </div>
-    <!-- 추가적인 질문과 답변을 이어서 작성할 수 있습니다 -->
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong>  입출금내역이 있을때 마다 휴대폰 SMS서비스를 받을수 있나요?</div>
-      <div class="accordion-content"><strong>A. </strong><p class="contP">입출금 문자 알림서비스에 등록된 계좌에 입/출금거래가 발생하면 은행에 등록된 휴대폰으로 문자(SMS)를 보내드리는 서비스입니다. 등록 가능 계좌수에는 제한이 없으며, 다음의 요금제 중 선택하여 이용하실 수 있습니다.</p>
-        <p class="contP">- 정액제 : 월 800원(무제한)<br>
-          - 종량제 : 건당 20원 <br>※ Hana-VIP,VIP등급은 면제</p></div><br>
-    </div>
-
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> [기타] 급여이체 판정 기준을 알고 싶습니다.</div>
-      <div class="accordion-content"><strong>A. </strong>
-        <p class="contP">급여이체는 매월 건당 50만원 이상의 급여성 자금이 본인 명의의 입출금이 자유로운 계좌로, 본인이 아닌 제3자에 의해 입금되는 경우에 한하며, 구체적으로는 아래 3가지 중 하나에 해당할 경우 급여 이체로 판정합니다.</p>
-        <p class="contP">① 자금 이체시 은행간 처리 구분코드가 '급여'유형으로 이체될 경우 급여이체로 판정합니다. <br>
-          ② 자금이체시 ‘적요＇란에 ‘급여＇로 추정되는 문구가 포함되었을 경우 급여이체로 판정합니다. <br>
-          단, 직장명 적요의 경우 등록된 직장명의 순수 직장명을 추출하여 앞에서 3글자 일치 시 급여이제로 판정합니다. <br>
-          (※ 순수직장명 추출 기준 : ‘주식회사, ㈜, 유한회사, (유), 사회복지재단, 사회복지법인, (사), 법무법인, 재단법인, (재), 사단법인, 의료법인, 의원, (의), 세부법인, 학교법인’ 문구를 제외한 직장명) <br> ③ 손님이 직접 '급여(이체)일'을 지정하여 등록하고, 해당 일자 포함 전후 1영업일에 건당 50만원 이상의 급여성 자금(카드대금, 보험료 등 비급여성 자금은 제외)이 입금될 경우 급여이체로 판정합니다.</p>
-          <p class="contP">급여 이체로 판정하지 않는 경우 (예시) <br>
-            - 본인에 의한 당행에서 당행으로의 이체거래 <br>
-            - 본인에 의한 당행 오픈뱅킹을 이용한 타행에서 당행으로의 이체거래 (단, 입금의뢰인의 실명번호 확인시) <br>
-            - 본인에 의한 타행에서 당행으로의 이체거래 (단, 예금주명과 입금적요 100% 일치시) <br> - 카드 가맹점 대금, 카드대금, 보험료, 의료비 등 비급여성 자금</p>
-      </div><br>
-    </div>
-
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> [기타] 프라임등급 유지서비스란 무엇인가요?</div>
-      <div class="accordion-content"><strong>A. </strong>
-        <p class="contP">구.외환은행의 프라임등급을 보유한 손님을 위한 서비스로 하나은행으로 이행된 등급의 우대서비스를 지속적으로 제공하기 위해 2017년 7월 10일부터 신설된 서비스 입니다.</p>
-        <p class="contP"><strong>서비스 제공 대상</strong><br>전산통합일(2016년 6월 7일) 기준 구.외환은행 프라임등급을 보유하고 있는 우수 손님이 대상이십니다.</p>
-        <p class="contP"><strong>서비스 제공 내용</strong><br>매 분기(1, 4, 7, 10월) 10일 손님우대서비스 우대등급 선정시 거래실적에 따라 산정된 우대등급이 하락하더라도, 최소 유지 요건을 충족하는 경우 기존 등급을 유지해 드립니다. </p>
-        <p class="contP"><strong>서비스 최소 유지 요건</strong><br>
-        손님우대서비스 우대점수 항목 중 '행복포인트' 충족 요건과 동일합니다.<br>
-        행복포인트란?<br>등급선정일 ①전월말 기준 대출 보유 또는 ②전월 수신성 상품 평잔 30만원 이상 시 행복포인트 30점 부여</p>
-        <p class="contP"><strong>기타 유의사항</strong><br>2분기 연속(6개월간) 서비스 최소유지요건이 충족되지 않을 경우, 본  서비스는 종료되며 거래실적에 따라 등급이 적용됩니다.</p><br>
-      </div><br>
-    </div>
-
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> [제목] - 이 밑은 추후 내용 추가 예정</div>
-      <div class="accordion-content"><strong>A. </strong>
-        <p class="contP">구.외환은행의 프라임등급을 보유한 손님을 위한 서비스로 하나은행으로 이행된 등급의 우대서비스를 지속적으로 제공하기 위해 2017년 7월 10일부터 신설된 서비스 입니다.</p>
-        <p class="contP"><strong>서비스 제공 대상</strong><br>전산통합일(2016년 6월 7일) 기준 구.외환은행 프라임등급을 보유하고 있는 우수 손님이 대상이십니다.</p>
-        <p class="contP"><strong>서비스 제공 내용</strong><br>매 분기(1, 4, 7, 10월) 10일 손님우대서비스 우대등급 선정시 거래실적에 따라 산정된 우대등급이 하락하더라도, 최소 유지 요건을 충족하는 경우 기존 등급을 유지해 드립니다. </p>
-        <p class="contP"><strong>서비스 최소 유지 요건</strong><br>
-        손님우대서비스 우대점수 항목 중 '행복포인트' 충족 요건과 동일합니다.<br>
-        행복포인트란?<br>등급선정일 ①전월말 기준 대출 보유 또는 ②전월 수신성 상품 평잔 30만원 이상 시 행복포인트 30점 부여</p>
-        <p class="contP"><strong>기타 유의사항</strong><br>2분기 연속(6개월간) 서비스 최소유지요건이 충족되지 않을 경우, 본  서비스는 종료되며 거래실적에 따라 등급이 적용됩니다.</p><br>
-      </div><br>
-    </div>
-
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> [기타] 프라임등급 유지서비스란 무엇인가요?</div>
-      <div class="accordion-content"><strong>A. </strong>
-        <p class="contP">구.외환은행의 프라임등급을 보유한 손님을 위한 서비스로 하나은행으로 이행된 등급의 우대서비스를 지속적으로 제공하기 위해 2017년 7월 10일부터 신설된 서비스 입니다.</p>
-        <p class="contP"><strong>서비스 제공 대상</strong><br>전산통합일(2016년 6월 7일) 기준 구.외환은행 프라임등급을 보유하고 있는 우수 손님이 대상이십니다.</p>
-        <p class="contP"><strong>서비스 제공 내용</strong><br>매 분기(1, 4, 7, 10월) 10일 손님우대서비스 우대등급 선정시 거래실적에 따라 산정된 우대등급이 하락하더라도, 최소 유지 요건을 충족하는 경우 기존 등급을 유지해 드립니다. </p>
-        <p class="contP"><strong>서비스 최소 유지 요건</strong><br>
-        손님우대서비스 우대점수 항목 중 '행복포인트' 충족 요건과 동일합니다.<br>
-        행복포인트란?<br>등급선정일 ①전월말 기준 대출 보유 또는 ②전월 수신성 상품 평잔 30만원 이상 시 행복포인트 30점 부여</p>
-        <p class="contP"><strong>기타 유의사항</strong><br>2분기 연속(6개월간) 서비스 최소유지요건이 충족되지 않을 경우, 본  서비스는 종료되며 거래실적에 따라 등급이 적용됩니다.</p><br>
-      </div><br>
-    </div>
-
-    <div class="accordion-item">
-      <div class="accordion-title"><strong>Q. </strong> [기타] 프라임등급 유지서비스란 무엇인가요?</div>
-      <div class="accordion-content"><strong>A. </strong>
-        <p class="contP">구.외환은행의 프라임등급을 보유한 손님을 위한 서비스로 하나은행으로 이행된 등급의 우대서비스를 지속적으로 제공하기 위해 2017년 7월 10일부터 신설된 서비스 입니다.</p>
-        <p class="contP"><strong>서비스 제공 대상</strong><br>전산통합일(2016년 6월 7일) 기준 구.외환은행 프라임등급을 보유하고 있는 우수 손님이 대상이십니다.</p>
-        <p class="contP"><strong>서비스 제공 내용</strong><br>매 분기(1, 4, 7, 10월) 10일 손님우대서비스 우대등급 선정시 거래실적에 따라 산정된 우대등급이 하락하더라도, 최소 유지 요건을 충족하는 경우 기존 등급을 유지해 드립니다. </p>
-        <p class="contP"><strong>서비스 최소 유지 요건</strong><br>
-        손님우대서비스 우대점수 항목 중 '행복포인트' 충족 요건과 동일합니다.<br>
-        행복포인트란?<br>등급선정일 ①전월말 기준 대출 보유 또는 ②전월 수신성 상품 평잔 30만원 이상 시 행복포인트 30점 부여</p>
-        <p class="contP"><strong>기타 유의사항</strong><br>2분기 연속(6개월간) 서비스 최소유지요건이 충족되지 않을 경우, 본  서비스는 종료되며 거래실적에 따라 등급이 적용됩니다.</p><br>
-      </div><br>
-    </div>
-  </div>
-  
-
-  
-  <div class="bottom">
-    <div class="bottom_content">
-        <img src="https://static.toss.im/3d/hand-phone-call-icon.png" alt="" class="bottom_img">
-        <div class="bottom_content_box">
-            <p class="bottom_title">문제가 아직 해결되지 않았다면<br>언제든 연락해주세요.</p>
-            <span class="alltime">24시간 고객센터</span>
-            <div class="small_content">
-                <div class="small_under">
-                    <div class="small_under_under">
-                        <span class="small_title">토스뱅크 일반 상담</span>
-                        <span class="tel">1661-7654</span>
-                    </div>
-                </div>
-                <div class="middle-bar"></div>
-                <div class="small_under">
-                    <div class="small_under_under">
-                        <span class="small_title">피해・사기 상담</span>
-                        <span class="tel">1661-4905</span>
-                    </div>
-                </div>
-            </div>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> 퇴직연금 가입확인서는 어디서 출력할 수 있나요?
         </div>
-    </div>
-</div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <p>
+            퇴직연금 계좌정보 거래에서 출력할 수 있습니다.<br />
+            거래 메뉴 경로는 다음과 같습니다.<br />
+            ※ 비대면 하나 원큐 이용안내<br />
+            * 전체메뉴 - 퇴직연금/개인형IRP - 나의퇴직연금 - 퇴직연금계좌정보<br />
+            <a
+              href="https://www.hanabank.com/pension/retirement/wppns111_01i.do"
+              target="_blank"
+              >바로가기 &gt;</a
+            >
+          </p>
+        </div>
+        <br />
+      </div>
 
-  <script src="../js/FAQ.js"></script>
-</body>
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> 입출금내역 문자서비스 어떻게 신청하면 되나요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <p>
+            입출금 문자알림 서비스는 하나원큐, 영업점, 인터넷뱅킹, 폰뱅킹에서
+            신청할 수 있습니다.
+          </p>
+          <p class="contP">
+            <strong>하나원큐</strong> <br />
+            - 대상 : 전자금융서비스에 가입한 하나원큐 이용 손님 <br />
+            - 신청방법 : 로그인 &gt; 전체메뉴 &gt; 설정 &gt; 문자알림 설정
+          </p>
+          <p class="contP">
+            <strong>영업점</strong> <br />
+            - 개인 : 본인 실명증표 <br />
+            - 법인 : 대리인에 의해서도 신청 가능 <br />
+            1) 대표자신청시 - 사업자등록증원본, 등기사항전부증명서,
+            법인인감증명서, 대표자 신분증, 통장, 통장도장, 법인인감 <br />
+            2) 대리인신청시 - 사업자등록증원본, 등기사항전부증명서,
+            법인인감증명서, 법인인감 날인한 위임장, 대리인 신분증, 통장,
+            통장도장, 법인인감
+          </p>
+          <p class="contP">
+            <strong>인터넷 뱅킹(하나은행 홈페이지(www.hanabank.com))</strong>
+            <br />
+            - 대상손님 : 개인인터넷뱅킹 가입 개인손님(조회손님 및 법인손님불가)
+            <br />
+            - 신청화면 : 로그인 &gt; 전체메뉴 &gt; 마이하나 &gt; 뱅킹관리 &gt;
+            통지서비스 &gt; 문자알리미서비스 <br />
+          </p>
+          <p class="contP">
+            <strong>폰뱅킹(개인손님만 가능)</strong> <br />
+            1) 폰뱅킹 - 1588-1111/1599-1111 &gt; (상담원연결) 0번 &gt;
+            (상담선택) 4번 or 5번 <br />
+            2) SMS문자서비스 - 1599-1111 &gt; (상담원연결) 0번 &gt; (업무선택)
+            1번 <br />
+            ※ 본인확인 :
+            손님계좌번호(수기/ARS)/비밀번호(ARS)/손님성함(수기)/주민번호 앞
+            6자리(수기/ARS)
+          </p>
+          <br />
+        </div>
+        <br />
+      </div>
+      <!-- 추가적인 질문과 답변을 이어서 작성할 수 있습니다 -->
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> 입출금내역이 있을때 마다 휴대폰 SMS서비스를
+          받을수 있나요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <p class="contP">
+            입출금 문자 알림서비스에 등록된 계좌에 입/출금거래가 발생하면 은행에
+            등록된 휴대폰으로 문자(SMS)를 보내드리는 서비스입니다. 등록 가능
+            계좌수에는 제한이 없으며, 다음의 요금제 중 선택하여 이용하실 수
+            있습니다.
+          </p>
+          <p class="contP">
+            - 정액제 : 월 800원(무제한)<br />
+            - 종량제 : 건당 20원 <br />※ Hana-VIP,VIP등급은 면제
+          </p>
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> [기타] 급여이체 판정 기준을 알고 싶습니다.
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <p class="contP">
+            급여이체는 매월 건당 50만원 이상의 급여성 자금이 본인 명의의
+            입출금이 자유로운 계좌로, 본인이 아닌 제3자에 의해 입금되는 경우에
+            한하며, 구체적으로는 아래 3가지 중 하나에 해당할 경우 급여 이체로
+            판정합니다.
+          </p>
+          <p class="contP">
+            ① 자금 이체시 은행간 처리 구분코드가 '급여'유형으로 이체될 경우
+            급여이체로 판정합니다. <br />
+            ② 자금이체시 ‘적요＇란에 ‘급여＇로 추정되는 문구가 포함되었을 경우
+            급여이체로 판정합니다. <br />
+            단, 직장명 적요의 경우 등록된 직장명의 순수 직장명을 추출하여 앞에서
+            3글자 일치 시 급여이제로 판정합니다. <br />
+            (※ 순수직장명 추출 기준 : ‘주식회사, ㈜, 유한회사, (유),
+            사회복지재단, 사회복지법인, (사), 법무법인, 재단법인, (재),
+            사단법인, 의료법인, 의원, (의), 세부법인, 학교법인’ 문구를 제외한
+            직장명) <br />
+            ③ 손님이 직접 '급여(이체)일'을 지정하여 등록하고, 해당 일자 포함
+            전후 1영업일에 건당 50만원 이상의 급여성 자금(카드대금, 보험료 등
+            비급여성 자금은 제외)이 입금될 경우 급여이체로 판정합니다.
+          </p>
+          <p class="contP">
+            급여 이체로 판정하지 않는 경우 (예시) <br />
+            - 본인에 의한 당행에서 당행으로의 이체거래 <br />
+            - 본인에 의한 당행 오픈뱅킹을 이용한 타행에서 당행으로의 이체거래
+            (단, 입금의뢰인의 실명번호 확인시) <br />
+            - 본인에 의한 타행에서 당행으로의 이체거래 (단, 예금주명과 입금적요
+            100% 일치시) <br />
+            - 카드 가맹점 대금, 카드대금, 보험료, 의료비 등 비급여성 자금
+          </p>
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> [기타] 프라임등급 유지서비스란 무엇인가요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <p class="contP">
+            구.외환은행의 프라임등급을 보유한 손님을 위한 서비스로 하나은행으로
+            이행된 등급의 우대서비스를 지속적으로 제공하기 위해 2017년 7월
+            10일부터 신설된 서비스 입니다.
+          </p>
+          <p class="contP">
+            <strong>서비스 제공 대상</strong><br />전산통합일(2016년 6월 7일)
+            기준 구.외환은행 프라임등급을 보유하고 있는 우수 손님이
+            대상이십니다.
+          </p>
+          <p class="contP">
+            <strong>서비스 제공 내용</strong><br />매 분기(1, 4, 7, 10월) 10일
+            손님우대서비스 우대등급 선정시 거래실적에 따라 산정된 우대등급이
+            하락하더라도, 최소 유지 요건을 충족하는 경우 기존 등급을 유지해
+            드립니다.
+          </p>
+          <p class="contP">
+            <strong>서비스 최소 유지 요건</strong><br />
+            손님우대서비스 우대점수 항목 중 '행복포인트' 충족 요건과
+            동일합니다.<br />
+            행복포인트란?<br />등급선정일 ①전월말 기준 대출 보유 또는 ②전월
+            수신성 상품 평잔 30만원 이상 시 행복포인트 30점 부여
+          </p>
+          <p class="contP">
+            <strong>기타 유의사항</strong><br />2분기 연속(6개월간) 서비스
+            최소유지요건이 충족되지 않을 경우, 본 서비스는 종료되며 거래실적에
+            따라 등급이 적용됩니다.
+          </p>
+          <br />
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> Household(가족손님) 제도란 무엇인가요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <div>
+            <p>
+              당행 거래 가족손님(주손님과 부손님)을 효율적으로 관리하기 위한
+              제도로 가족 단위의 우대등급(손님우대서비스)을 제공합니다.
+            </p>
+            <p>
+              가족손님의 등록은 주손님과 부손님을 포함하여 최대 10명까지
+              가능하며, 등록 가능한 부손님은 주손님의 조부모, 부모, 배우자의
+              부모, 배우자, 자녀, 며느리와 사위, 손자와 손녀으로 한정합니다. 즉,
+              주손님의 형제 또는 자매는 등록이 불가 합니다.
+            </p>
+            <p>
+              가족손님의 등록 신청을 위해서는 영업점을 방문해야 하며
+              실명확인증표 및 가족관계확인서류를 반드시 지참하고 별도의 신청서
+              양식을 작성 제출해야 합니다. 당사자 전원 방문이 원칙이며 부손님의
+              해지 경우에는 예외적으로 부손님 단독으로 신청이 가능합니다.
+            </p>
+            <p>
+              ※ 실명확인 밎 가족관계 확인을 위해 상황에 따라 추가서류를 요청드릴
+              수 있습니다.
+            </p>
+          </div>
+          <br />
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> 주거래 손님에게는 어떠한 혜택이 있나요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <div>
+            <p>
+              주거래 손님이라 함은 개별 손님 기준 우대등급 Family 이상 또는
+              결제성과 상품성 우대 점수 모두 보유한 손님으로, 주거래 손님에게는
+              Family의 수수료 우대 혜택을 제공합니다. 단, 우대 혜택은
+              손님우대서비스와 중복 제공하지 않습니다.
+            </p>
+            <strong
+              ><span class="fb"
+                >※ 우대등급 Family의 수수료 우대 혜택</span
+              ></strong
+            >
+            <ol>
+              <li>① 자동화기기이용수수료(자행분) 50%</li>
+              <li>② 인터넷/스마트폰뱅킹(합산) 월5회 100%</li>
+              <li>③ 폰뱅킹이체수수료 50%</li>
+              <li>④ OTP발급수수료(토근형) 50%</li>
+              <li>⑤ 자금이체수취인통지수수료 100% 등</li>
+            </ol>
+            <strong
+              ><span class="fb"
+                >※ 본인의 주거래 손님 여부 확인 방법</span
+              ></strong
+            >
+            <ol>
+              <li>
+                ① 모바일뱅킹(하나원큐앱) : 로그인 &gt; 전체메뉴 &gt; 등급 선택
+                &gt; 손님우대서비스 &gt; 주거래
+              </li>
+              <li>
+                ② 인터넷뱅킹(<a href="http://www.kebhana.com">www.kebhana.com</a
+                >) : 로그인 &gt; 전체메뉴 &gt; 마이하나 &gt; 우대서비스 &gt;
+                우대서비스 등급 조회 &gt; 주거래
+              </li>
+            </ol>
+          </div>
+          <br />
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> 금융거래한도계좌란 무엇인가요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <div>
+            <p>
+              금융거래한도계좌는 1일 출금 및 이체한도가 제한되는 계좌 입니다.<br />금융회사는
+              입출금이 자유로은 통장 개설시 대포통장(전기통신금융사기)
+              피해예방을 위해 금융거래목적을 확인할 수 있는 증빙서류 제출을
+              요구하고 있으며, 증빙서류 제출이 어렵거나 진위확인이 어려운 경우
+              「금융거래한도계좌」로 개설됩니다.
+            </p>
+            <p class="mt10">- 거래범위 및 한도(거래종류별 1일 거래한도)</p>
+            <table
+              style="border: 1px solid rgb(221, 221, 221); border-image: none"
+            >
+              <colgroup>
+                <col width="30%" />
+                <col width="20%" />
+                <col width="20%" />
+                <col width="30%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <td style="background-color: rgb(241, 241, 241)" rowspan="2">
+                    <strong>창구거래<br />(인출/이체 포함)</strong>
+                  </td>
+                  <td style="background-color: rgb(241, 241, 241)" colspan="2">
+                    <strong>ATM 거래</strong>
+                  </td>
+                  <td style="background-color: rgb(241, 241, 241)" rowspan="2">
+                    <strong
+                      >전자금융거래<br />
+                      (이체)</strong
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(241, 241, 241)">
+                    <strong>인출</strong>
+                  </td>
+                  <td style="background-color: rgb(241, 241, 241)">
+                    <strong>이체</strong>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>100만원</td>
+                  <td>30만원</td>
+                  <td>30만원</td>
+                  <td>30만원</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br />
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> 금융거래한도계좌는 어떻게 해제 하나요?
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <div>
+            <style>
+              .ta_l {
+                text-align: left !important;
+              }
+            </style>
+            <p>
+              금융거래목적을 확인할 수 있는 증빙서류를 지참하여 가까운 영업점
+              방문 하시기 바랍니다.
+            </p>
+            <h5 class="mb10">● 금융거래목적을 확인할 수 있는 증빙자료(예시)</h5>
+            <table
+              style="border: 1px solid rgb(221, 221, 221); border-image: none"
+              summary="거래 목적, 증빙 자료 예시로 이루어진 표 입니다."
+            >
+              <colgroup>
+                <col width="20%" />
+                <col width="35%" />
+                <col width="*" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <td style="background-color: rgb(241, 241, 241)">
+                    <strong>거래 목적</strong>
+                  </td>
+                  <td style="background-color: rgb(241, 241, 241)" colspan="2">
+                    <strong>증빙 자료 예시</strong>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ta_l">□ 개인(급여수령)</td>
+                  <td class="ta_l" colspan="2">
+                    □ 재직증명서 □ 급여명세표 □ 근로소득 원천징수 영수증 □
+                    건강보험자격득실확인서 <br />□ 고용(연봉)계약서 □
+                    소득금액증명원 □ 합격증/사원증 등
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ta_l">□ 법인/개인사업자<br />(사업영위통장)</td>
+                  <td class="ta_l" colspan="2">
+                    사업자등록증, 법인등기부등본, 법인인감증명서, 주주명부 등은
+                    증빙자료로 인정 불가 합니다
+                  </td>
+                </tr>
+                <tr>
+                  <td>신설<br />법인/개인사업자</td>
+                  <td class="ta_l">
+                    □ 사업장 임대차계약서<br />(부동산중개업소 명시)
+                  </td>
+                  <td class="ta_l">
+                    □ 사업자 홈페이지 □ 사무실 인테리어,가구,집기 등 구입 영수증
+                    <br />
+                    □ 포털사이트 로드뷰 및 사무실 실내 · 간판사진 등 사업장 실제
+                    확인 서류<br />□ 창업관련기관 발급 자료 □ 기타 증빙서류
+                  </td>
+                </tr>
+                <tr>
+                  <td>기존<br />법인/개인사업자</td>
+                  <td class="ta_l" colspan="2">
+                    □ 직전년도 재무제표 □ 전자세금계산서(공급자용) □
+                    납세증명원/부가세과세증명<br />
+                    □ 물품공급계약서(계산서) □ 프랜차이즈가맹점 계약서 □
+                    원천징수이행상황 신고서<br />□ 기타 영업활동 증빙 서류
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ta_l">□ 아르바이트 통장</td>
+                  <td class="ta_l">□ 고용주 사업자등록증 사본</td>
+                  <td class="ta_l">
+                    □ 근로계약서 및 급여명세표 등 고용확인 서류
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ta_l">□ 연금 수급 통장</td>
+                  <td class="ta_l">□ 연금증서 (또는 연금수급권자 확인서)</td>
+                  <td class="ta_l">□ 국민연금 수급 증빙 서류</td>
+                </tr>
+                <tr>
+                  <td class="ta_l">□ 모임 통장</td>
+                  <td class="ta_l" colspan="2">
+                    □ 구성원 명부(연락처 포함) 및 회칙 등 모임 실체 입증 서류
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ta_l">□ 자동이체 통장</td>
+                  <td class="ta_l" colspan="2">□ 공과금/관리비영수증 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_l">□ 기 타</td>
+                  <td class="ta_l" colspan="2">
+                    □ 대출이자 납부를 위한 자동이체(대출상담 및 신청서 사본)<br />
+                    □ 해외사용목적(국외 교육기관의
+                    입학허가서,재학증명서,성적증명서 등)<br />□ 기타 통장개설
+                    목적을 확인할 수 있는 객관적 증빙자료
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="mt10">
+              ※ 상기 예시 자료 외 금융거래목적을 확인할 수 있는 별도의 자료
+              제출이 가능합니다.
+            </p>
+            <p>
+              기타 궁금하신 사항은 고객센터(☎ 1588-1111, 1599-1111)나 가까운
+              영업점으로 문의하시면 성심껏 안내해 드리겠습니다.
+            </p>
+          </div>
+        </div>
+        <br />
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <strong>Q. </strong> [인기][로그인] 이용자 비밀번호 오류 입력 횟수가
+          초과 했습니다.
+        </div>
+        <div class="accordion-content">
+          <strong>A. </strong>
+          <div>
+            <p class="contP">
+              인터넷뱅킹 이용 시 이용자 비밀번호를 5회 이상 틀리시는 경우 더
+              이상 인터넷뱅킹 로그인이 불가능합니다.
+            </p>
+            <p class="contP">
+              (예를 들어) 어제까지 이용자 비밀번호 4회 오류가 있었고 오늘 정확한
+              이용자 비밀번호를 입력하면 오류횟수가 다시 초기화 되며 계속
+              이용하실 수 있습니다. 하지만 어제 3번 오류가 있었고 오늘 2번
+              잘못된 비밀번호를 입력하시면 비밀번호 오류입력 횟수가 5회로
+              누적되며 더 이상 이용이 안됩니다.
+            </p>
+            <p class="contP">
+              1. 이런 경우 이용자 비밀번호 오입력 횟수를 해제하고 새 비밀번호를
+              등록하시면 다시 이용이 가능합니다.<br />
+              이때 하나은행 출금 계좌번호와 계좌 비밀번호 + 보안매체
+              (조회회원생략) + 본인인증이 필요합니다. <br />
+              ※ 본인인증방법: ① 공동인증서(구.공인인증서), ② ARS 인증, ③ 해외
+              체류자 인증<br />
+              <span class="color03"
+                >· 스마트폰뱅킹: ID/PW 로그인 페이지 → [비밀번호 재등록] → 새
+                이용자 비밀번호 등록<br />· 인터넷뱅킹: 로그인 페이지 →
+                [비밀번호 등록/변경/오류해제] → [기존가입고객] → 새 이용자
+                비밀번호 변경</span
+              >
+            </p>
+            <p class="contP">
+              2. 인터넷뱅킹 회원 중 보안매체(자물쇠카드, 안전카드, OTP) 미소지
+              손님은 스마트폰뱅킹 비로그인 상태에서 모바일 OTP를 발급 받으신 후
+              비밀번호 재등록을 할 수 있습니다.<br />
+              &lt;모바일 OTP 발급 메뉴&gt;<br />
+              <span class="color03"
+                >· 스마트폰뱅킹 : 보안센터 &gt; 모바일 OTP 관리 &gt; 모바일 OTP
+                발급/재발급</span
+              >
+            </p>
+            <p class="contP">
+              3. 본인인증이 어렵거나 모바일 OTP 발급을 원치않는 손님은 영업점을
+              방문하시어 비밀번호 오입력 횟수를 해제하고 새 비밀번호를
+              등록하셔야 합니다.<br />※ 영업점 방문 시 지참할 본인확인서류: ①
+              신분증, ② 출금통장, ③ 통장도장(서명 시 생략)
+            </p>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="bottom_content">
+        <img
+          src="https://static.toss.im/3d/hand-phone-call-icon.png"
+          alt=""
+          class="bottom_img"
+        />
+        <div class="bottom_content_box">
+          <p class="bottom_title">
+            문제가 아직 해결되지 않았다면<br />언제든 연락해주세요.
+          </p>
+          <span class="alltime">24시간 고객센터</span>
+          <div class="small_content">
+            <div class="small_under">
+              <div class="small_under_under">
+                <span class="small_title">토스뱅크 일반 상담</span>
+                <span class="tel">1661-7654</span>
+              </div>
+            </div>
+            <div class="middle-bar"></div>
+            <div class="small_under">
+              <div class="small_under_under">
+                <span class="small_title">피해・사기 상담</span>
+                <span class="tel">1661-4905</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/FAQ.js"></script>
+  </body>
 </html>
