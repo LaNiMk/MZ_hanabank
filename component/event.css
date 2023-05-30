@@ -21,6 +21,7 @@
   float: left;
   margin-left: 70px;
   width: 800px;
+  display: flex;
 }
 
 .new_evt {
@@ -49,7 +50,10 @@ h3 {
 }
 
 .newsEventMenuWrap {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
   margin-top: 2px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .newsEventMenuWrap::after {
@@ -113,9 +117,9 @@ a {
 }
 
 a:-webkit-any-link {
-  color: -webkit-link;
+  /* color: -webkit-link; */
   cursor: pointer;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 ul,
@@ -125,17 +129,451 @@ ol {
   padding: 0;
 }
 
-ul {
+.newsEventMenu {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 
-li {
+.newsEventMenu li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+}
+
+.carousel-prev {
+  left: 10px;
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/ico_slick_prevbt.png) 10px 10px no-repeat;
+}
+
+.carousel-next {
+  right: 10px;
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/ico_slick_nextbt.png) 10px 10px no-repeat;
+}
+
+.new_evt .evt_list {
+  margin-top: 20px;
+  
+}
+
+.new_evt .evt_list ul {
+  overflow: hidden;
+  margin-left: -20px;
+}
+
+.new_evt .evt_list ul li {
+  float: left;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 390px;
+  height: 140px;
+  box-sizing: border-box;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  background-color: #fff;
+  
+}
+
+.new_evt .evt_list ul li a {
+  display: block;
+  padding: 20px 120px 20px 25px;
+  height: 115px;
+}
+
+.new_evt .evt_list ul li a .evt_txt p {
+  margin-top: 1px;
+  height: 50px;
+  line-height: 26px;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  color: #111;
+}
+
+.new_evt .evt_list ul li a .evt_img {
+  position: absolute;
+  margin-top: -44px;
+  width: 88px;
+  top: 50%;
+  right: 20px;
+}
+
+img {
+  border: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+div {
+  display: block;
+}
+
+.new_evt .evt_list ul li a .evt_txt span {
+  display: block;
+  margin-top: 28px;
+  color: #757575;
+  font-family: Arial;
+  cursor: pointer;
+}
+
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc((50% - 10px));
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+} */
+
+
+
+/* .new_evt .evt_banner {
+  position: relative;
+  margin-top: 20px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.new_evt .slick-prev {
+  left: 15px;
+}
+
+.new_evt .slick-next {
+  right: 15px;
+}
+
+.new_evt .slick-prev:after {
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/ico_slick_prevbt.png) 10px 10px no-repeat;
+}
+
+.new_evt .slick-next:after {
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/ico_slick_nextbt.png) 10px 10px no-repeat;
+}
+
+.new_evt .slick-prev, .new_evt .slick-next {
+  width: 37px;
+  height: 53px;
+  top: 95px;
+}
+
+.slick-prev {
+  left: 35px;
+  z-index: 1;
+  top: 90px;
+  margin-top: 0;
+}
+
+.slick-next {
+  right: 35px;
+  z-index: 1;
+  top: 90px;
+  margin-top: 0;
+}
+
+.slick-next:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/common/btn-carousel-right-active.png) 0 0 no-repeat;
+}
+
+.new_evt .slick-prev:after {
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/ico_slick_prevbt.png) 10px 10px no-repeat;
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 23px;
+  height: 45px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  margin-top: -23px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: dotum,gulim,sans-serif;
+  font-size: 12px;
+  color: #555;
+  vertical-align: middle;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.slick-track:before, .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.new_evt .evt_banner .slick-initialized .slick-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.new_evt .evt_banner .slick-initialized .slick-slide > a {
+  display: block;
+}
+
+.new_evt .evt_banner .section-wrap img {
+  width: 100%;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.new_evt .evt_banner .d_day {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  width: 57px;
+  height: 57px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0;
+}
+
+.new_evt .evt_banner .d_day p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #878787;
+  font-size: 12px;
+}
+
+
+
+.new_evt .evt_banner .d_day span {
+  display: block;
+  font-size: 19px;
+  color: #b26a80;
+  font-weight: bold;
+}
+
+.new_evt .evt_banner .d_day:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.new_evt .slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+
+.new_evt .slick-dots li {
+  margin-left: 6px;
+}
+
+.slick-dots {
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  margin-left: 8px;
+  position: relative;
+  float: left;
+}
+
+.slick-dots li:first-child {
+  margin-left: 0;
+}
+
+.slick-dots li.slick-active {
+  margin-left: 0;
+}
+
+.slick-dots li button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.new_evt .slick-dots li button:after {
+  width: 6px;
+  height: 6px;
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/ico_slickbul.png) 0 0 no-repeat;
+  opacity: 0.5;
+}
+
+.slick-dots li button:after {
+  display: block;
+  content: '';
+  background: url(../img/common/bul-indi.png) 0 0 no-repeat;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+
+.new_evt .autoplay {
+  position: absolute;
+  bottom: 38px;
+  left: 60px;
+  overflow: hidden;
+}
+
+.new_evt .autoplay .play {
+  display: none;
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/banbtn_play.png) 0 0 no-repeat;
+}
+
+.new_evt .autoplay .stop {
+  background: url(https://image.kebhana.com/cont/common/img/newsEvent/banbtn_stop.png) 0 0 no-repeat;
+}
+
+.new_evt .autoplay button {
+  display: block;
+  width: 8px;
+  height: 10px;
+  text-indent: -9999px;
+}
+
+.new_evt .evt_banner .ban_round4.round4_tl {
+  top: 0;
+  left: 0;
+}
+
+.new_evt .evt_banner .ban_round4.round4_tr {
+  top: 0;
+  right: 0;
+}
+
+.new_evt .evt_banner .ban_round4.round4_bl {
+  bottom: 0;
+  left: 0;
+}
+
+.new_evt .evt_banner .ban_round4.round4_br {
+  bottom: 0;
+  right: 0;
+}
+
+.new_evt .evt_banner .ban_round4 {
+  position: absolute;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  z-index: 99;
+} */
