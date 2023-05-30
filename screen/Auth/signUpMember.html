@@ -11,60 +11,12 @@
     <link rel="stylesheet" href="../../css/signUp.css">
     <link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css" type="text/css">
     <style>
-        .signup_guide {
-            display: block;
-            margin-top: 16px;
+        .categories>li:last-child {
+            background-color: #fff;
+            border-bottom: none;
         }
 
-        .txt_wrap {
-            display: block;
-            background: #ECF6FE;
-            border-radius: 8px;
-            margin-top: 0px;
-            padding: 9px 19px;
-        }
-
-        .ico_guide_tip {
-            display: block;
-            position: relative;
-            font-size: 14px;
-            color: #2196F3;
-            margin-right: 3px;
-        }
-
-        .tool_tip {
-            display: block;
-            position: absolute;
-            top: 30px;
-            left: -20px;
-            z-index: 10;
-            display: none;
-            min-width: 298px;
-            font-size: 14px;
-            color: #2196F3;
-        }
-
-        .tip_text {
-            display: block;
-            font-size: 12px;
-            color: #323438;
-            background: #FFFFFF;
-            border: 1px solid #E5E6E9;
-            box-shadow: 0px 6px 48px rgba(30, 40, 58, 0.08);
-            border-radius: 8px;
-            padding: 12px 16px;
-        }
-
-        .txt_head {
-            font-size: 12px;
-            color: #323438;
-        }
-
-        .categories>li:first-child {
-            border-right: 2px solid #d4d4d4;
-        }
-
-        .categories>li:not(:first-child) {
+        .categories>li:not(:last-child) {
             border-bottom: 1.5px solid #d4d4d4;
             background-color: #f8f9fa;
         }

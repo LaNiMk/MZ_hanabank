@@ -1,14 +1,17 @@
 window.onload = function () {
     const USER_NAME = document.getElementById("username_inp");
     const PASSWORD = document.getElementById("password_inp");
+    const CONFIRMPASSWORD = document.getElementById("password_cofirm");
     const IP_SWITCH = document.getElementById("ip_switch");
     const KEEP_LOGIN_LABEL = document.getElementById("kepp-login--label");
     const CHECK_BOX = document.getElementById("check_box");
 
     USER_NAME.addEventListener("focus", handleFocusFunc);
     PASSWORD.addEventListener("focus", handleFocusFunc);
+    CONFIRMPASSWORD.addEventListener("focus", handleFocusFunc);
     USER_NAME.addEventListener("focusout", handleFocusOutFunc);
     PASSWORD.addEventListener("focusout", handleFocusOutFunc);
+    CONFIRMPASSWORD.addEventListener("focusout", handleFocusOutFunc);
     IP_SWITCH.addEventListener("click", handleSwitchClickFunc);
     KEEP_LOGIN_LABEL.addEventListener("click", handleKeepClickFunc);
 

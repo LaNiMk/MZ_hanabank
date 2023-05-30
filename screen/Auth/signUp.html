@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/loginCommon.css">
     <link rel="stylesheet" href="../../css/signUp.css">
     <link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css" type="text/css">
-
+    <script src="../../modules/clickEvent.js"></script>
 </head>
 
 <body>
@@ -68,15 +68,18 @@
                     <div class="username">
                         <input type="text" id="username_inp" placeholder="이메일 주소" />
                     </div>
+                    <small>Error message</small>
                     <div class="password">
                         <input type="password" id="password_inp" placeholder="비밀번호(10자리 이상)" />
                     </div>
-                    <div class="password">
+                    <small>Error message</small>
+                    <div class="password2">
                         <input type="password" id="password_cofirm" placeholder="비밀번호 확인" />
                     </div>
+                    <small>Error message</small>
                     <div class="ector"></div>
                     <div class="login-btn_wrap">
-                        <button id="signUpBtn" type="submit" class="text-btn-4">이메일로 가입하기</button>
+                        <button id="signup-btn" type="submit" class="text-btn-4">이메일로 가입하기</button>
                     </div>
                 </form>
             </div>

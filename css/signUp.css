@@ -74,15 +74,6 @@ section {
     margin-top: 20px;
     margin-bottom: 10px;
     display: block;
-    /*
-    padding: 0;
-
-    line-height: 48px;
-    font-size: 14px;
-    color: #000;
-    text-align: center;
-    overflow: hidden;
-    */
 }
 
 input[type="text"],
@@ -98,8 +89,7 @@ input[type="password"] {
 
 input[type="text"]:focus,
 input[type="password"]:focus {
-    outline: #1877F2;
-
+    outline: #000;
 }
 
 input[type="text"]::placeholder,
@@ -109,13 +99,37 @@ input[type="password"]::placeholder {
 }
 
 .container>.login-card>.login-form>.username,
-.password {
+.password,
+.password2 {
     display: flex;
-    margin-bottom: 1rem;
     padding: 10px 17px 9px 0px;
     box-sizing: border-box;
     border: 1px solid #c6c6c6;
     border-radius: 10px;
+}
+
+.container>.login-card>.login-form>.sucess .username,
+.password,
+.password2 {
+    border-color: #67C8C1;
+}
+
+.container>.login-card>.login-form>.error .username,
+.password,
+.password2 {
+    border-color: #e74c3c;
+}
+
+small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.error small {
+    visibility: visible;
 }
 
 .categories>li:first-child {
@@ -125,4 +139,53 @@ input[type="password"]::placeholder {
 .categories>li:not(:first-child) {
     border-bottom: 1.5px solid #d4d4d4;
     background-color: #f8f9fa;
+}
+
+.signup_guide {
+    display: block;
+    margin-top: 16px;
+}
+
+.txt_wrap {
+    display: block;
+    background: #ECF6FE;
+    border-radius: 8px;
+    margin-top: 0px;
+    padding: 9px 19px;
+}
+
+.ico_guide_tip {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #2196F3;
+    margin-right: 3px;
+}
+
+.tool_tip {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    z-index: 10;
+    display: none;
+    min-width: 298px;
+    font-size: 14px;
+    color: #2196F3;
+}
+
+.tip_text {
+    display: block;
+    font-size: 12px;
+    color: #323438;
+    background: #FFFFFF;
+    border: 1px solid #E5E6E9;
+    box-shadow: 0px 6px 48px rgba(30, 40, 58, 0.08);
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.txt_head {
+    font-size: 12px;
+    color: #323438;
 }

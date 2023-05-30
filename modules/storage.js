@@ -1,59 +1,48 @@
-window.onload = function () {
-    console.log("");
-    console.log("=========================================");
-    console.log("[window onload] : [start]");
-    console.log("=========================================");
-    console.log("");
+//import * as val from '../modules/validation';
 
-    const signUpBtn = document.getElementById("signUpBtn");
-    const GETEMAIL = document.getElementById("username_inp");
-    const GETPASSWORD = document.getElementById("password_inp");
-    const GETCONFIRM = document.getElementById("password_cofirm");
-    const logoutTime = new Date().getTime() + 30 * 60 * 1000;
+const USEREMAIL = document.getElementById("username_inp");
+const USERPW = document.getElementById("password_inp");
+const signUpBtn = document.getElementById("signup-btn");
+const currentPlus30Min = addTime(1);
 
-    //let userInfo = userData.find((userInfo) => userInfo.id === userId);
+function addTime(minutes) {
+    const userlogoutTime = new Date();
+    userlogoutTime.setTime(userlogoutTime.getTime() + minutes * 60 * 60 * 1000);
 
-    function getUserData() {
-        const userInfos = localStorage.getItem('userData');
-        try {
-            return userInfos ? JSON.parse(userInfos) : []
-        } catch {
-            return []
-        }
-    }
+    let hours = userlogoutTime.getHours();
+    let min = userlogoutTime.getMinutes();
+    let seconds = userlogoutTime.getSeconds();
 
-    function registerUser(userData) {
-        localStorage.setItem('userData', JSON.stringify(userData));
-        alert('회원가입이 완료되었습니다!');
-
-        GETEMAIL.value = '';
-        GETPASSWORD.value = '';
-        GETCONFIRM.value = '';
-    }
-
-
-    const userId = 12; //스트링 난수 
-    let userData = getUserData();
-
-    signUpBtn.addEventListener("submit", (e) => {
-        e.preventDefault()
-
-        userData.push({
-            id: userId,
-            email: GETEMAIL.value,
-            password: GETPASSWORD.value,
-            logoutTime: logoutTime
-        })
-
-        registerUser(userData)
-        console.log('등록 완료')
-    })
+    const formattedTime = `${hours}:${padZero(min)}:${padZero(seconds)}`;
+    return formattedTime;
 }
 
-// 현재 시간에 30분을 더한 로그아웃 시간 계산
+function padZero(num) {
+    return num.toString().padStart(2, "0");
+}
 
+function registerUser() {
+    let userData = localStorage.getItem("details") ?
+        JSON.parse(localStorage.getItem("details")) : [];
 
-// 사용자 데이터 객체 생성
+    let userObj = {
+        email: USEREMAIL.value,
+        password: USERPW.value,
+        logoutTime: currentPlus30Min,
+    };
 
+    userData.push(userObj);
 
-//좌우 공백제거해서 빈칸일 경우
+    if (localStorage) {
+        localStorage.setItem("details", JSON.stringify(userData));
+        alert("회원가입 되셨습니다!");
+    }
+
+    USEREMAIL.value = "";
+    USERPW.value = "";
+}
+
+signUpBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    registerUser();
+});
