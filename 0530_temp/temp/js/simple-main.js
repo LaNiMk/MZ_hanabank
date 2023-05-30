@@ -922,6 +922,7 @@
   function scrollLoop() {
     enterNewScene = false;
     prevScrollHeight = 0;
+    checkMenu();
 
     for (let i = 0; i < currentScene; i++) {
       prevScrollHeight += sceneInfo[i].scrollHeight;
