@@ -16,12 +16,15 @@
   <body>
     <header include-html="./header.html"></header>
     <div class="bg_gnb"></div>
-    <h1>자주 묻는 질문</h1>
-    <div class="search-container">
-      <button id="search-button">
-        <i class="fas fa-light fa-magnifying-glass"></i>
-      </button>
-      <input type="text" id="search-input" placeholder="무엇이든 찾아보세요" />
+    <main class="faq-main">
+    <div class="top-container">
+      <h1 class="faq-title">자주 묻는 질문</h1>
+      <div class="search-container">
+        <button id="search-button">
+          <i class="fas fa-light fa-magnifying-glass"></i>
+        </button>
+        <input type="text" id="search-input" placeholder="무엇이든 찾아보세요" />
+      </div>
     </div>
 
     <div class="accordion">
@@ -93,7 +96,7 @@
         </div>
         <br />
       </div>
-      <!-- 추가적인 질문과 답변을 이어서 작성할 수 있습니다 -->
+      
       <div class="accordion-item">
         <div class="accordion-title">
           <strong>Q. </strong> 입출금내역이 있을때 마다 휴대폰 SMS서비스를
@@ -541,7 +544,7 @@
         </div>
       </div>
     </div>
-
+  </main>
     <footer include-html="./footer.html"></footer>
     <script src="../js/includeHTML.js"></script>
     <script src="../js/jquery.js" charset="utf-8"></script>

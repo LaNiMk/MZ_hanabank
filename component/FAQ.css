@@ -10,22 +10,32 @@ style {
   display: none;
 }
 
-.container {
-  text-align: center;
+.top-container {
+  width: 100%;
+  margin-top: 90px;
+  /* padding: 70px 64px 0 64px; */
 }
 
-h1 {
-  margin-bottom: 60px;
+.faq-main{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  max-width: 1160px;
+  width: 100%;
+}
+
+.faq-title {
   letter-spacing: -2px;
   font-size: 32px;
   font-weight: 700;
-  line-height: 32px;
+  /* line-height: 32px; */
   color: #333d4b;
 }
 
 .search-container {
-  margin-bottom: 20px;
-  position: relative;
+  /* margin-bottom: 20px; */
+  /* position: relative; */
   display: flex;
   align-items: center;
 }
@@ -35,7 +45,7 @@ h1 {
   width: 95%;
   border: none;
   border-bottom: 1px solid #ccc;
-  display: block;
+  display: flex;
 }
 
 .search-container input:focus {
@@ -43,18 +53,18 @@ h1 {
   border-color: #aaa;
 }
 
-.search-container .search-label {
+/* .search-container .search-label {
   position: absolute;
   top: 10px;
   left: 10px;
   pointer-events: none;
   transition: 0.2s;
   color: #999;
-}
+} */
 
 .search-container input:focus + .search-label,
 .search-container input:not(:placeholder-shown) + .search-label {
-  top: -15px;
+  /* top: -15px; */
   font-size: 12px;
   color: #333;
 }
@@ -69,6 +79,9 @@ h1 {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 32px 50px;
 }
 
 .accordion-item {
@@ -117,6 +130,7 @@ h1 {
   display: flex;
   clear: both;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .accordion-content table {
