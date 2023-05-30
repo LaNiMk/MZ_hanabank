@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <title>FAQ 페이지</title>
     <link rel="stylesheet" href="../component/FAQ.css" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../global.css" />
     <script
       src="https://kit.fontawesome.com/5f6a75f731.js"
       crossorigin="anonymous"
     ></script>
+    
   </head>
 
   <body>
+    <header include-html="./header.html"></header>
+    <div class="bg_gnb"></div>
     <h1>자주 묻는 질문</h1>
     <div class="search-container">
       <button id="search-button">
@@ -536,6 +541,12 @@
         </div>
       </div>
     </div>
+
+    <footer include-html="./footer.html"></footer>
+    <script src="../js/includeHTML.js"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/header.js" charset="utf-8"></script>
+    <script src="../js/header-hamburger.js" charset="utf-8"></script>
 
     <script src="../js/FAQ.js"></script>
   </body>
