@@ -1,3 +1,5 @@
+//import * as val from "./validation";
+
 const USEREMAIL = document.getElementById("username_inp");
 const USERPW = document.getElementById("password_inp");
 const signUpBtn = document.getElementById("signup-btn");
@@ -20,8 +22,8 @@ function padZero(num) {
 }
 
 function registerUser() {
-  let userData = localStorage.getItem("details")
-    ? JSON.parse(localStorage.getItem("details"))
+  let userData = localStorage.getItem("USER")
+    ? JSON.parse(localStorage.getItem("USER"))
     : [];
 
   let userObj = {
@@ -33,7 +35,7 @@ function registerUser() {
   userData.push(userObj);
 
   if (localStorage) {
-    localStorage.setItem("details", JSON.stringify(userData));
+    localStorage.setItem("USER", JSON.stringify(userData));
     alert("회원가입 되셨습니다!");
   }
 
@@ -43,5 +45,7 @@ function registerUser() {
 
 signUpBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  //val.validateEmail(email);
+  //val.checkRequired([username_inp, password_inp, password_cofirm]);
   registerUser();
 });

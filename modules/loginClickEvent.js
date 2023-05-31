@@ -1,5 +1,5 @@
-const USER_NAME = document.getElementById("username_inp");
-const PASSWORD = document.getElementById("password_inp");
+const USER_NAME = document.getElementById("username_inp_login");
+const PASSWORD = document.getElementById("password_inp_login");
 const IP_SWITCH = document.getElementById("ip_switch");
 const KEEP_LOGIN_LABEL = document.getElementById("kepp-login--label");
 const CHECK_BOX = document.getElementById("check_box");
