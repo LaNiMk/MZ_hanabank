@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load", () => {
   const ham = document.querySelector("#ham");
   const menu = document.querySelector("header .gnb");
 
@@ -7,4 +7,4 @@ window.onload = function () {
   }
 
   ham.addEventListener("click", onClickButtonHam);
-};
+});
