@@ -15,7 +15,7 @@
 
   <body>
     <header include-html="./header.html"></header>
-    <div class="bg_gnb"></div>
+    <div class="bg_gnb"><br></div>
     <main class="faq-main">
     <div class="top-container">
       <h1 class="faq-title">자주 묻는 질문</h1>
@@ -23,9 +23,11 @@
         <button id="search-button">
           <i class="fas fa-light fa-magnifying-glass"></i>
         </button>
-        <input type="text" id="search-input" placeholder="무엇이든 찾아보세요" />
+        <input type="text" id="search-input" placeholder="무엇이든 찾아보세요"  />
       </div>
     </div>
+
+    <div id="search-results"></div>
 
     <div class="accordion">
       <div class="accordion-item">
@@ -292,7 +294,8 @@
               「금융거래한도계좌」로 개설됩니다.
             </p>
             <p class="mt10">- 거래범위 및 한도(거래종류별 1일 거래한도)</p>
-            <table
+
+            <table class="content_table"
               style="border: 1px solid rgb(221, 221, 221); border-image: none"
             >
               <colgroup>
@@ -357,11 +360,11 @@
               방문 하시기 바랍니다.
             </p>
             <h5 class="mb10">● 금융거래목적을 확인할 수 있는 증빙자료(예시)</h5>
-            <table
+            <table class="document-table"
               style="border: 1px solid rgb(221, 221, 221); border-image: none"
               summary="거래 목적, 증빙 자료 예시로 이루어진 표 입니다."
             >
-              <colgroup>
+              <colgroup class="document-colgroup">
                 <col width="20%" />
                 <col width="35%" />
                 <col width="*" />
@@ -551,6 +554,6 @@
     <script src="../js/header.js" charset="utf-8"></script>
     <script src="../js/header-hamburger.js" charset="utf-8"></script>
 
-    <script src="../js/FAQ.js"></script>
+    <script defer src="../js/FAQ.js"></script>
   </body>
 </html>
