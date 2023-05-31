@@ -1,6 +1,6 @@
-body {
+/* body {
   vertical-align: baseline;
-}
+} */
 
 style {
   display: none;
@@ -28,6 +28,7 @@ style {
   font-weight: 700;
   /* line-height: 32px; */
   color: #333d4b;
+
 }
 
 .search-container {
@@ -43,6 +44,7 @@ style {
   border: none;
   border-bottom: 1px solid #ccc;
   display: flex;
+  cursor: pointer;
 }
 
 .search-container input:focus {
@@ -72,6 +74,14 @@ style {
   cursor: pointer;
 }
 
+#search-results {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 .accordion {
   margin: 20px;
   display: flex;
@@ -92,6 +102,11 @@ style {
 
 .accordion-title:hover {
   background-color: #f2f2f2;
+  border-radius: 7px;
+}
+
+.accordion-title.active {
+  background-color: rgb(213, 240, 212);
   border-radius: 7px;
 }
 

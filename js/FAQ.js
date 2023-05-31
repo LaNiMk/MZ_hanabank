@@ -1,4 +1,5 @@
 const accordionItems = document.querySelectorAll('.accordion-item');
+// const accordionContents = document.querySelector('.accordion-content');
 
 accordionItems.forEach(item => {
     const title = item.querySelector('.accordion-title');
@@ -48,6 +49,7 @@ function scrollToResult(event) {
   
   // FAQ 아코디언에서 해당 질문을 찾아서 스크롤 이동
   var accordionTitles = document.getElementsByClassName('accordion-title');
+  var accordionContents = document.querySelectorAll('.accordion-content');
   for (var i = 0; i < accordionTitles.length; i++) {
     var itemQuestion = accordionTitles[i].textContent;
     
@@ -56,15 +58,17 @@ function scrollToResult(event) {
 
       setTimeout(function() {
         // 스크롤 위치를 조정하는 보정 작업
-        window.scrollBy(0, -100); // 보정값 추가
+        window.scrollBy(0, -250); // 보정값 추가
       }, 500);
 
-      var accordionContent = accordionTitles[i].nextElementSibling;
+      var accordionContent = accordionContents[i];
       if (accordionContent.style.maxHeight) {
         accordionContent.style.maxHeight = null;
       } else {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
       }
+
+      accordionTitles[i].classList.toggle('active');
       
       break;
     }
