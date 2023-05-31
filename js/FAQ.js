@@ -54,21 +54,17 @@ function scrollToResult(event) {
     var itemQuestion = accordionTitles[i].textContent;
     
     if (itemQuestion === question) {
-      accordionTitles[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      accordionTitles[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-      setTimeout(function() {
-        // 스크롤 위치를 조정하는 보정 작업
-        window.scrollBy(0, -250); // 보정값 추가
-      }, 500);
-
-      var accordionContent = accordionContents[i];
-      if (accordionContent.style.maxHeight) {
-        accordionContent.style.maxHeight = null;
-      } else {
-        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-      }
+      // var accordionContent = accordionContents[i];
+      // if (accordionContent.style.maxHeight) {
+      //   accordionContent.style.maxHeight = null;
+      // } else {
+      //   accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      // }
 
       accordionTitles[i].classList.toggle('active');
+      accordionContents[i].classList.toggle('active');
       
       break;
     }
