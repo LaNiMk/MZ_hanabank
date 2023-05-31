@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
+@import "./css/default.css";
+
 @import "./component/btn.css";
 @import "./css/color.css";
 @import "./css/text.css";
@@ -7,11 +8,7 @@
 @import "./component/header.css";
 @import "./component/footer.css";
 @import "./component/timeline.css";
-@import "./css/minseon.css";
-
-body {
-  font-family: "Noto Sans KR", sans-serif;
-}
+@import "./css/introduce.css";
 
 .mt-2 {
   margin-top: 2rem;
