@@ -1,0 +1,52 @@
+.map {
+  /* aspect-ratio: 16/9; */
+  aspect-ratio: 4/2;
+  /* width: 100%; */
+  /* height: 30rem; */
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.main-visit {
+  max-width: 1160px;
+  /* background-color: #008485; */
+  margin: 0 auto;
+  margin-top: 102px;
+}
+
+.visit-title {
+  position: relative;
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.visit-title::before {
+  content: "";
+  position: absolute;
+  /* left: 50%; */
+  bottom: -8px;
+  height: 3px;
+  width: 80px;
+  /* transform: translateX(50%); */
+  background: black;
+}
+
+.visit-tb {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.visit-tb .head {
+  width: 8rem;
+}
+
+@media (max-width: 480px) {
+  .map {
+    aspect-ratio: 2/2;
+  }
+}
