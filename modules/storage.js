@@ -22,9 +22,8 @@ function padZero(num) {
 }
 
 function registerUser() {
-  let userData = localStorage.getItem("USER")
-    ? JSON.parse(localStorage.getItem("USER"))
-    : [];
+  let userData = localStorage.getItem("USER") ?
+    JSON.parse(localStorage.getItem("USER")) : [];
 
   let userObj = {
     email: USEREMAIL.value,
@@ -37,6 +36,7 @@ function registerUser() {
   if (localStorage) {
     localStorage.setItem("USER", JSON.stringify(userData));
     alert("회원가입 되셨습니다!");
+    window.location.href = "loginId.html";
   }
 
   USEREMAIL.value = "";
