@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="helloalpaca" />
+    <meta name="keywords" content="MZ하나은행" />
+    <meta name="description" content="1020과 함께하는 MZ 하나은행" />
+
+    <!-- common meta tag -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="MZ하나은행" />
+    <meta property="og:description" content="1020과 함께하는 MZ 하나은행" />
+    <meta property="og:image" content="../img/hanabank_model.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+
+    <!-- twitter meta tag -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta property="twitter:title" content="MZ하나은행" />
+    <meta
+      property="twitter:description"
+      content="1020과 함께하는 MZ 하나은행"
+    />
+    <meta property="twitter:image" content="../img/hanabank_model.jpg" />
+    <!-- og 이미지는 최상단에 -->
+
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <!-- Chrome, Safari, IE (.ico) -->
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <title>이벤트 - 하나은행</title>
     <link rel="stylesheet" href="../css/default.css" />
     <link rel="stylesheet" href="../global.css" />
@@ -18,8 +46,8 @@
   </head>
 
   <body>
-    <header include-html="./header.html"></header>
-    <div class="bg_gnb"><br /></div>
+    <!-- <header include-html="./header.html"></header>
+    <div class="bg_gnb"><br /></div> -->
 
     <div id="contents" class="hana-contents">
       <div class="new_evt">
@@ -181,7 +209,6 @@
                         margin-top: 0;
                         color: inherit;
                         font-family: inherit;
-                        text-indent: -10px;
                       "
                       >『디폴트옵션,마감임박』</span
                     >
@@ -256,7 +283,6 @@
                         margin-top: 0;
                         color: inherit;
                         font-family: inherit;
-                        text-indent: -10px;
                       "
                       >『구(9)해줘, IRP』</span
                     >
@@ -330,7 +356,7 @@
     <!-- <script src="../js/header.js" charset="utf-8"></script> -->
     <script src="../js/header-hamburger.js" charset="utf-8"></script>
 
-    <script>
+    <!-- <script>
       let observer = new IntersectionObserver((e) => {
         e.forEach((박스) => {
           if (박스.isIntersecting) {
@@ -357,6 +383,6 @@
       observer.observe(section1[10]);
       observer.observe(section1[11]);
       observer.observe(section1[12]);
-    </script>
+    </script> -->
   </body>
 </html>
