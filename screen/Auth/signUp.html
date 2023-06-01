@@ -89,18 +89,20 @@
                         </button>
                     </section>
                     <div class="ector"></div>
-                    <div class="username">
+                    <div class="username form-control">
                         <input type="text" id="username_inp" placeholder="이메일 주소" />
                     </div>
-                    <small>Error message</small>
-                    <div class="password">
+
+                    <div class="password form-control">
                         <input type="password" id="password_inp" placeholder="비밀번호(10자리 이상)" />
                     </div>
-                    <small>Error message</small>
-                    <div class="password2">
+
+                    <div class="password2 form-control">
                         <input type="password" id="password_cofirm" placeholder="비밀번호 확인" />
                     </div>
-                    <small>Error message</small>
+                    <div id="c" class="control">
+                        <small class="e" id="error">Error message</small>
+                    </div>
                     <div class="ector"></div>
                     <div class="login-btn_wrap">
                         <button id="signup-btn" type="submit" class="text-btn-4">이메일로 가입하기</button>
@@ -117,7 +119,7 @@
         </div>
 
     </wrap>
-    <script src="../../modules/storage.js"></script>
+    <script src="../../modules/storage.js" type="module"></script>
     <script src="../../modules/signUpClickEvent.js"></script>
 </body>
 

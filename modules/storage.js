@@ -1,7 +1,13 @@
-//import * as val from "./validation";
+import {
+  validateEmail,
+  validatePassword,
+  confirmPasswordMatch,
+  checkRequired
+} from "./validation.js";
 
 const USEREMAIL = document.getElementById("username_inp");
 const USERPW = document.getElementById("password_inp");
+const CONFIRMUSERPW = document.getElementById("password-confirm");
 const signUpBtn = document.getElementById("signup-btn");
 const currentPlus1Hours = addTime(1);
 
@@ -45,7 +51,9 @@ function registerUser() {
 
 signUpBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  //val.validateEmail(email);
-  //val.checkRequired([username_inp, password_inp, password_cofirm]);
+  // checkRequired([USEREMAIL, USERPW, CONFIRMUSERPW]);
+  validateEmail(USEREMAIL);
+  validatePassword(USERPW);
+  // confirmPasswordMatch(USERPW, CONFIRMUSERPW);
   registerUser();
 });
