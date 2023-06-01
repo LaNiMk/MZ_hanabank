@@ -19,15 +19,18 @@
 
 .hana-contents {
   /* float: left; */
-  margin-left: 70px;
+  margin: 96px auto;
   width: 800px;
   display: flex;
+  padding: 32px 0;
 }
 
 .new_evt {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   font-family: "NotoSans_Regular";
+  display: flex;
+  flex-direction: column;
 }
 
 .newsEventit {
@@ -54,6 +57,8 @@
   margin-bottom: 50px;
   margin-top: 2px;
   border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .newsEventMenuWrap::after {
@@ -67,6 +72,7 @@
   zoom: 1;
   text-align: right;
   margin-top: 0px;
+  list-style-type: none;
 }
 
 .newsEventMenu li {
@@ -187,21 +193,35 @@ ol {
     10px 10px no-repeat;
 }
 
-.new_evt .evt_list {
+.evt_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.new_evt .evt_list ul {
+.flex-container {
+  list-style-type: none;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  margin-left: -20px;
+  /* margin-left: -20px; */
+  /* margin-right: 10px; */
 }
 
-.new_evt .evt_list ul li {
+.flex-container li {
+  opacity: 0;
+  transition: all 2.5s;
   float: left;
   position: relative;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-top: 20px;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
   height: 140px;
   box-sizing: border-box;
   border: 1px solid #e4e4e4;
@@ -209,22 +229,44 @@ ol {
   background-color: #fff;
 }
 
-.new_evt .evt_list ul li a {
+.flex-container li a {
   display: block;
   padding: 20px 120px 20px 25px;
   height: 115px;
 }
 
-.new_evt .evt_list ul li a .evt_txt p {
+@media (max-width: 800px) {
+  /* 화면 너비가 768px 이하인 경우에 대한 스타일 */
+
+  .hana-contents {
+    justify-content: center;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .evt_txt {
+    margin: 0 auto;
+  }
+
+  .carousel {
+    display: clip;
+  }
+}
+
+.evt_txt p {
   margin-top: 1px;
   height: 50px;
   line-height: 26px;
   font-size: 20px;
   letter-spacing: -0.4px;
   color: #111;
+  display: block;
 }
 
-.new_evt .evt_list ul li a .evt_img {
+.evt_img {
   position: absolute;
   margin-top: -44px;
   width: 88px;
@@ -239,19 +281,11 @@ ol {
   overflow: clip;
 }
 
-.evt_txt p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 div {
   display: block;
 }
 
-.new_evt .evt_list ul li a .evt_txt span {
+.evt_txt span {
   display: block;
   margin-top: 28px;
   color: #757575;

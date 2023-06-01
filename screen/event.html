@@ -90,9 +90,9 @@
         </div>
 
         <div class="evt_list">
-          <ul>
+          <ul class="flex-container">
             <li>
-              <a href="/cont/news/news02/1490975_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>
                     6월 1일은 하나데이
@@ -113,7 +113,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1490489_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>돈 주고도 살 수 없는<br />"머니드림" 추가 제작!</p>
                   <span>2023.05.11 ~ 2023.05.31</span>
@@ -127,7 +127,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1490284_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>오~ 수지 큐~ ♬<br />퀴즈풀고 돈베개 받자!</p>
                   <span>2023.05.04 ~ 2023.06.30</span>
@@ -142,7 +142,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1488347_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>주택청약 가입하면 적금이<br />최대 연 5.0%(세전, 1년제)</p>
                   <span>2023.04.29 ~ 2023.12.29</span>
@@ -157,7 +157,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1490534_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>하나가 효도해요<br />상품권과 금리쿠폰!</p>
                   <span>2023.04.27 ~ 2023.06.30</span>
@@ -172,7 +172,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1490259_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>
                     수익률 끌어올려<br /><span
@@ -198,7 +198,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1490216_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>해외송금 Welcome 이벤트</p>
                   <span>2023.04.11 ~ 2023.05.31</span>
@@ -213,7 +213,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1489990_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>
                     이제 가맹점도 하나로!<br />가맹점대금 입금계좌<br />변경이벤트
@@ -230,7 +230,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1489990_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>
                     이제 가맹점도 하나로!<br />가맹점대금 입금계좌<br />변경이벤트
@@ -247,7 +247,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1489980_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>
                     작년보다 더 많이 돌려받자!<br /><span
@@ -273,7 +273,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1489983_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>
                     청년형 장기펀드<br />이러니 가입할 수밖에!<br />#소득공제#스벅#BBQ치킨
@@ -290,7 +290,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1488678_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>하나은행 X LG유플러스<br />초등자녀를 위한 완벽조합!</p>
                   <span>2023.02.06 ~ 2023.12.31</span>
@@ -305,7 +305,7 @@
             </li>
 
             <li>
-              <a href="/cont/news/news02/1473984_115431.jsp">
+              <a href="">
                 <div class="evt_txt">
                   <p>자녀 청약통장 만들고<br />띠 도장 &amp; 1만 하나머니</p>
                   <span>2023.01.02 ~ 2023.12.29</span>
@@ -329,5 +329,34 @@
     <!-- <script src="../js/jquery.js" charset="utf-8"></script> -->
     <!-- <script src="../js/header.js" charset="utf-8"></script> -->
     <script src="../js/header-hamburger.js" charset="utf-8"></script>
+
+    <script>
+      let observer = new IntersectionObserver((e) => {
+        e.forEach((박스) => {
+          if (박스.isIntersecting) {
+            박스.target.style.opacity = 1;
+          }
+        });
+      });
+
+      // let div = document.querySelectorAll("div");
+      // let section = document.querySelectorAll(".black-background2");
+      let section1 = document.querySelectorAll(".flex-container li");
+      // observer.observe(div[0]); /*html 요소가 화면에 등장하는지 감시해줌*/
+      // observer.observe(section[0]);
+      observer.observe(section1[0]);
+      observer.observe(section1[1]);
+      observer.observe(section1[2]);
+      observer.observe(section1[3]);
+      observer.observe(section1[4]);
+      observer.observe(section1[5]);
+      observer.observe(section1[6]);
+      observer.observe(section1[7]);
+      observer.observe(section1[8]);
+      observer.observe(section1[9]);
+      observer.observe(section1[10]);
+      observer.observe(section1[11]);
+      observer.observe(section1[12]);
+    </script>
   </body>
 </html>
