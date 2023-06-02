@@ -1,0 +1,173 @@
+/* header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-color: #9c65ff;
+  z-index: 10;
+} */
+
+.introduce-header {
+  display: block;
+  text-align: center;
+  margin-top: 203px;
+}
+
+.introduce-header > div:first-child {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: black;
+  padding: 1rem;
+}
+
+.introduce-header > div:nth-child(2) {
+  margin-top: 2rem;
+  color: black;
+  padding: 1rem;
+}
+
+.kakao-bg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.kakao-bg > img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.brand-section {
+  text-align: center;
+  background-color: #008485;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.brand-section div {
+  color: white;
+}
+
+.brand-section > .title {
+  position: relative;
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+}
+
+.brand-section > .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  height: 3px;
+  width: 80px;
+  transform: translateX(-50%);
+  background: white;
+}
+
+.brand-card-container {
+  height: fit-content;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.brand-section > .brand-card-container div:last-child {
+  color: #d7d7d7;
+}
+
+.window-center {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-16 {
+  margin-top: 16rem;
+}
+
+.mr-2 {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.timeline-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.bg-c-h-green {
+  background-color: #008485;
+  color: #fff;
+}
+
+.font-section {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.font-section * {
+  color: black;
+}
+
+.font-section > .title {
+  position: relative;
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+}
+
+.font-section > .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  height: 3px;
+  width: 80px;
+  transform: translateX(-50%);
+  background: black;
+}
+
+.font-section > textarea {
+  resize: none;
+  width: 80%;
+  height: 1.8rem;
+  border: 2px solid #008485;
+  font-size: 1.5rem;
+  padding: 1rem;
+  line-height: 2rem;
+  font-family: "Nanum Pen Script", cursive;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+.font-section > textarea:focus {
+  outline: none;
+}
+
+.font-download {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-2 {
+  padding: 2rem;
+}

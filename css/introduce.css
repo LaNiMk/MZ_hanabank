@@ -1,63 +1,222 @@
-/* header {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-color: #9c65ff;
-  z-index: 10;
-} */
-
-.introduce-header {
-  display: block;
-  text-align: center;
-  margin-top: 203px;
+.container {
+  width: 100vw;
+  height: 100vh;
 }
-
-.introduce-header > div:first-child {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: black;
-  padding: 1rem;
-}
-
-.introduce-header > div:nth-child(2) {
-  margin-top: 2rem;
-  color: black;
-  padding: 1rem;
-}
-
-.kakao-bg {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  margin-top: 4rem;
-}
-
-.kakao-bg > img {
+.scroll-container,
+.scroll-area {
   width: 100%;
   height: 100%;
-  background-size: contain;
+  font-size: 60px;
 }
 
-.brand-section {
-  text-align: center;
-  background-color: #008485;
-  padding-top: 16rem;
-  padding-bottom: 16rem;
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
-.brand-section div {
+.scroll-area {
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
-.brand-section > .title {
-  position: relative;
-  font-size: 2.7rem;
-  margin-bottom: 4rem;
+/* .scroll-area:nth-of-type(odd) {
+  background: #c94e4b;
 }
 
-.brand-section > .title::before {
+.scroll-area:nth-of-type(even) {
+  background: #8360a6;
+} */
+
+/*==============================================================================================*/
+/*==============================================SNAP 2==========================================*/
+/*==============================================================================================*/
+
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    width: 177.78vh;
+  }
+}
+
+.text-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100vw;
+}
+
+.content h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 12vw;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.content h2:nth-child(2) {
+  color: #fff;
+  animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 44%,
+      21% 43%,
+      39% 49%,
+      53% 55%,
+      68% 61%,
+      85% 59%,
+      100% 49%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 60%,
+      19% 68%,
+      36% 72%,
+      53% 66%,
+      68% 52%,
+      82% 39%,
+      100% 42%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+/*==============================================================================================*/
+/*==============================================SNAP 3,4,5======================================*/
+/*==============================================================================================*/
+
+.intro-carousel-content {
+  /* width: calc(100% - 2rem); */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.intro-carousel-title {
+  font-size: 6rem;
+  color: white;
+  font-weight: 600;
+  /* transform: translateY(10%);
+  transition: all 1s ease-in; */
+}
+
+.intro-carousel-desc {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+}
+.intro-carousel-button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+}
+
+.intro-relative {
+  position: relative;
+}
+
+.intro-img-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*==============================================================================================*/
+/*==============================================SNAP 6==========================================*/
+/*==============================================================================================*/
+.brand-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: stretch;
+  align-items: center;
+  /* text-align: center; */
+}
+.brand-title,
+.brand-title-white {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.brand-title {
+  color: black;
+}
+
+.brand-title-white {
+  color: white;
+}
+
+.brand-title::before,
+.brand-title-white::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -65,7 +224,24 @@
   height: 3px;
   width: 80px;
   transform: translateX(-50%);
+}
+
+.brand-title::before {
+  background: black;
+}
+
+.brand-title-white::before {
   background: white;
+}
+
+.brand-subtitle {
+  font-size: 2rem;
+  color: grey;
+}
+
+.brand-subtitle-white {
+  font-size: 2rem;
+  color: #eee;
 }
 
 .brand-card-container {
@@ -77,97 +253,14 @@
   flex-wrap: wrap;
 }
 
-.brand-section > .brand-card-container div:last-child {
-  color: #d7d7d7;
-}
-
-.window-center {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.mt-8 {
-  margin-top: 8rem;
-}
-
-.mt-1 {
-  margin-top: 1rem;
-}
-
-.mt-16 {
-  margin-top: 16rem;
-}
-
-.mr-2 {
-  display: inline-block;
-  margin-right: 2rem;
-}
-
-.timeline-section {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.bg-c-h-green {
-  background-color: #008485;
-  color: #fff;
-}
-
-.font-section {
-  text-align: center;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-.font-section * {
+.brand-card > div:nth-child(2) {
   color: black;
 }
 
-.font-section > .title {
-  position: relative;
-  font-size: 2.7rem;
-  margin-bottom: 4rem;
+.brand-card-white > div:nth-child(2) {
+  color: white;
 }
 
-.font-section > .title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -8px;
-  height: 3px;
-  width: 80px;
-  transform: translateX(-50%);
-  background: black;
-}
-
-.font-section > textarea {
-  resize: none;
-  width: 80%;
-  height: 1.8rem;
-  border: 2px solid #008485;
-  font-size: 1.5rem;
-  padding: 1rem;
-  line-height: 2rem;
-  font-family: "Nanum Pen Script", cursive;
-  overflow: hidden;
-  margin: 0.5rem;
-}
-
-.font-section > textarea:focus {
-  outline: none;
-}
-
-.font-download {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.p-2 {
-  padding: 2rem;
+.brand-card-white > div:nth-child(3) {
+  color: #eee;
 }
