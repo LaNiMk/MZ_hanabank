@@ -96,45 +96,42 @@ input[type="password"]::placeholder {
   font-size: 0.938rem;
 }
 
-.container > .login-card > .login-form > .username,
+.container>.login-card>.login-form>.username,
 .password,
 .password2 {
   display: flex;
   padding: 10px 17px 9px 0px;
+  margin-bottom: 1rem;
   box-sizing: border-box;
   border: 1px solid #c6c6c6;
   border-radius: 10px;
 }
-/*
-.container>.login-card>.login-form>.sucess .username,
-.password,
-.password2 {
-    border-color: #67C8C1;
+
+.form-control.success input {
+  border-color: #67C8C1;
 }
 
-.container>.login-card>.login-form>.error .username,
-.password,
-.password2 {
-    border-color: #e74c3c;
+.form-control.error input {
+  border-color: red;
 }
 
-small {
-    color: #e74c3c;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
+.container>.login-card>.login-form>.control>.e {
+  visibility: hidden;
 }
-*/
-.error small {
+
+.container>.login-card>.login-form>.control>.e2 {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   visibility: visible;
 }
 
-.categories > li:first-child {
+.categories>li:first-child {
   border-right: 2px solid #d4d4d4;
 }
 
-.categories > li:not(:first-child) {
+.categories>li:not(:first-child) {
   border-bottom: 1.5px solid #d4d4d4;
   background-color: #f8f9fa;
 }

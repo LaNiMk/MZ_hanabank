@@ -1,7 +1,13 @@
-//import * as val from "./validation";
+import {
+  validateEmail,
+  validatePassword,
+  confirmPasswordMatch,
+  checkRequired
+} from "./validation.js";
 
 const USEREMAIL = document.getElementById("username_inp");
 const USERPW = document.getElementById("password_inp");
+const CONFIRMUSERPW = document.getElementById("password-confirm");
 const signUpBtn = document.getElementById("signup-btn");
 const currentPlus1Hours = addTime(1);
 
@@ -22,9 +28,8 @@ function padZero(num) {
 }
 
 function registerUser() {
-  let userData = localStorage.getItem("USER")
-    ? JSON.parse(localStorage.getItem("USER"))
-    : [];
+  let userData = localStorage.getItem("USER") ?
+    JSON.parse(localStorage.getItem("USER")) : [];
 
   let userObj = {
     email: USEREMAIL.value,
@@ -37,6 +42,7 @@ function registerUser() {
   if (localStorage) {
     localStorage.setItem("USER", JSON.stringify(userData));
     alert("회원가입 되셨습니다!");
+    window.location.href = "loginId.html";
   }
 
   USEREMAIL.value = "";
@@ -45,7 +51,9 @@ function registerUser() {
 
 signUpBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  //val.validateEmail(email);
-  //val.checkRequired([username_inp, password_inp, password_cofirm]);
+  // checkRequired([USEREMAIL, USERPW, CONFIRMUSERPW]);
+  validateEmail(USEREMAIL);
+  validatePassword(USERPW);
+  // confirmPasswordMatch(USERPW, CONFIRMUSERPW);
   registerUser();
 });
