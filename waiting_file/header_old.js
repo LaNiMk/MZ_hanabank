@@ -1,4 +1,4 @@
-$(document).ready(function () {
+window.onload = function () {
   let screen = $(window).width();
   const gnbdiv = $(".gnb > li > div");
   const bg = $(".bg_gnb");
@@ -42,7 +42,7 @@ $(document).ready(function () {
       }
     });
   }
-});
+};
 
 $(window).on("resize", function () {
   console.log("resize event!");
