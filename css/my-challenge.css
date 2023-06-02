@@ -356,13 +356,13 @@ animation circle 回る玉 ~4s
   flex-wrap: wrap-reverse;
 }
 
-.my-scene-4 .content {
+.my-scene-4 .temp2-container .content {
   text-align: start;
   font-size: 17px;
   color: white;
 }
 
-.my-scene-4 .card-text {
+.my-scene-4 .temp2-container .card-text {
   font-size: 24px;
   color: white;
 }
