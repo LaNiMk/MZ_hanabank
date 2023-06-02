@@ -1,0 +1,674 @@
+@charset 'utf-8';
+@import url("https://static.toss.im/tps/main.css");
+@import url("https://static.toss.im/tps/others.css");
+
+body {
+  overflow-x: hidden;
+  /* color: rgb(29, 29, 31); */
+  letter-spacing: -0.05em;
+  /* background: white; */
+}
+p {
+  line-height: 1.6;
+  margin: auto;
+}
+a {
+  /* color: white; */
+  /* color: rgb(29, 29, 31); */
+  text-decoration: none;
+}
+
+.font-toss {
+  font-family: "Toss Product Sans", sans-serif;
+  font-size: 14px;
+}
+
+#sticky-box-intro {
+  height: 100%;
+}
+
+/* canvas */
+.sticky-elem-2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+.sticky-elem-canvas {
+  top: 0;
+  height: 100%;
+}
+.sticky-elem-canvas canvas {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+/* sticky */
+.sticky-box {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  /* background: gray; */
+  display: flex;
+  align-content: center;
+}
+.sticky-elem {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  /* iPhone 가로 스크롤 방지 */
+  overflow-x: hidden;
+}
+.scroll-section {
+  position: relative;
+  /* padding-top: 50vh; */
+}
+/* #scroll-section-1 {
+  background: #3182f6;
+} */
+#scroll-section-0 h1 {
+  position: relative;
+  top: -10vh;
+  z-index: 5;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.main-message {
+  top: 50vh;
+  margin: auto;
+  height: 10vh;
+  font-size: 2.5rem;
+  opacity: 0;
+}
+
+.main-message.z2 {
+  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#messsage-a {
+  top: 47vh;
+}
+#messsage-b {
+  top: 35vh;
+}
+#messsage-c {
+  top: 45vh;
+}
+#messsage-d {
+  top: 55vh;
+}
+#messsage-z2 {
+  top: 47vh;
+}
+#messsage-a2 {
+  top: 47vh;
+}
+#messsage-b2 {
+  top: 47vh;
+}
+.main-message p {
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  margin: auto;
+}
+.main-message small {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+}
+
+#scroll-section-1 .hero-message {
+  font-size: 3.5rem;
+}
+.description {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+.description strong {
+  float: left;
+  margin-right: 0.2em;
+  font-size: 3rem;
+  color: rgb(29, 29, 31);
+}
+.mid-message {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #888;
+}
+.mid-message strong {
+  color: rgb(29, 29, 31);
+}
+
+/* section-2 */
+/* .grad-1 {
+  background: #121fcf;
+  background: linear-gradient(to top right, #8dc191 0%, #29aea9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grad-2 {
+  background: #121fcf;
+  background: linear-gradient(to top right, #ed6a9e 0%, #e90061 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+visible,
+invisible {
+  font-weight: 900;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  color: white;
+  background: darkorange;
+}
+
+/* ,
+#show-scene-1 #scroll-section-1 .sticky-elem  */
+#show-scene-0 #scroll-section-0 .sticky-elem {
+  display: block;
+  will-change: transform, opacity;
+}
+.scroll-effect-end .sticky-elem {
+  /* 스크롤 효과가 모두 끝나고, 아래 일반 콘텐츠 영역에서는 sticky-elem들을 모두 안보이도록 */
+  display: none !important;
+}
+.sticky-elem-canvas {
+  top: 0;
+  height: 100%s;
+}
+.sticky-elem-canvas canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.normal-content {
+  padding: 20vh 0;
+}
+
+.sticky-elem .main-message .z .title {
+  opacity: 1;
+  display: block;
+}
+
+/* loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.before-load .container {
+  display: none;
+}
+.before-load .loading {
+  opacity: 1;
+}
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+.loading-circle {
+  width: 54px;
+  height: 54px;
+  animation: loading-spin 3s infinite;
+}
+.loading-circle circle {
+  stroke: black;
+  stroke-width: 4;
+  /* getTotalLength()로 stroke의 길이를 얻어올 수 있음 */
+  stroke-dasharray: 157, 157;
+  stroke-dashoffset: 0;
+  fill: transparent;
+  animation: loading-circle-ani 1s infinite;
+}
+
+/* etc */
+.display-none {
+  display: none;
+}
+
+/* section-4 */
+
+/* section-4 */
+.section-4-img-box {
+  width: 32px;
+  height: 32px;
+}
+.section-4-img {
+  width: 32px;
+}
+
+/* section-5 */
+.s-5-video {
+  height: 100%;
+  opacity: 0;
+}
+#sticky-box-5 {
+  height: 100%;
+}
+#messsage-z5 {
+  top: 40vh;
+  font-size: 2.7rem;
+}
+#messsage-a5 {
+  top: 53vh;
+  font-size: 7rem;
+  line-height: 1.6;
+}
+#s5-0,
+#s5-1 {
+  text-align: center;
+}
+
+/* section-6 */
+/* #sticky-box-6 {
+  height: 100%;
+} */
+#messsage-z6 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+#messsage-a6,
+#messsage-b6 {
+  margin-top: -5vh;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#s6-0,
+#s6-1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* section-7 */
+#sticky-box-7 {
+  height: 100%;
+}
+.s-7-video {
+  opacity: 0;
+  height: 100%;
+  /* transform: translate3d(50%, 50%, 0); */
+}
+#king-7-1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+#king-7-2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+#king-7-3 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.section-7-button-box {
+  margin-top: -5vh;
+  display: flex;
+  justify-content: center;
+}
+.section-7-button-img {
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+#king-7-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 42px;
+  padding: 12px 20px;
+}
+#messsage-a7,
+#messsage-b7 {
+  box-sizing: border-box;
+  margin-top: 17vh;
+  padding: 18px 32px;
+}
+#messsage-a7 {
+  top: 20vh;
+}
+#messsage-b7 {
+  top: 42vh;
+}
+.s-7-video-box {
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.tossteam-video {
+  height: 40vh;
+}
+
+/* ########################################################### */
+@media (min-width: 1025px) {
+  /* section-0 */
+  #s0-0 {
+    font-size: 6rem;
+  }
+  #s0-1,
+  #s0-2,
+  #s0-3,
+  #s0-4 {
+    font-size: 5rem;
+  }
+
+  /* section-1 */
+  #sticky-box-1 {
+    display: flex;
+    justify-content: center;
+  }
+  .s1-inside-sticky-box {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* section-2 */
+  #s2-0,
+  #s2-1,
+  #s2-2 {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
+  /* section-3 */
+  #sticky-box-3 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .s3-inside-sticky-box {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  #card-z3,
+  #card-a3,
+  #card-b3,
+  #card-c3 {
+    position: absolute;
+  }
+
+  /* section-4 */
+  .section-4-message {
+    font-size: 3rem;
+  }
+  .s-4-dp-none {
+    display: none;
+  }
+
+  /* section-5 */
+  .s-5-dp-none {
+    display: none;
+  }
+  #messsage-z5 {
+    font-size: 5rem;
+  }
+
+  /* 얘 필요함? */
+  .main-message {
+    font-size: 4vw;
+  }
+  .main-message small {
+    font-size: 1.5vw;
+  }
+  .hero-message {
+    font-size: 6vw;
+  }
+  .mid-message {
+    width: 1000px;
+    padding: 0;
+    font-size: 4vw;
+  }
+
+  #s7-0 {
+    font-size: 3rem;
+  }
+  #s7-1 {
+    font-size: 4rem;
+  }
+  #s7-2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .section-7-button-box {
+    margin-top: 0px;
+  }
+}
+
+/* ########################################################### */
+@media (max-width: 1024px) {
+  /* section-0 */
+  #s0-0 {
+    font-size: 5rem;
+  }
+  #s0-1,
+  #s0-2,
+  #s0-3,
+  #s0-4 {
+    font-size: 4rem;
+  }
+
+  /* section-1 */
+  #sticky-box-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .s1-inside-sticky-box {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-1-img-box {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* section-2 */
+  .x-none {
+    display: flex;
+  }
+  #s2-0,
+  #s2-1,
+  #s2-2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+  /* section-3 */
+  #sticky-box-3 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .s3-inside-sticky-box {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  #card-z3,
+  #card-a3,
+  #card-b3,
+  #card-c3 {
+    position: absolute;
+  }
+
+  .section-4-message {
+    font-size: 2rem;
+  }
+  .s-4-dp-none {
+    display: none;
+  }
+
+  #messsage-z5 {
+    font-size: 3rem;
+  }
+  #messsage-a5 {
+    margin-top: 1rem;
+    line-height: 1.2;
+  }
+
+  #s6-0,
+  #s6-1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  #s7-0 {
+    font-size: 2.5rem;
+  }
+  #s7-1 {
+    font-size: 3rem;
+  }
+  #s7-2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+  #messsage-b7 {
+    top: 37vh;
+  }
+  .section-7-button-box {
+    margin-top: 10px;
+  }
+}
+
+/* ########################################################### */
+@media (max-width: 640px) {
+  #s0-0 {
+    font-size: 4rem;
+  }
+  #s0-1,
+  #s0-2,
+  #s0-3,
+  #s0-4 {
+    font-size: 3.5rem;
+  }
+
+  /* section-2 */
+  .display-none {
+    display: flex;
+  }
+  #s2-0,
+  #s2-1,
+  #s2-2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+  #s4-0,
+  #s4-1,
+  #s4-2,
+  #s4-3,
+  #s4-4,
+  #s4-5,
+  #s4-6,
+  #s4-7 {
+    font-size: 1.5rem;
+  }
+  .s-4-dp-none {
+    display: inline-block;
+  }
+
+  #messsage-z5 {
+    font-size: 3rem;
+  }
+  #messsage-a5 {
+    margin-top: 1rem;
+    line-height: 1.2;
+  }
+
+  .section-4-message {
+    font-size: 1.5rem;
+  }
+  #s6-0,
+  #s6-1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  #s7-0 {
+    font-size: 2rem;
+  }
+  #s7-1 {
+    font-size: 2.5rem;
+  }
+  #s7-2 {
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+  }
+  #messsage-b7 {
+    top: 35vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-card-2 {
+    max-height: 500px;
+  }
+  .section-7-button-box {
+    margin-top: 20px;
+  }
+  #messsage-a6,
+  #messsage-b6 {
+    margin-top: 20px;
+  }
+}

@@ -2,7 +2,9 @@ footer {
   padding: 50px 40px 50px 40px;
   margin: 0 auto;
   background-color: black;
+  /* width: calc(100% - 80px); */
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-outerbox {
