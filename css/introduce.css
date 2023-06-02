@@ -79,7 +79,7 @@
   transform: translate(-50%, -50%);
 }
 
-.content {
+.intro-text {
   position: relative;
 
   display: flex;
@@ -89,18 +89,18 @@
   width: 100vw;
 }
 
-.content h2 {
+.intro-text h2 {
   position: absolute;
   color: #fff;
   font-size: 12vw;
 }
 
-.content h2:nth-child(1) {
+.intro-text h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #fff;
 }
 
-.content h2:nth-child(2) {
+.intro-text h2:nth-child(2) {
   color: #fff;
   animation: wave 4s ease-in-out infinite;
 }
