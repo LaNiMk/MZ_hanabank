@@ -1,284 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/default.css" />
-		<link rel="stylesheet" href="../component/event.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-		<!-- <link rel="stylesheet" href="../component/card.css"> -->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="helloalpaca" />
+    <meta name="keywords" content="MZ하나은행" />
+    <meta name="description" content="1020과 함께하는 MZ 하나은행" />
+
+    <!-- common meta tag -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="MZ하나은행" />
+    <meta property="og:description" content="1020과 함께하는 MZ 하나은행" />
+    <meta property="og:image" content="../img/hanabank_model.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+
+    <!-- twitter meta tag -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta property="twitter:title" content="MZ하나은행" />
+    <meta
+      property="twitter:description"
+      content="1020과 함께하는 MZ 하나은행"
+    />
+    <meta property="twitter:image" content="../img/hanabank_model.jpg" />
+    <!-- og 이미지는 최상단에 -->
+
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <!-- Chrome, Safari, IE (.ico) -->
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <title>이벤트 - 하나은행</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../component/event.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/event_carousel.js"></script>
   </head>
-  <body style="margin: 0">
+
+  <body>
+    <!-- <header include-html="./header.html"></header>
+    <div class="bg_gnb"><br /></div> -->
+
     <div id="contents" class="hana-contents">
-        <div class="new_evt">
-      		<h3 class="newsEventit">이벤트</h3>
-      		<div class="newsEventMenuWrap">
-				<ul class="newsEventMenu">
-					<li class="on"><a href="/cont/news/news02/index.jsp" title="선택됨"><span>진행중인 이벤트</span></a></li>
-            		<li><a href="/cont/news/news02/index1.jsp"><span>종료된 이벤트</span></a></li>
-            		<li><a href="/cont/news/news02/index2.jsp"><span>당첨확인</span></a></li>
-				</ul>
-			</div>
-			
-			<div class="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item">
-						<img src="../img/1490284_list_banner.png" alt="Image 1">
-					</div>
-					
-					<div class="carousel-item">
-						<img src="../img/1490489_listbanner.jpg" alt="Image 2">
-					</div>
-					
-					<div class="carousel-item">
-						<img src="../img/1490975_list-banner.jpg" alt="Image 3">
-					</div>
+      <div class="new_evt">
+        <h3 class="newsEventit">이벤트</h3>
+        <div class="newsEventMenuWrap">
+          <ul class="newsEventMenu">
+            <li class="on">
+              <a href="" title="선택됨"><span>진행중인 이벤트</span></a>
+            </li>
+            <li>
+              <a href=""><span>종료된 이벤트</span></a>
+            </li>
+            <li>
+              <a href=""><span>당첨확인</span></a>
+            </li>
+          </ul>
+        </div>
 
-					<div class="carousel-item">
-						<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/05/02/evt_1488347_visual_202305.jpg" alt="Image 4">
-					</div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="../img/1490284_list_banner.png" alt="Image 1" />
+            </div>
 
-					<div class="carousel-item">
-						<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/27/1490534_bnr.jpg" alt="Image 5">
-					</div>
+            <div class="carousel-item">
+              <img src="../img/1490489_listbanner.jpg" alt="Image 2" />
+            </div>
 
-					<div class="carousel-item">
-						<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/13/1490259_listbanner.png" alt="Image 6">
-					</div>
-				</div>
+            <div class="carousel-item">
+              <img src="../img/1490975_list-banner.jpg" alt="Image 3" />
+            </div>
 
+            <div class="carousel-item">
+              <img
+                src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/05/02/evt_1488347_visual_202305.jpg"
+                alt="Image 4"
+              />
+            </div>
 
-				<div class="carousel-container">
-					
-					<button class="carousel-prev" type="button">
-						<img src="../img/ico_slick_prevbt.png" alt="이전">
-					</button>
-					
-					<div class="carousel-items">
-						<!-- Carousel 아이템들을 추가해주세요 -->
-					</div>
-					
-					<button class="carousel-next" type="button">
-						<img src="../img/ico_slick_nextbt.png" alt="다음">
-					</button>
-				</div>
-			</div>
+            <div class="carousel-item">
+              <img
+                src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/27/1490534_bnr.jpg"
+                alt="Image 5"
+              />
+            </div>
 
+            <div class="carousel-item">
+              <img
+                src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/13/1490259_listbanner.png"
+                alt="Image 6"
+              />
+            </div>
+          </div>
 
-			<div class="evt_list">
-				<ul>
-					<li>
-						<a href="/cont/news/news02/1490975_115431.jsp">
-							<div class="evt_txt">
-								<p>
-									6월 1일은 하나데이
-									<br>
-									6월은 영화관 쿠폰 100명!
-									<br>
-									하나머니 랜덤 당첨!
-								</p>
-								<span>2023.05.25 ~ 2023.06.01</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/05/15/1490975_list-thumbnail.png" alt="6월 1일은 하나데이 6월은 영화관 쿠폰 100명! 하나머니 랜덤 당첨!">
-							</div>
-						</a>
-					</li>
+          <div class="carousel-container">
+            <button class="carousel-prev" type="button">
+              <img src="../img/ico_slick_prevbt.png" alt="이전" />
+            </button>
 
-					<li>
-						<a href="/cont/news/news02/1490489_115431.jsp">
-							<div class="evt_txt">
-									<p>돈 주고도 살 수 없는<br>"머니드림" 추가 제작!</p>
-									<span>2023.05.11 ~ 2023.05.31</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/05/10/1490489_listthumb.png" alt="돈 주고도 살 수 없는  " 머니드림"="" 추가="" 제작!"="">
-							</div>
-						</a>
-					</li>
+            <div class="carousel-items">
+              <!-- Carousel 아이템들을 추가해주세요 -->
+            </div>
 
-					<li>
-						<a href="/cont/news/news02/1490284_115431.jsp">
-							<div class="evt_txt">
-									<p>오~ 수지 큐~ ♬<br>퀴즈풀고 돈베개 받자!</p>
-									<span>2023.05.04 ~ 2023.06.30</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/25/1490284_list_thum.png" alt="오~ 수지 큐~ ♬ 퀴즈풀고 돈베개 받자!">
-							</div>
-						</a>
-					</li>
+            <button class="carousel-next" type="button">
+              <img src="../img/ico_slick_nextbt.png" alt="다음" />
+            </button>
+          </div>
+        </div>
 
-					<li>
-						<a href="/cont/news/news02/1488347_115431.jsp">
-							<div class="evt_txt">
-									<p>주택청약 가입하면 적금이<br>최대 연 5.0%(세전, 1년제)</p>
-									<span>2023.04.29 ~ 2023.12.29</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/01/19/evt_14888347_listthumb.png" alt="주택청약 가입하면 적금이 최대 연 5.0%(세전,1년제)">
-							</div>
-						</a>
-					</li>
+        <div class="evt_list">
+          <ul class="flex-container">
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>
+                    6월 1일은 하나데이
+                    <br />
+                    6월은 영화관 쿠폰 100명!
+                    <br />
+                    하나머니 랜덤 당첨!
+                  </p>
+                  <span>2023.05.25 ~ 2023.06.01</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/05/15/1490975_list-thumbnail.png"
+                    alt="6월 1일은 하나데이 6월은 영화관 쿠폰 100명! 하나머니 랜덤 당첨!"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1490534_115431.jsp">
-							<div class="evt_txt">
-									<p>하나가 효도해요<br>상품권과 금리쿠폰!</p>
-									<span>2023.04.27 ~ 2023.06.30</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/27/1490534_thumb.png" alt="4대 연금 이벤트">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>돈 주고도 살 수 없는<br />"머니드림" 추가 제작!</p>
+                  <span>2023.05.11 ~ 2023.05.31</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                  src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/05/10/1490489_listthumb.png"
+                  alt="돈 주고도 살 수 없는 " 머니드림"="" 추가="" 제작!"="">
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1490259_115431.jsp">
-							<div class="evt_txt">
-									<p>수익률 끌어올려<br><span style="display: inline-block;margin-top: 0;color: inherit;font-family: inherit;text-indent: -10px;">『디폴트옵션,마감임박』</span></p>
-									<span>2023.04.17 ~ 2023.05.31</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/13/1490259_listthumbnail.png" alt="디폴트옵션 선정 이벤트">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>오~ 수지 큐~ ♬<br />퀴즈풀고 돈베개 받자!</p>
+                  <span>2023.05.04 ~ 2023.06.30</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/25/1490284_list_thum.png"
+                    alt="오~ 수지 큐~ ♬ 퀴즈풀고 돈베개 받자!"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1490216_115431.jsp">
-							<div class="evt_txt">
-									<p>해외송금 Welcome 이벤트</p>
-									<span>2023.04.11 ~ 2023.05.31</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/11/1490216_listthumb.png" alt="해외송금 Welcome 이벤트">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>주택청약 가입하면 적금이<br />최대 연 5.0%(세전, 1년제)</p>
+                  <span>2023.04.29 ~ 2023.12.29</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/01/19/evt_14888347_listthumb.png"
+                    alt="주택청약 가입하면 적금이 최대 연 5.0%(세전,1년제)"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1489990_115431.jsp">
-							<div class="evt_txt">
-									<p>이제 가맹점도 하나로!<br>가맹점대금 입금계좌<br>변경이벤트</p>
-									<span>2023.04.03 ~ 2023.06.30</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/03/31/1489990_list-thumbnail.png" alt="가맹점대금 입금계좌 변경 이벤트">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>하나가 효도해요<br />상품권과 금리쿠폰!</p>
+                  <span>2023.04.27 ~ 2023.06.30</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/27/1490534_thumb.png"
+                    alt="4대 연금 이벤트"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1489990_115431.jsp">
-							<div class="evt_txt">
-									<p>이제 가맹점도 하나로!<br>가맹점대금 입금계좌<br>변경이벤트</p>
-									<span>2023.04.03 ~ 2023.06.30</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/03/31/1489990_list-thumbnail.png" alt="가맹점대금 입금계좌 변경 이벤트">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>
+                    수익률 끌어올려<br /><span
+                      style="
+                        display: inline-block;
+                        margin-top: 0;
+                        color: inherit;
+                        font-family: inherit;
+                      "
+                      >『디폴트옵션,마감임박』</span
+                    >
+                  </p>
+                  <span>2023.04.17 ~ 2023.05.31</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/13/1490259_listthumbnail.png"
+                    alt="디폴트옵션 선정 이벤트"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1489980_115431.jsp">
-							<div class="evt_txt">
-									<p>작년보다 더 많이 돌려받자!<br><span style="display: inline-block;margin-top: 0;color: inherit;font-family: inherit;text-indent: -10px;">『구(9)해줘, IRP』</span></p>
-									<span>2023.04.03 ~ 2023.06.30</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/03/31/1489980_thum_1.png" alt="구해줘, IRP">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>해외송금 Welcome 이벤트</p>
+                  <span>2023.04.11 ~ 2023.05.31</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/11/1490216_listthumb.png"
+                    alt="해외송금 Welcome 이벤트"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1489983_115431.jsp">
-							<div class="evt_txt">
-									<p>청년형 장기펀드<br>이러니 가입할 수밖에!<br>#소득공제#스벅#BBQ치킨</p>
-									<span>2023.03.20 ~ 2023.06.30</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/10/1489983_thum.png" alt="청년형 장기펀드, 이러니 가입할 수밖에!">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>
+                    이제 가맹점도 하나로!<br />가맹점대금 입금계좌<br />변경이벤트
+                  </p>
+                  <span>2023.04.03 ~ 2023.06.30</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/03/31/1489990_list-thumbnail.png"
+                    alt="가맹점대금 입금계좌 변경 이벤트"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1488678_115431.jsp">
-							<div class="evt_txt">
-									<p>하나은행 X LG유플러스<br>초등자녀를 위한 완벽조합!</p>
-									<span>2023.02.06 ~ 2023.12.31</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/02/09/1488678_list-thumbnail.png" alt="초등자녀를 위한 완벽조합! 하나은행 X LG유플러스">
-							</div>
-						</a>
-					</li>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>
+                    이제 가맹점도 하나로!<br />가맹점대금 입금계좌<br />변경이벤트
+                  </p>
+                  <span>2023.04.03 ~ 2023.06.30</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/03/31/1489990_list-thumbnail.png"
+                    alt="가맹점대금 입금계좌 변경 이벤트"
+                  />
+                </div>
+              </a>
+            </li>
 
-					<li>
-						<a href="/cont/news/news02/1473984_115431.jsp">
-							<div class="evt_txt">
-									<p>자녀 청약통장 만들고<br>띠 도장 &amp; 1만 하나머니</p>
-									<span>2023.01.02 ~ 2023.12.29</span>
-							</div>
-							<div class="evt_img">
-								<img src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/01/02/1473984_list_thum.png" alt="자녀 청약통장 만들고 띠 도장 &amp; 1만 하나머니 받으세요">
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>
+                    작년보다 더 많이 돌려받자!<br /><span
+                      style="
+                        display: inline-block;
+                        margin-top: 0;
+                        color: inherit;
+                        font-family: inherit;
+                      "
+                      >『구(9)해줘, IRP』</span
+                    >
+                  </p>
+                  <span>2023.04.03 ~ 2023.06.30</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/03/31/1489980_thum_1.png"
+                    alt="구해줘, IRP"
+                  />
+                </div>
+              </a>
+            </li>
 
-		<div id="footer">
-			<!-- footer 내용 -->
-		</div>
-	</div>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>
+                    청년형 장기펀드<br />이러니 가입할 수밖에!<br />#소득공제#스벅#BBQ치킨
+                  </p>
+                  <span>2023.03.20 ~ 2023.06.30</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/04/10/1489983_thum.png"
+                    alt="청년형 장기펀드, 이러니 가입할 수밖에!"
+                  />
+                </div>
+              </a>
+            </li>
 
-	<script>
-		$(document).ready(function() {
-		  var $carouselInner = $('.carousel-inner');
-		  var $carouselItems = $('.carousel-items');
-	  
-		  $carouselInner.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
-			// 현재 슬라이드 인덱스와 전체 슬라이드 개수 계산
-			var currentSlideIndex = (currentSlide ? currentSlide : 0) + 1;
-			var totalSlides = slick.slideCount;
-	  
-			// 슬라이드 정보 업데이트
-			$('.carousel-count').text(currentSlideIndex + ' / ' + totalSlides);
-		  });
-	  
-		  $carouselInner.slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			prevArrow: $('.carousel-prev'),
-			nextArrow: $('.carousel-next'),
-			autoplay: true, // 자동 재생 설정
-			autoplaySpeed: 2000, // 재생 간격(ms)
-			infinite: true, // 무한 반복
-		  });
-	  
-		  $carouselItems.slick('slickPlay'); // 자동 재생 시작
-	  
-		  $('.carousel-prev').click(function() {
-			$carouselItems.slick('slickPrev');
-		  });
-	  
-		  $('.carousel-next').click(function() {
-			$carouselItems.slick('slickNext');
-		  });
-		});
-	</script>
-	  
-	  
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>하나은행 X LG유플러스<br />초등자녀를 위한 완벽조합!</p>
+                  <span>2023.02.06 ~ 2023.12.31</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/02/09/1488678_list-thumbnail.png"
+                    alt="초등자녀를 위한 완벽조합! 하나은행 X LG유플러스"
+                  />
+                </div>
+              </a>
+            </li>
 
-</body>
+            <li>
+              <a href="">
+                <div class="evt_txt">
+                  <p>자녀 청약통장 만들고<br />띠 도장 &amp; 1만 하나머니</p>
+                  <span>2023.01.02 ~ 2023.12.29</span>
+                </div>
+                <div class="evt_img">
+                  <img
+                    src="https://image.kebhana.com/cont/news/news02/__icsFiles/afieldfile/2023/01/02/1473984_list_thum.png"
+                    alt="자녀 청약통장 만들고 띠 도장 &amp; 1만 하나머니 받으세요"
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer include-html="./footer.html"></footer>
+
+    <script src="../js/includeHTML.js"></script>
+    <!-- <script src="../js/jquery.js" charset="utf-8"></script> -->
+    <!-- <script src="../js/header.js" charset="utf-8"></script> -->
+    <script src="../js/header-hamburger.js" charset="utf-8"></script>
+
+    <!-- <script>
+      let observer = new IntersectionObserver((e) => {
+        e.forEach((박스) => {
+          if (박스.isIntersecting) {
+            박스.target.style.opacity = 1;
+          }
+        });
+      });
+
+      // let div = document.querySelectorAll("div");
+      // let section = document.querySelectorAll(".black-background2");
+      let section1 = document.querySelectorAll(".flex-container li");
+      // observer.observe(div[0]); /*html 요소가 화면에 등장하는지 감시해줌*/
+      // observer.observe(section[0]);
+      observer.observe(section1[0]);
+      observer.observe(section1[1]);
+      observer.observe(section1[2]);
+      observer.observe(section1[3]);
+      observer.observe(section1[4]);
+      observer.observe(section1[5]);
+      observer.observe(section1[6]);
+      observer.observe(section1[7]);
+      observer.observe(section1[8]);
+      observer.observe(section1[9]);
+      observer.observe(section1[10]);
+      observer.observe(section1[11]);
+      observer.observe(section1[12]);
+    </script> -->
+  </body>
 </html>

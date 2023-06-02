@@ -1,8 +1,4 @@
 /* body {
-  font-family: Arial, sans-serif;
-  margin: 120px 70px;
-  padding: 0;
-  border: 0;
   vertical-align: baseline;
 } */
 
@@ -10,22 +6,34 @@ style {
   display: none;
 }
 
-.container {
-  text-align: center;
+.top-container {
+  width: 100%;
+  margin-top: 120px; 
+  /* padding: 70px 64px 0 64px; */
 }
 
-h1 {
-  margin-bottom: 60px;
+.faq-main{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faq-title {
   letter-spacing: -2px;
   font-size: 32px;
   font-weight: 700;
-  line-height: 32px;
+  /* line-height: 32px; */
   color: #333d4b;
+
 }
 
 .search-container {
-  margin-bottom: 20px;
-  position: relative;
+  /* margin-bottom: 20px; */
+  /* position: relative; */
   display: flex;
   align-items: center;
 }
@@ -35,7 +43,8 @@ h1 {
   width: 95%;
   border: none;
   border-bottom: 1px solid #ccc;
-  display: block;
+  display: flex;
+  cursor: pointer;
 }
 
 .search-container input:focus {
@@ -43,18 +52,18 @@ h1 {
   border-color: #aaa;
 }
 
-.search-container .search-label {
+/* .search-container .search-label {
   position: absolute;
   top: 10px;
   left: 10px;
   pointer-events: none;
   transition: 0.2s;
   color: #999;
-}
+} */
 
 .search-container input:focus + .search-label,
 .search-container input:not(:placeholder-shown) + .search-label {
-  top: -15px;
+  /* top: -15px; */
   font-size: 12px;
   color: #333;
 }
@@ -65,10 +74,21 @@ h1 {
   cursor: pointer;
 }
 
+#search-results {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 .accordion {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 32px 50px;
 }
 
 .accordion-item {
@@ -82,6 +102,11 @@ h1 {
 
 .accordion-title:hover {
   background-color: #f2f2f2;
+  border-radius: 7px;
+}
+
+.accordion-title.active {
+  background-color: rgb(213, 240, 212);
   border-radius: 7px;
 }
 
@@ -117,6 +142,7 @@ h1 {
   display: flex;
   clear: both;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .accordion-content table {
@@ -132,7 +158,7 @@ h1 {
   text-align: center;
 }
 
-table {
+.content_table {
   font-size: 12px;
   font-family: "돋움", dtum, "굴림", gulim, sans-serif;
   display: table;
@@ -165,7 +191,7 @@ table {
   background-color: #eef6f3;
 }
 
-div,
+/* div,
 p,
 span {
   word-break: keep-all;
@@ -179,7 +205,7 @@ span {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-}
+} */
 
 .bottom_content {
   align-items: flex-start;
@@ -202,7 +228,7 @@ span {
   height: 372px;
 }
 
-img {
+.bottom_img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
@@ -219,13 +245,13 @@ img {
   margin-bottom: 8px;
 }
 
-p {
+/* p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-}
+} */
 
 br {
   font-family: initial !important;
@@ -294,30 +320,19 @@ br {
   font-weight: bold;
 }
 
-ul,
-ol {
+.accordion-content ol {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul ol {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-
 .mb10 {
   margin-bottom: 10px !important;
-}
-
-h5,
-h6.tabTit {
   margin: 27px 0 0;
   font-size: 14px;
   color: #444;
-}
-
-h5 {
   display: block;
   font-size: 0.83em;
   margin-block-start: 1.67em;
@@ -327,35 +342,30 @@ h5 {
   font-weight: bold;
 }
 
-colgroup {
+.document-colgroup {
   display: table-column-group;
 }
 
-col {
+.document-colgroup col {
   display: table-column;
 }
 
-thead {
+.document-table thead {
   display: table-header-group;
   vertical-align: middle;
   border-color: inherit;
-}
-
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-
-table,
-th,
-td {
   margin: 0;
   padding: 0;
   border-collapse: collapse;
 }
 
-tbody {
+.document-table thead tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.document-table tbody {
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
