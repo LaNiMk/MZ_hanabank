@@ -1,0 +1,405 @@
+@charset 'utf-8';
+@import url("https://static.toss.im/tps/main.css");
+@import url("https://static.toss.im/tps/others.css");
+
+html {
+  font-family: "Toss Product Sans", sans-serif;
+  font-size: 14px;
+}
+body {
+  overflow-x: hidden;
+  color: rgb(29, 29, 31);
+  letter-spacing: -0.05em;
+  /* background: white; */
+}
+p {
+  line-height: 1.6;
+  margin: auto;
+}
+a {
+  color: white;
+  /* color: rgb(29, 29, 31); */
+  text-decoration: none;
+}
+
+/* sticky */
+.sticky-box {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  /* background: gray; */
+  display: flex;
+  align-content: center;
+}
+.sticky-elem {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+}
+#sticky-box-3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container {
+  /* iPhone 가로 스크롤 방지 */
+  overflow-x: hidden;
+}
+.scroll-section {
+  position: relative;
+  /* padding-top: 50vh; */
+}
+/* #scroll-section-1 {
+  background: #3182f6;
+} */
+#scroll-section-0 h1 {
+  position: relative;
+  top: -10vh;
+  z-index: 5;
+  font-size: 4rem;
+  text-align: center;
+}
+#king-1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+#king-2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.main-message {
+  top: 50vh;
+  margin: auto;
+  height: 10vh;
+  font-size: 2.5rem;
+  opacity: 0;
+}
+
+.main-message.z2 {
+  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#messsage-a {
+  top: 47vh;
+}
+#messsage-b {
+  top: 35vh;
+}
+#messsage-c {
+  top: 45vh;
+}
+#messsage-d {
+  top: 55vh;
+}
+#messsage-z2 {
+  top: 47vh;
+}
+#messsage-a2 {
+  top: 47vh;
+}
+#messsage-b2 {
+  top: 47vh;
+}
+.main-message p {
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  margin: auto;
+}
+.main-message small {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+}
+
+#scroll-section-1 .hero-message {
+  font-size: 3.5rem;
+}
+.description {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+.description strong {
+  float: left;
+  margin-right: 0.2em;
+  font-size: 3rem;
+  color: rgb(29, 29, 31);
+}
+.mid-message {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #888;
+}
+.mid-message strong {
+  color: rgb(29, 29, 31);
+}
+
+/* section-2 */
+.grad-1 {
+  /* background: #121fcf; */
+  background: linear-gradient(to top right, #8dc191 0%, #29aea9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grad-2 {
+  /* background: #121fcf; */
+  background: linear-gradient(to top right, #ed6a9e 0%, #e90061 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+visible,
+invisible {
+  font-weight: 900;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  color: white;
+  background: darkorange;
+}
+
+/* ,
+#show-scene-1 #scroll-section-1 .sticky-elem  */
+#show-scene-0 #scroll-section-0 .sticky-elem {
+  display: block;
+  will-change: transform, opacity;
+}
+.scroll-effect-end .sticky-elem {
+  /* 스크롤 효과가 모두 끝나고, 아래 일반 콘텐츠 영역에서는 sticky-elem들을 모두 안보이도록 */
+  display: none !important;
+}
+.sticky-elem-canvas {
+  top: 0;
+  height: 100%;
+}
+.sticky-elem-canvas canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.normal-content {
+  padding: 20vh 0;
+}
+
+.sticky-elem .main-message .z .title {
+  opacity: 1;
+  display: block;
+}
+
+/* loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.before-load .container {
+  display: none;
+}
+.before-load .loading {
+  opacity: 1;
+}
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+.loading-circle {
+  width: 54px;
+  height: 54px;
+  animation: loading-spin 3s infinite;
+}
+.loading-circle circle {
+  stroke: black;
+  stroke-width: 4;
+  /* getTotalLength()로 stroke의 길이를 얻어올 수 있음 */
+  stroke-dasharray: 157, 157;
+  stroke-dashoffset: 0;
+  fill: transparent;
+  animation: loading-circle-ani 1s infinite;
+}
+
+/* etc */
+.display-none {
+  display: none;
+}
+
+/* section-4 */
+.section-4-message {
+  font-size: 1.5rem;
+}
+/* section-4 */
+.section-4-img-box {
+  width: 32px;
+  height: 32px;
+}
+.section-4-img {
+  width: 32px;
+}
+
+/* section-5 */
+#messsage-z5 {
+  top: 40vh;
+  font-size: 2.7rem;
+}
+#messsage-a5 {
+  top: 53vh;
+  font-size: 7rem;
+  line-height: 1.6;
+}
+
+/* section-6 */
+#messsage-z6 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+#messsage-a6,
+#messsage-b6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#king-6 {
+  line-height: 1.6;
+}
+
+/* section-7 */
+#king-7-1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+#king-7-2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+#king-7-3 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.section-7-button-box {
+  display: flex;
+  justify-content: center;
+}
+.section-7-button-img {
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+#king-7-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 42px;
+  padding: 12px 20px;
+}
+#messsage-b7 {
+  margin-top: 17vh;
+  padding: 18px 32px;
+}
+.tossteam-video {
+  height: 40vh;
+}
+
+@media (min-width: 1025px) {
+  #scroll-section-0 h1 {
+    font-size: 9vw;
+  }
+  .main-message {
+    font-size: 4vw;
+  }
+  .main-message small {
+    font-size: 1.5vw;
+  }
+  .hero-message {
+    font-size: 6vw;
+  }
+  .mid-message {
+    width: 1000px;
+    padding: 0;
+    font-size: 4vw;
+  }
+  .home-card-1-desc {
+    font-size: 1.2rem;
+  }
+  .home-card-1 {
+    top: 20vh;
+  }
+}
+@media (max-width: 1024px) {
+  #sticky-box-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .home-card-1 {
+    top: 15vh;
+  }
+  .home-card-2 {
+    top: 15vh;
+  }
+}
+@media (max-width: 768px) {
+  .display-none {
+    display: flex;
+  }
+}
+@media (max-width: 640px) {
+  .home-card-1 {
+    max-width: 330px;
+    min-height: 420px;
+    height: fit-content;
+    width: 80vw;
+  }
+  .home-card-2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 600px;
+    padding: 32px;
+  }
+}
+@media (max-width: 380px) {
+  .home-card-1 {
+    width: 80vw;
+    height: fit-content;
+  }
+}

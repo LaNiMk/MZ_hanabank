@@ -2,7 +2,9 @@ footer {
   padding: 50px 40px 50px 40px;
   margin: 0 auto;
   background-color: black;
+  /* width: calc(100% - 80px); */
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-outerbox {
@@ -71,7 +73,7 @@ footer {
   column-gap: 34px;
   row-gap: 4px;
   margin: 0;
-  padding: 24px 0 30px;
+  padding-bottom: 30px;
   font-size: 13px;
   width: fit-content;
 }
@@ -91,7 +93,7 @@ footer {
   column-gap: 34px;
   row-gap: 4px;
   margin: 0;
-  padding: 24px 0 10px;
+  padding-bottom: 30px;
   font-size: 13px;
   width: fit-content;
 }
@@ -111,5 +113,15 @@ footer {
 
   .footer-social {
     grid-template-columns: unset;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-site-group {
+    flex-direction: column;
+  }
+
+  .footer-site-group-box:nth-child(2) {
+    padding-top: 30px;
   }
 }
