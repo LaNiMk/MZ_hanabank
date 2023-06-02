@@ -156,7 +156,7 @@ a {
 }
 
 /* section-2 */
-/* .grad-1 {
+.grad-1 {
   background: #121fcf;
   background: linear-gradient(to top right, #8dc191 0%, #29aea9 100%);
   -webkit-background-clip: text;
@@ -167,7 +167,7 @@ a {
   background: linear-gradient(to top right, #ed6a9e 0%, #e90061 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-} */
+}
 visible,
 invisible {
   font-weight: 900;

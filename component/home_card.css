@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 .home-card-1-title {
-  color: black;
+  color: white;
   font-weight: 900;
   font-size: 1.7rem;
 }
@@ -37,7 +37,7 @@
   height: 100%;
 }
 .home-card-1-desc {
-  color: black;
+  color: white;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -52,6 +52,21 @@
 .home-card-1-img {
   width: 100%;
   height: auto;
+}
+#s-1-bg-z {
+  background-image: url("https://static.toss.im/homepage-static/newtoss/logo-story1.png");
+  background-size: cover;
+  background-position: center;
+}
+#s-1-bg-a {
+  background-image: url("https://static.toss.im/homepage-static/newtoss/logo-story2.png");
+  background-size: cover;
+  background-position: center;
+}
+#s-1-bg-b {
+  background-image: url("https://static.toss.im/homepage-static/newtoss/logo-story3.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* card-2 */
@@ -198,6 +213,12 @@
     padding: 40px;
     justify-content: center;
   }
+  .home-card-2-title {
+    font-size: 3rem;
+  }
+  .home-card-2-desc {
+    font-size: 1.5rem;
+  }
   #s3-inside-box-0 {
     width: 36%;
     margin-left: auto;
@@ -286,6 +307,12 @@
   .home-card-2 {
     padding: 40px;
     justify-content: center;
+  }
+  .home-card-2-title {
+    font-size: 2.5rem;
+  }
+  .home-card-2-desc {
+    font-size: 1.5rem;
   }
   #s3-inside-box-0 {
     width: 60%;
