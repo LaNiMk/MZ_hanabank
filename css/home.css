@@ -2,15 +2,6 @@
 @import url("https://static.toss.im/tps/main.css");
 @import url("https://static.toss.im/tps/others.css");
 
-/* start */
-#s0-0 {
-  opacity: 1 !important;
-}
-
-#messsage-z {
-  opacity: 1;
-}
-
 body {
   overflow-x: hidden;
   /* color: rgb(29, 29, 31); */
