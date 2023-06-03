@@ -318,8 +318,8 @@
   function animation(object, type, values, currentYOffset) {
     if (type === "opacity") {
       object.style.opacity = calcValues(values, currentYOffset);
-    } else if (type === "translate") {
-      object.style.tranform = calcValues(values, currentYOffset);
+    } else if (type === "transform") {
+      object.style.transform = `translate3d(0, ${calcValues(values, currentYOffset)}%, 0)`;
     }
   }
 
@@ -338,42 +338,42 @@
 
         if (scrollRatio <= 0.04) {
           animation(objs.z, "opacity", values.z_opacity.slice(0, 3), currentYOffset);
-          animation(objs.z, "transform", values.z_opacity.slice(0, 3), currentYOffset);
+          animation(objs.z, "transform", values.z_translateY.slice(0, 3), currentYOffset);
         } else {
           animation(objs.z, "opacity", values.z_opacity.slice(-3), currentYOffset);
-          animation(objs.z, "transform", values.z_opacity.slice(-3), currentYOffset);
+          animation(objs.z, "transform", values.z_translateY.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.22) {
           animation(objs.a, "opacity", values.a_opacity.slice(0, 3), currentYOffset);
-          animation(objs.a, "transform", values.a_opacity.slice(0, 3), currentYOffset);
+          animation(objs.a, "transform", values.a_translateY.slice(0, 3), currentYOffset);
         } else {
           animation(objs.a, "opacity", values.a_opacity.slice(-3), currentYOffset);
-          animation(objs.a, "transform", values.a_opacity.slice(-3), currentYOffset);
+          animation(objs.a, "transform", values.a_translateY.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.51) {
           animation(objs.b, "opacity", values.b_opacity.slice(0, 3), currentYOffset);
-          animation(objs.b, "transform", values.b_opacity.slice(0, 3), currentYOffset);
+          animation(objs.b, "transform", values.b_translateY.slice(0, 3), currentYOffset);
         } else {
           animation(objs.b, "opacity", values.b_opacity.slice(-3), currentYOffset);
-          animation(objs.b, "transform", values.b_opacity.slice(-3), currentYOffset);
+          animation(objs.b, "transform", values.b_translateY.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.58) {
           animation(objs.c, "opacity", values.c_opacity.slice(0, 3), currentYOffset);
-          animation(objs.c, "transform", values.c_opacity.slice(0, 3), currentYOffset);
+          animation(objs.c, "transform", values.c_translateY.slice(0, 3), currentYOffset);
         } else {
           animation(objs.c, "opacity", values.c_opacity.slice(-3), currentYOffset);
-          animation(objs.c, "transform", values.c_opacity.slice(-3), currentYOffset);
+          animation(objs.c, "transform", values.c_translateY.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.65) {
           animation(objs.d, "opacity", values.d_opacity.slice(0, 3), currentYOffset);
-          animation(objs.d, "transform", values.d_opacity.slice(0, 3), currentYOffset);
+          animation(objs.d, "transform", values.d_translateY.slice(0, 3), currentYOffset);
         } else {
           animation(objs.d, "opacity", values.d_opacity.slice(-3), currentYOffset);
-          animation(objs.d, "transform", values.d_opacity.slice(-3), currentYOffset);
+          animation(objs.d, "transform", values.d_translateY.slice(-3), currentYOffset);
         }
 
         break;
