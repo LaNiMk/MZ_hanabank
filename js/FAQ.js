@@ -25,10 +25,10 @@ document
   });
 
 function search() {
+  clearSearchResults();
+
   var searchQuery = document.getElementById("search-input").value;
   var searchResultsContainer = document.getElementById("search-results");
-
-  searchResultsContainer.innerHTML = "";
 
   var accordionTitles = document.getElementsByClassName("accordion-title");
   for (var i = 0; i < accordionTitles.length; i++) {
@@ -48,6 +48,8 @@ function search() {
 function scrollToResult(event) {
   var question = event.target.textContent;
 
+  clearSearchResults();
+
   // FAQ 아코디언에서 해당 질문을 찾아서 스크롤 이동
   var accordionTitles = document.getElementsByClassName("accordion-title");
   var accordionContents = document.querySelectorAll(".accordion-content");
@@ -60,17 +62,28 @@ function scrollToResult(event) {
         block: "center",
       });
 
-      // var accordionContent = accordionContents[i];
-      // if (accordionContent.style.maxHeight) {
-      //   accordionContent.style.maxHeight = null;
-      // } else {
-      //   accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-      // }
-
       accordionTitles[i].classList.toggle("active");
       accordionContents[i].classList.toggle("active");
 
       break;
     }
   }
+}
+
+function clearSearchResults() {
+  var searchResultsContainer = document.getElementById("search-results");
+  searchResultsContainer.innerHTML = "";
+
+  // 이전 검색 결과에 대한 아코디언 초기화
+  var activeTitles = document.querySelectorAll(".accordion-title.active");
+  var activeContents = document.querySelectorAll(".accordion-content.active");
+
+  activeTitles.forEach(function (title) {
+    title.classList.remove("active");
+  });
+
+  activeContents.forEach(function (content) {
+    content.style.maxHeight = "0";
+    content.classList.remove("active");
+  });
 }
