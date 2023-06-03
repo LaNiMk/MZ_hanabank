@@ -971,7 +971,7 @@
     });
   });
 
-  function init() {
+  function initiate() {
     yOffset = window.pageYOffset;
     if (yOffset === 0) {
       const title = document.querySelector("#scroll-section-0 .main-message.z");
@@ -980,5 +980,5 @@
   }
 
   setCanvasImages();
-  init();
+  initiate();
 })();
