@@ -15,6 +15,8 @@
       type: "sticky",
       heightNum: 5, // 브라우저 높이의 5배로 scrollHeight 세팅
       scrollHeight: 0,
+      videoImageCount: 480,
+      imageSequence: [1, 480],
       objs: {
         container: document.querySelector("#scroll-section-0"),
         messageZ: document.querySelector("#scroll-section-0 .main-message.z"),
@@ -28,10 +30,7 @@
         videoImages: [],
       },
       values: {
-        videoImageCount: 480,
-        imageSequence: [0, 480],
         canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
-
         messageZ_opacity_in: [0, 1, { start: 0, end: 0.03 }],
         messageZ_translateY_in: [20, 0, { start: 0, end: 0.03 }],
         messageZ_opacity_out: [1, 0, { start: 0.05, end: 0.08 }],
@@ -312,7 +311,7 @@
   // canvas
   function setCanvasImages() {
     let imgElem;
-    for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
+    for (let i = 0; i < sceneInfo[0].videoImageCount; i++) {
       imgElem = new Image();
       let sequenceNum = String(1 + i);
       let sequenceStr = sequenceNum.padStart(3, "0");
@@ -896,9 +895,10 @@
       // 이미지 시퀀스 비디오가 포함된 씬만 처리
       if (currentScene === 0) {
         const currentYOffset = delayedYOffset - prevScrollHeight;
+        const info = sceneInfo[currentScene];
         const objs = sceneInfo[currentScene].objs;
         const values = sceneInfo[currentScene].values;
-        let sequence = Math.round(calcValues(values.imageSequence, currentYOffset));
+        let sequence = Math.round(calcValues(info.imageSequence, currentYOffset));
         if (objs.videoImages[sequence]) {
           objs.context.drawImage(objs.videoImages[sequence], 0, 0);
         }
