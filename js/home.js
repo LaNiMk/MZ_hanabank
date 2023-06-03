@@ -315,11 +315,19 @@
     }
   }
 
-  function animation(object, type, values, currentYOffset) {
+  function animation(object, type, values, currentYOffset, scrollRatio, timing) {
     if (type === "opacity") {
-      object.style.opacity = calcValues(values, currentYOffset);
+      if (scrollRatio <= timing) {
+        object.style.opacity = calcValues(values.slice(0, 3), currentYOffset);
+      } else {
+        object.style.opacity = calcValues(values.slice(-3), currentYOffset);
+      }
     } else if (type === "transform") {
-      object.style.transform = `translate3d(0, ${calcValues(values, currentYOffset)}%, 0)`;
+      if (scrollRatio <= timing) {
+        object.style.transform = `translate3d(0, ${calcValues(values.slice(0, 3), currentYOffset)}%, 0)`;
+      } else {
+        object.style.transform = `translate3d(0, ${calcValues(values.slice(-3), currentYOffset)}%, 0)`;
+      }
     }
   }
 
@@ -335,47 +343,16 @@
       case 0:
         objs.canvas.style.opacity = calcValues(values.canvas_opacity, currentYOffset);
         sceneInfo[0].objs.context.drawImage(sceneInfo[0].objs.videoImages[0], 0, 0);
-
-        if (scrollRatio <= 0.04) {
-          animation(objs.z, "opacity", values.z_opacity.slice(0, 3), currentYOffset);
-          animation(objs.z, "transform", values.z_translateY.slice(0, 3), currentYOffset);
-        } else {
-          animation(objs.z, "opacity", values.z_opacity.slice(-3), currentYOffset);
-          animation(objs.z, "transform", values.z_translateY.slice(-3), currentYOffset);
-        }
-
-        if (scrollRatio <= 0.22) {
-          animation(objs.a, "opacity", values.a_opacity.slice(0, 3), currentYOffset);
-          animation(objs.a, "transform", values.a_translateY.slice(0, 3), currentYOffset);
-        } else {
-          animation(objs.a, "opacity", values.a_opacity.slice(-3), currentYOffset);
-          animation(objs.a, "transform", values.a_translateY.slice(-3), currentYOffset);
-        }
-
-        if (scrollRatio <= 0.51) {
-          animation(objs.b, "opacity", values.b_opacity.slice(0, 3), currentYOffset);
-          animation(objs.b, "transform", values.b_translateY.slice(0, 3), currentYOffset);
-        } else {
-          animation(objs.b, "opacity", values.b_opacity.slice(-3), currentYOffset);
-          animation(objs.b, "transform", values.b_translateY.slice(-3), currentYOffset);
-        }
-
-        if (scrollRatio <= 0.58) {
-          animation(objs.c, "opacity", values.c_opacity.slice(0, 3), currentYOffset);
-          animation(objs.c, "transform", values.c_translateY.slice(0, 3), currentYOffset);
-        } else {
-          animation(objs.c, "opacity", values.c_opacity.slice(-3), currentYOffset);
-          animation(objs.c, "transform", values.c_translateY.slice(-3), currentYOffset);
-        }
-
-        if (scrollRatio <= 0.65) {
-          animation(objs.d, "opacity", values.d_opacity.slice(0, 3), currentYOffset);
-          animation(objs.d, "transform", values.d_translateY.slice(0, 3), currentYOffset);
-        } else {
-          animation(objs.d, "opacity", values.d_opacity.slice(-3), currentYOffset);
-          animation(objs.d, "transform", values.d_translateY.slice(-3), currentYOffset);
-        }
-
+        animation(objs.z, "opacity", values.z_opacity, currentYOffset, scrollRatio, 0.04);
+        animation(objs.z, "transform", values.z_translateY, currentYOffset, scrollRatio, 0.04);
+        animation(objs.a, "opacity", values.a_opacity, currentYOffset, scrollRatio, 0.22);
+        animation(objs.a, "transform", values.a_translateY, currentYOffset, scrollRatio, 0.22);
+        animation(objs.b, "opacity", values.b_opacity, currentYOffset, scrollRatio, 0.51);
+        animation(objs.b, "transform", values.b_translateY, currentYOffset, scrollRatio, 0.51);
+        animation(objs.c, "opacity", values.c_opacity, currentYOffset, scrollRatio, 0.58);
+        animation(objs.c, "transform", values.c_translateY, currentYOffset, scrollRatio, 0.58);
+        animation(objs.d, "opacity", values.d_opacity, currentYOffset, scrollRatio, 0.65);
+        animation(objs.d, "transform", values.d_translateY, currentYOffset, scrollRatio, 0.65);
         break;
       case 1:
         if (scrollRatio <= 0.22) {
