@@ -1,9 +1,12 @@
 const accordionItems = document.querySelectorAll(".accordion-item");
-// const accordionContents = document.querySelector('.accordion-content');
 
 accordionItems.forEach((item) => {
   const title = item.querySelector(".accordion-title");
   const content = item.querySelector(".accordion-content");
+
+  // 초기 상태로 설정 --> 컨텐츠가 숨겨진 상태에서 애니메이션 적용
+  content.style.maxHeight = "0";
+  content.style.transition = "max-height 0.3s ease";
 
   title.addEventListener("click", () => {
     content.classList.toggle("active");
