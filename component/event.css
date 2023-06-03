@@ -309,6 +309,19 @@ div {
     /* display: clip; */
     display: none;
   }
+
+  .newsEvent_box {
+    width: 100%;
+  }
+
+  .event_list li span.tit {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .event_list li span.date {
+    display: none;
+  }
 }
 
 @media (max-width: 410px) {
@@ -321,6 +334,14 @@ div {
     font-size: 11px;
     font-weight: bold;
   }
+
+  .newsEvent_box li span.date {
+    display: none;
+  }
+
+  .event_list li span.tit {
+    white-space: normal;
+  }
 }
 
 .newsEvent_box {
@@ -329,6 +350,8 @@ div {
   border-top: 1px solid #ddd;
   width: 800px;
   max-height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .event_list {
