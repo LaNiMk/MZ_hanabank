@@ -78,20 +78,12 @@
         b: document.querySelector("#scroll-section-2 .main-message.b"),
       },
       values: {
-        z_opacity_in: [0, 1, { start: 0, end: 0.25 }],
-        z_translateY_in: [350, 0, { start: 0, end: 0.25 }],
-        z_opacity_out: [1, 0, { start: 0.8, end: 0.85 }],
-        z_translateY_out: [0, 0, { start: 0.8, end: 0.85 }],
-
-        a_opacity_in: [0, 1, { start: 0.35, end: 0.5 }],
-        a_translateY_in: [50, 0, { start: 0.35, end: 0.5 }],
-        a_opacity_out: [1, 0, { start: 0.55, end: 0.6 }],
-        a_translateY_out: [0, 0, { start: 0.55, end: 0.6 }],
-
-        b_opacity_in: [0, 1, { start: 0.65, end: 0.8 }],
-        b_translateY_in: [50, 0, { start: 0.65, end: 0.8 }],
-        b_opacity_out: [1, 0, { start: 0.9, end: 0.95 }],
-        b_translateY_out: [0, 0, { start: 0.9, end: 0.95 }],
+        z_opacity: [0, 1, { start: 0, end: 0.25 }, 1, 0, { start: 0.8, end: 0.85 }],
+        z_translateY: [350, 0, { start: 0, end: 0.25 }, 0, 0, { start: 0.8, end: 0.85 }],
+        a_opacity: [0, 1, { start: 0.35, end: 0.5 }, 1, 0, { start: 0.55, end: 0.6 }],
+        a_translateY: [50, 0, { start: 0.35, end: 0.5 }, 0, 0, { start: 0.55, end: 0.6 }],
+        b_opacity: [0, 1, { start: 0.65, end: 0.8 }, 1, 0, { start: 0.9, end: 0.95 }],
+        b_translateY: [50, 0, { start: 0.65, end: 0.8 }, 0, 0, { start: 0.9, end: 0.95 }],
       },
     },
 
@@ -356,29 +348,12 @@
         animation(objs.b, "transform", values.b_translateY, currentYOffset, scrollRatio);
         break;
       case 2:
-        if (scrollRatio <= 0.3) {
-          objs.z.style.opacity = calcValues(values.z_opacity_in, currentYOffset);
-          objs.z.style.transform = `translate3d(0, ${calcValues(values.z_translateY_in, currentYOffset)}%, 0)`;
-        } else {
-          objs.z.style.opacity = calcValues(values.z_opacity_out, currentYOffset);
-          objs.z.style.transform = `translate3d(0, ${calcValues(values.z_translateY_out, currentYOffset)}%, 0)`;
-        }
-
-        if (scrollRatio <= 0.55) {
-          objs.a.style.opacity = calcValues(values.a_opacity_in, currentYOffset);
-          objs.a.style.transform = `translate3d(0, ${calcValues(values.a_translateY_in, currentYOffset)}%, 0)`;
-        } else {
-          objs.a.style.opacity = calcValues(values.a_opacity_out, currentYOffset);
-          objs.a.style.transform = `translate3d(0, ${calcValues(values.a_translateY_out, currentYOffset)}%, 0)`;
-        }
-
-        if (scrollRatio <= 0.87) {
-          objs.b.style.opacity = calcValues(values.b_opacity_in, currentYOffset);
-          objs.b.style.transform = `translate3d(0, ${calcValues(values.b_translateY_in, currentYOffset)}%, 0)`;
-        } else {
-          objs.b.style.opacity = calcValues(values.b_opacity_out, currentYOffset);
-          objs.b.style.transform = `translate3d(0, ${calcValues(values.b_translateY_out, currentYOffset)}%, 0)`;
-        }
+        animation(objs.z, "opacity", values.z_opacity, currentYOffset, scrollRatio);
+        animation(objs.z, "transform", values.z_translateY, currentYOffset, scrollRatio);
+        animation(objs.a, "opacity", values.a_opacity, currentYOffset, scrollRatio);
+        animation(objs.a, "transform", values.a_translateY, currentYOffset, scrollRatio);
+        animation(objs.b, "opacity", values.b_opacity, currentYOffset, scrollRatio);
+        animation(objs.b, "transform", values.b_translateY, currentYOffset, scrollRatio);
         break;
       case 3:
         if (scrollRatio >= 0.8) {
