@@ -315,6 +315,14 @@
     }
   }
 
+  function animation(object, type, values, currentYOffset) {
+    if (type === "opacity") {
+      object.style.opacity = calcValues(values, currentYOffset);
+    } else if (type === "translate") {
+      object.style.tranform = calcValues(values, currentYOffset);
+    }
+  }
+
   // 스크롤섹션 번호에 따라 switch문으로 애니메이션 구현
   function playAnimation() {
     const objs = sceneInfo[currentScene].objs;
@@ -329,43 +337,43 @@
         sceneInfo[0].objs.context.drawImage(sceneInfo[0].objs.videoImages[0], 0, 0);
 
         if (scrollRatio <= 0.04) {
-          objs.z.style.opacity = calcValues(values.z_opacity.slice(0, 3), currentYOffset);
-          objs.z.style.transform = `translate3d(0, ${calcValues(values.z_translateY.slice(0, 3), currentYOffset)}%, 0)`;
+          animation(objs.z, "opacity", values.z_opacity.slice(0, 3), currentYOffset);
+          animation(objs.z, "transform", values.z_opacity.slice(0, 3), currentYOffset);
         } else {
-          objs.z.style.opacity = calcValues(values.z_opacity.slice(-3), currentYOffset);
-          objs.z.style.transform = `translate3d(0, ${calcValues(values.z_translateY.slice(-3), currentYOffset)}%, 0)`;
+          animation(objs.z, "opacity", values.z_opacity.slice(-3), currentYOffset);
+          animation(objs.z, "transform", values.z_opacity.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.22) {
-          objs.a.style.opacity = calcValues(values.a_opacity.slice(0, 3), currentYOffset);
-          objs.a.style.transform = `translate3d(0, ${calcValues(values.a_translateY.slice(0, 3), currentYOffset)}%, 0)`;
+          animation(objs.a, "opacity", values.a_opacity.slice(0, 3), currentYOffset);
+          animation(objs.a, "transform", values.a_opacity.slice(0, 3), currentYOffset);
         } else {
-          objs.a.style.opacity = calcValues(values.a_opacity.slice(-3), currentYOffset);
-          objs.a.style.transform = `translate3d(0, ${calcValues(values.a_translateY.slice(-3), currentYOffset)}%, 0)`;
+          animation(objs.a, "opacity", values.a_opacity.slice(-3), currentYOffset);
+          animation(objs.a, "transform", values.a_opacity.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.51) {
-          objs.b.style.opacity = calcValues(values.b_opacity.slice(0, 3), currentYOffset);
-          objs.b.style.transform = `translate3d(0, ${calcValues(values.b_translateY.slice(0, 3), currentYOffset)}%, 0)`;
+          animation(objs.b, "opacity", values.b_opacity.slice(0, 3), currentYOffset);
+          animation(objs.b, "transform", values.b_opacity.slice(0, 3), currentYOffset);
         } else {
-          objs.b.style.opacity = calcValues(values.b_opacity.slice(-3), currentYOffset);
-          objs.b.style.transform = `translate3d(0, ${calcValues(values.b_translateY.slice(-3), currentYOffset)}%, 0)`;
+          animation(objs.b, "opacity", values.b_opacity.slice(-3), currentYOffset);
+          animation(objs.b, "transform", values.b_opacity.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.58) {
-          objs.c.style.opacity = calcValues(values.c_opacity.slice(0, 3), currentYOffset);
-          objs.c.style.transform = `translate3d(0, ${calcValues(values.c_translateY.slice(0, 3), currentYOffset)}%, 0)`;
+          animation(objs.c, "opacity", values.c_opacity.slice(0, 3), currentYOffset);
+          animation(objs.c, "transform", values.c_opacity.slice(0, 3), currentYOffset);
         } else {
-          objs.c.style.opacity = calcValues(values.c_opacity.slice(-3), currentYOffset);
-          objs.c.style.transform = `translate3d(0, ${calcValues(values.c_translateY.slice(-3), currentYOffset)}%, 0)`;
+          animation(objs.c, "opacity", values.c_opacity.slice(-3), currentYOffset);
+          animation(objs.c, "transform", values.c_opacity.slice(-3), currentYOffset);
         }
 
         if (scrollRatio <= 0.65) {
-          objs.d.style.opacity = calcValues(values.d_opacity.slice(0, 3), currentYOffset);
-          objs.d.style.transform = `translate3d(0, ${calcValues(values.d_translateY.slice(0, 3), currentYOffset)}%, 0)`;
+          animation(objs.d, "opacity", values.d_opacity.slice(0, 3), currentYOffset);
+          animation(objs.d, "transform", values.d_opacity.slice(0, 3), currentYOffset);
         } else {
-          objs.d.style.opacity = calcValues(values.d_opacity.slice(-3), currentYOffset);
-          objs.d.style.transform = `translate3d(0, ${calcValues(values.d_translateY.slice(-3), currentYOffset)}%, 0)`;
+          animation(objs.d, "opacity", values.d_opacity.slice(-3), currentYOffset);
+          animation(objs.d, "transform", values.d_opacity.slice(-3), currentYOffset);
         }
 
         break;
