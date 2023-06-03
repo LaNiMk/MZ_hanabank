@@ -8,11 +8,11 @@ style {
 
 .top-container {
   width: 100%;
-  margin-top: 120px; 
+  margin-top: 120px;
   /* padding: 70px 64px 0 64px; */
 }
 
-.faq-main{
+.faq-main {
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,12 +23,12 @@ style {
 }
 
 .faq-title {
+  padding: 0 1rem;
   letter-spacing: -2px;
   font-size: 32px;
   font-weight: 700;
   /* line-height: 32px; */
   color: #333d4b;
-
 }
 
 .search-container {
@@ -36,6 +36,7 @@ style {
   /* position: relative; */
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .search-container input {
@@ -51,15 +52,6 @@ style {
   outline: none;
   border-color: #aaa;
 }
-
-/* .search-container .search-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  pointer-events: none;
-  transition: 0.2s;
-  color: #999;
-} */
 
 .search-container input:focus + .search-label,
 .search-container input:not(:placeholder-shown) + .search-label {
@@ -77,9 +69,14 @@ style {
 #search-results {
   cursor: pointer;
   padding: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+}
+
+#search-results > div {
+  margin-bottom: 10px;
 }
 
 .accordion {
@@ -101,18 +98,18 @@ style {
 }
 
 .accordion-title:hover {
-  background-color: #f2f2f2;
+  background-color: #e7e7e7;
   border-radius: 7px;
 }
 
 .accordion-title.active {
-  background-color: rgb(213, 240, 212);
+  background-color: #e7e7e7;
   border-radius: 7px;
 }
 
 .accordion-content {
-  background-color: rgb(182, 220, 182);
-  padding: 10px;
+  background-color: #f2f2f2;
+  padding: 23px;
   border-radius: 7px;
   margin: 0 0 24px;
   max-height: 0;
@@ -121,8 +118,17 @@ style {
   display: none;
 }
 
+.accordion-content strong {
+  font-size: 19px;
+}
+
+.accordion-content p {
+  color: black;
+  font-size: 17px;
+}
+
 .accordion-content ol li {
-  font-size: 12px;
+  font-size: 15px;
   border: none;
   background: none;
   padding: 0;
@@ -158,6 +164,10 @@ style {
   text-align: center;
 }
 
+/* .accordion-content div p {
+  font-size: 12px;
+} */
+
 .content_table {
   font-size: 12px;
   font-family: "돋움", dtum, "굴림", gulim, sans-serif;
@@ -167,6 +177,10 @@ style {
   text-indent: initial;
   border-spacing: 2px;
   border-color: gray;
+}
+
+.content_table thead tr td strong {
+  font-size: 15px;
 }
 
 .accordion-title {
