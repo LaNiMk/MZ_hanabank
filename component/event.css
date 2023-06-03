@@ -8,13 +8,18 @@
   float: left;
 }
 
-.inner img {
+.inner > img {
   width: 100%;
 }
 
 #contents {
   position: relative;
   line-height: 21px;
+}
+
+#contents > h3 {
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .hana-contents {
@@ -60,6 +65,7 @@
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .newsEventMenuWrap::after {
@@ -76,22 +82,22 @@
   list-style-type: none;
 }
 
-.newsEventMenu li {
+.newsEventMenu > li {
   float: left;
   width: 130px;
   height: 35px;
   margin-left: 3px;
 }
 
-.newsEventMenu li:first-child {
+.newsEventMenu > li:first-child {
   margin-left: 0px;
 }
 
-.newsEventMenu li a {
+.newsEventMenu > li > a {
   display: block;
 }
 
-.newsEventMenu li a span {
+.newsEventMenu > li > a > span {
   display: inline-block;
   width: 130px;
   text-align: center;
@@ -100,7 +106,7 @@
   font-family: NotoSans_Dl;
 }
 
-.newsEventMenu li.on a span,
+.newsEventMenu > li.on > a > span,
 .newsEventMenu li a:hover span {
   background: url(https://image.kebhana.com/cont/common/img/newsEvent/bg_newsEventMenuL.png)
     no-repeat 0 0;
@@ -113,7 +119,7 @@
   clear: both;
 }
 
-#wrap a span,
+#wrap > a > span,
 #wrap button span {
   cursor: pointer;
 }
@@ -138,7 +144,7 @@ a:-webkit-any-link {
   margin-inline-end: 0px;
 }
 
-.newsEventMenu li {
+.newsEventMenu > li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
@@ -158,7 +164,7 @@ a:-webkit-any-link {
   flex: 0 0 100%;
 }
 
-.carousel-item img {
+.carousel-item > img {
   width: 100%;
 }
 
@@ -206,7 +212,7 @@ a:-webkit-any-link {
   /* margin-right: 10px; */
 }
 
-.flex-container li {
+.flex-container > li {
   display: flex;
   flex-direction: column;
   /* opacity: 0; */
@@ -225,25 +231,25 @@ a:-webkit-any-link {
   transition: height 0.4s ease-in-out;
 }
 
-.flex-container li:hover {
-  background: linear-gradient(to bottom, #c5efbe, #bdffa1);
+.flex-container > li:hover {
+  background: linear-gradient(to bottom, #fcfffb, #e4e4e4);
   height: 148px;
 }
 
-.flex-container li a {
+.flex-container > li > a {
   display: block;
   padding: 20px 120px 20px 25px;
   height: 115px;
 }
 
-.flex-container li .evt_txt {
+.flex-container > li .evt_txt {
   flex-shrink: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.evt_txt p {
+.evt_txt > p {
   margin-top: 1px;
   height: 50px;
   line-height: 26px;
@@ -261,8 +267,8 @@ a:-webkit-any-link {
   right: 20px;
 }
 
-.carousel img,
-.evt_img img {
+.carousel > img,
+.evt_img > img {
   border: none;
   overflow-clip-margin: content-box;
   overflow: clip;
@@ -272,7 +278,7 @@ div {
   display: block;
 }
 
-.evt_txt span {
+.evt_txt > span {
   display: block;
   margin-top: 28px;
   color: #757575;
@@ -289,12 +295,6 @@ div {
     flex-shrink: 1;
   }
 
-  /* .newsEventMenuWrap {
-    
-    display: flex;
-    padding: 0 2px;
-  } */
-
   .flex-container {
     flex-direction: column;
     margin-left: 1rem;
@@ -309,4 +309,88 @@ div {
     /* display: clip; */
     display: none;
   }
+
+  .newsEvent_box {
+    width: 100%;
+  }
+
+  .event_list li span.tit {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .event_list li span.date {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .evt_txt > p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .evt_txt > span {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .newsEvent_box li span.date {
+    display: none;
+  }
+
+  .event_list li span.tit {
+    white-space: normal;
+  }
+}
+
+.newsEvent_box {
+  position: relative;
+  padding: 30px 10px 0;
+  border-top: 1px solid #ddd;
+  width: 800px;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.event_list {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.event_list li {
+  display: flex;
+  align-items: center;
+  /* padding-left: 10px; */
+  border-bottom: 1px solid #f1f1f1;
+  padding: 16px 0 12px 0;
+  zoom: 1;
+}
+
+.event_list li span {
+  font-size: 17px;
+  flex: 1;
+  color: #555;
+  /* float: left; */
+}
+
+.event_list li span.tit {
+  width: 100%;
+  padding-left: 5px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event_list li span.date {
+  width: 30%;
+  float: right;
+  text-align: right;
+  padding-right: 10px;
+  margin-bottom: 8px;
+  white-space: break-word;
 }
