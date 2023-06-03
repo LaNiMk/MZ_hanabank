@@ -40,8 +40,8 @@
         videoImages: [],
       },
       values: {
-        videoImageCount: 520,
-        imageSequence: [0, 519],
+        videoImageCount: 480,
+        imageSequence: [0, 480],
         canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
 
         messageZ_opacity_in: [0, 1, { start: 0, end: 0.03 }],
@@ -341,7 +341,7 @@
       imgElem = new Image();
       let sequenceNum = String(1 + i);
       let sequenceStr = sequenceNum.padStart(3, "0");
-      imgElem.src = `../sequence/${sequenceStr}.png`;
+      imgElem.src = `../sequence/${sequenceStr}.jpg`;
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
   }
@@ -936,7 +936,7 @@
     }
     document.body.setAttribute("id", `show-scene-${currentScene}`);
 
-    const heightRatio = window.innerHeight / 2160;
+    const heightRatio = window.innerHeight / 1000;
     sceneInfo[0].objs.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${heightRatio})`;
   }
 
