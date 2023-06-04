@@ -45,6 +45,63 @@
             border-bottom: 1.5px solid #d4d4d4;
             background-color: #f8f9fa;
         }
+
+        label {
+            cursor: pointer;
+
+        }
+
+        /* 못생긴 기존 input 숨기기 */
+        #chooseFile {
+            visibility: hidden;
+        }
+
+        .fileContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fileInput {
+            display: flex;
+            align-items: center;
+            border-bottom: solid 2px black;
+            width: 60%;
+            height: 30px;
+        }
+
+        #fileName {
+            margin-left: 5px;
+        }
+
+        .buttonContainer {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            font-size: 0.8em;
+
+            cursor: pointer;
+        }
+
+        .image-show {
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img {
+            position: absolute;
+        }
     </style>
 </head>
 
@@ -115,22 +172,23 @@
                     </div>
                     <div class="ector"></div>
                     <div class="username">
-                        <input type="text" id="username_inp" placeholder="명함에 기재된 주소" />
+                        <input type="text" id="useremail_inp" placeholder="명함에 기재된 주소" />
                     </div>
                     <div class="username">
-                        <input type="text" id="" placeholder="담당자 이름" />
+                        <input type="text" id="username_inp" placeholder="담당자 이름" />
                     </div>
                     <div class="password">
                         <input type="password" id="password_inp" placeholder="비밀번호(10자리 이상)" />
                     </div>
                     <div class="password2">
-                        <input type="password" id="password_inp" placeholder="비밀번호 확인" />
+                        <input type="password" id="password_confirm" placeholder="비밀번호 확인" />
                     </div>
                     <div class="username">
-                        <input type="text" id="username_inp" placeholder="연락처" />
+                        <input type="text" id="phone_inp" placeholder="연락처" />
                     </div>
-                    <div class="username">
-                        <input type="text" id="username_inp" placeholder="명함 이미지" />
+
+                    <div id="c" class="control">
+                        <small class="e" id="error">Error message</small>
                     </div>
                     <div class="ector"></div>
                     <div class="login-btn_wrap">
@@ -148,6 +206,8 @@
         </div>
 
     </wrap>
+    <script src="../../modules/AdminClickEvent.js"></script>
+
 </body>
 
 </html>

@@ -20,6 +20,18 @@ body {
   }
 }
 
+@media all and (max-width: 375px) {
+
+  #hidden,
+  #kepp-login--label {
+    display: none;
+  }
+
+  .limit-time {
+    display: none;
+  }
+}
+
 .wrap {
   letter-spacing: -0.5px;
 }
