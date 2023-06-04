@@ -45,6 +45,10 @@ body {
   vertical-align: bottom;
 }
 
+.header-s>.header-info>p {
+  display: grid;
+}
+
 .header-s>.header-info>a>.title {
   display: inline;
   font-size: 2.5em;
