@@ -90,7 +90,7 @@
     {
       // 3
       type: "sticky",
-      heightNum: 5,
+      heightNum: 8,
       scrollHeight: 0,
       objs: {
         k: document.querySelector(".container"),
