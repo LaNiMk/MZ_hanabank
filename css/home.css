@@ -116,14 +116,10 @@ a {
 #messsage-d {
   top: 55vh;
 }
-#messsage-z2 {
-  top: 47vh;
-}
-#messsage-a2 {
-  top: 47vh;
-}
+#messsage-z2,
+#messsage-a2,
 #messsage-b2 {
-  top: 47vh;
+  top: 40vh;
 }
 .main-message p {
   font-weight: bold;
