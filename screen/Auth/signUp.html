@@ -74,19 +74,21 @@
                 <form class="login-form">
                     <p><strong>회원가입</strong></p>
                     <section>
-                        <button class="kakao" href="">
+                        <a class="kakao"
+                            href='https://accounts.kakao.com/login/?continue=https%3A%2F%2Faccounts.kakao.com%2Fweblogin%2Faccount#login'>
                             <span class="logoSpan">
                                 <img src="../../img/kakao.png" alt="">
                             </span>
                             <b id="hidden">카카오뱅크로 시작하기</b>
+                        </a>
                     </section>
                     <section>
-                        <button class="toss" href="">
+                        <a class="toss" href="https://biz.tossbank.com/login">
                             <span class="logoSpan">
                                 <img src="../../img/Toss_Symbol_Primary.png" alt="">
                             </span>
                             <b id="hidden">토스뱅크로 시작하기</b>
-                        </button>
+                        </a>
                     </section>
                     <div class="ector"></div>
                     <div class="username form-control">
@@ -94,14 +96,14 @@
                     </div>
 
                     <div class="password form-control">
-                        <input type="password" id="password_inp" placeholder="비밀번호(10자리 이상)" />
+                        <input type="password" id="password_inp" placeholder="비밀번호(8자리 이상)" />
                     </div>
 
                     <div class="password2 form-control">
                         <input type="password" id="password_cofirm" placeholder="비밀번호 확인" />
                     </div>
                     <div id="c" class="control">
-                        <small class="e" id="error">Error message</small>
+                        <small class="error-message" id="error" hidden>Error message</small>
                     </div>
                     <div class="ector"></div>
                     <div class="login-btn_wrap">
