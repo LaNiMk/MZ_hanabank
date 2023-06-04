@@ -14,7 +14,7 @@ img {
 .background-mj-white1 {
   background: #f1f4f6;
   opacity: 0;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .background-mj-white2 {
@@ -23,12 +23,12 @@ img {
 
 .mj-card1 {
   opacity: 0;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .container {
   opacity: 0;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .section-css {
@@ -118,29 +118,23 @@ h2 {
   background: #fafafa;
 }
 
-@media (max-width: 640px) {
-  .grid {
-    display: grid;
-    justify-content: center;
-    gap: 40px;
-    width: 1125px;
-    height: fit-content;
-    padding: 16px 0px 40px;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 22px 18px 24px 18px;
-    gap: 30px;
-    border-radius: 20px;
-    align-items: flex-start;
-    transition: background-color 0.2s ease;
-    -webkit-box-align: center;
+@media (min-width: 1161px) {
+  #box-2 {
+    margin-top: -250px;
   }
 }
 
-@media (min-width: 641px) {
+@media (max-width: 1160px) and (min-width: 1025px) {
+  #box-2 {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 641px) {
+  #box-2 {
+    margin-top: -100px;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -158,6 +152,31 @@ h2 {
     gap: 30px;
     border-radius: 20px;
     align-items: center;
+    transition: background-color 0.2s ease;
+    -webkit-box-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  #box-2 {
+    margin-top: -50px;
+  }
+  .grid {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    width: 1125px;
+    height: fit-content;
+    padding: 16px 0px 40px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 22px 18px 24px 18px;
+    gap: 30px;
+    border-radius: 20px;
+    align-items: flex-start;
     transition: background-color 0.2s ease;
     -webkit-box-align: center;
   }
