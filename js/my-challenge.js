@@ -187,6 +187,7 @@ function showCard(cardId, num) {
     }
   }, 200 * num);
 }
+
 function onClickCard(num) {
   cardNum = num;
   showScene(3);
