@@ -309,3 +309,12 @@ h3 {
     font-size: 4rem;
   }
 }
+
+@media (max-width: 640px) {
+  .innerbox3 h3 {
+    font-size: 1.5rem;
+  }
+  .innerbox3Title {
+    font-size: 2.5rem;
+  }
+}
