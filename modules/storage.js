@@ -1,13 +1,12 @@
 import {
   validateEmail,
   validatePassword,
-  confirmPasswordMatch,
-  checkRequired
+  confirmPasswordMatch
 } from "./validation.js";
 
 const USEREMAIL = document.getElementById("username_inp");
 const USERPW = document.getElementById("password_inp");
-const CONFIRMUSERPW = document.getElementById("password-confirm");
+const CONFIRMUSERPW = document.getElementById("password_cofirm");
 const signUpBtn = document.getElementById("signup-btn");
 const currentPlus1Hours = addTime(1);
 
@@ -47,13 +46,42 @@ function registerUser() {
 
   USEREMAIL.value = "";
   USERPW.value = "";
+  CONFIRMUSERPW.value = "";
+}
+
+function validateForm() {
+  if (!validateEmail(USEREMAIL)) {
+    alert("이메일이 유효하지 않은 형식입니다!");
+    return false;
+  }
+  if (!validatePassword(USERPW)) {
+    alert("패스워드가 유효하지 않습니다!");
+    return false;
+  }
+  if (!confirmPasswordMatch(USERPW, CONFIRMUSERPW)) {
+    alert("비밀번호가 일치하지 않습니다!");
+    return false;
+  }
+  return true;
 }
 
 signUpBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  // checkRequired([USEREMAIL, USERPW, CONFIRMUSERPW]);
-  validateEmail(USEREMAIL);
-  validatePassword(USERPW);
-  // confirmPasswordMatch(USERPW, CONFIRMUSERPW);
-  registerUser();
+
+  if (validateForm()) {
+    registerUser();
+  }
 });
+/*
+  if (validateEmail(USEREMAIL)) {
+    validatePassword(USERPW);
+    if (validatePassword(USERPW)) {
+      confirmPasswordMatch(USERPW, CONFIRMUSERPW);
+      if (confirmPasswordMatch(USERPW, CONFIRMUSERPW)) {
+        registerUser();
+      }
+    }
+  } else {
+    alert("올바른 정보를 입력하세요!");
+  }
+  */

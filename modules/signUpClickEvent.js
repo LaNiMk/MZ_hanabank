@@ -3,8 +3,8 @@ const PASSWORD = document.getElementById("password_inp");
 const CONFIRMPASSWORD = document.getElementById("password_cofirm");
 
 USER_NAME.addEventListener("focus", handleFocusFunc);
-PASSWORD.addEventListener("focus", handleFocusFunc);
 USER_NAME.addEventListener("focusout", handleFocusOutFunc);
+PASSWORD.addEventListener("focus", handleFocusFunc);
 PASSWORD.addEventListener("focusout", handleFocusOutFunc);
 CONFIRMPASSWORD.addEventListener("focus", handleFocusFunc);
 CONFIRMPASSWORD.addEventListener("focusout", handleFocusOutFunc);

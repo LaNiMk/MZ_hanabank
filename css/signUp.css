@@ -26,6 +26,7 @@ section {
   height: 48px;
   line-height: 48px;
   text-align: center;
+
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -35,6 +36,10 @@ section {
   font-size: 16px;
   font-weight: bold;
   margin-top: 16px;
+}
+
+.kakao>#hidden {
+  color: black;
 }
 
 .toss {
@@ -54,6 +59,11 @@ section {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
+}
+
+.toss>#hidden {
+  color: #fff;
+  text-decoration-line: none;
 }
 
 .logoSpan {
@@ -107,24 +117,8 @@ input[type="password"]::placeholder {
   border-radius: 10px;
 }
 
-.form-control.success input {
-  border-color: #67C8C1;
-}
-
-.form-control.error input {
-  border-color: red;
-}
-
-.container>.login-card>.login-form>.control>.e {
-  visibility: hidden;
-}
-
-.container>.login-card>.login-form>.control>.e2 {
+.container>.login-card>.login-form>.control>.error-message {
   color: red;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: visible;
 }
 
 .categories>li:first-child {
