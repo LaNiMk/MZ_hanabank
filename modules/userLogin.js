@@ -17,7 +17,7 @@ const requestLogin = () => {
     const user = userData.find((item) => item.email === storeEmail);
     console.log(user);
     if (user && user.password === storePw) {
-      window.location.href = "../home-v2.html";
+      window.location.href = "../home.html";
       clearInputArea();
     } else {
       alert("이메일 또는 비밀번호가 일치하지 않습니다!");

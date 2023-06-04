@@ -90,7 +90,7 @@
     {
       // 3
       type: "sticky",
-      heightNum: 5,
+      heightNum: 8,
       scrollHeight: 0,
       objs: {
         k: document.querySelector(".container"),
@@ -325,7 +325,7 @@
     }
     document.body.setAttribute("id", `show-scene-${currentScene}`);
 
-    const heightRatio = window.innerHeight / 950;
+    const heightRatio = window.innerHeight / 640;
     sceneInfo[0].objs.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${heightRatio})`;
   }
 
@@ -462,7 +462,7 @@
       imgElem = new Image();
       let sequenceNum = String(1 + i);
       let sequenceStr = sequenceNum.padStart(3, "0");
-      imgElem.src = `../sequence/${sequenceStr}.jpg`;
+      imgElem.src = `../sequence_low/${sequenceStr}.jpg`;
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
   }
