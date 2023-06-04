@@ -34,25 +34,3 @@ window.onload = function () {
     $carouselItems.slick("slickNext");
   });
 };
-
-// const slider = document.querySelector(".carousel-inner");
-// const slides = [...document.querySelectorAll(".carousel-item")];
-// this.wallop = new Wallop(slider);
-
-// const button_next = document.querySelector(".carousel-next");
-
-// function AutoSlide() {
-//   button_next.click();
-// }
-
-// setInterval(AutoSlide, 3000);
-
-//   var slickOptions = {
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     prevArrow: carouselPrev,
-//     nextArrow: carouselNext,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     infinite: true,
-//   };
