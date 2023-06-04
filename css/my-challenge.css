@@ -367,7 +367,7 @@ animation circle 回る玉 ~4s
   color: white;
 }
 
-.my-scene-4 > div:nth-child(2) {
+.my-scene-4>div:nth-child(2) {
   /* margin-left: 4rem; */
   width: 240px;
   height: 360px;
@@ -387,13 +387,13 @@ animation circle 回る玉 ~4s
   margin: 0 2rem;
 }
 
-.my-scene-4 > div:nth-child(2) > div {
+.my-scene-4>div:nth-child(2)>div {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-.my-scene-4 > div:nth-child(2):hover {
+.my-scene-4>div:nth-child(2):hover {
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
@@ -440,6 +440,7 @@ animation circle 回る玉 ~4s
 }
 
 @media (max-width: 480px) {
+
   .my-scene-0 h1,
   .my-scene-4 h1 {
     font-size: 32px;
@@ -448,5 +449,11 @@ animation circle 回る玉 ~4s
   .my-scene-1 h2,
   .my-scene-2 h2 {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .my-scene-4 {
+    padding: 3rem 0 2rem 0 !important;
   }
 }

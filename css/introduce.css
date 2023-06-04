@@ -1,7 +1,19 @@
 .container {
   width: 100vw;
   height: 100vh;
+  padding-top: 44px;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 .scroll-container,
 .scroll-area {
   width: 100%;
@@ -54,8 +66,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vw;
-  height: 100vh;
+  width: 140vw;
+  height: 140vh;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
@@ -106,32 +118,30 @@
 }
 
 @keyframes wave {
+
   0%,
   100% {
-    clip-path: polygon(
-      0 44%,
-      21% 43%,
-      39% 49%,
-      53% 55%,
-      68% 61%,
-      85% 59%,
-      100% 49%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0 44%,
+        21% 43%,
+        39% 49%,
+        53% 55%,
+        68% 61%,
+        85% 59%,
+        100% 49%,
+        100% 100%,
+        0% 100%);
   }
+
   50% {
-    clip-path: polygon(
-      0 60%,
-      19% 68%,
-      36% 72%,
-      53% 66%,
-      68% 52%,
-      82% 39%,
-      100% 42%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0 60%,
+        19% 68%,
+        36% 72%,
+        53% 66%,
+        68% 52%,
+        82% 39%,
+        100% 42%,
+        100% 100%,
+        0% 100%);
   }
 }
 
@@ -164,6 +174,7 @@
   color: white;
   font-weight: 400;
 }
+
 .intro-carousel-button {
   font-size: 1rem;
   background-color: transparent;
@@ -188,6 +199,22 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+
+  .intro-carousel-title {
+    font-size: 4rem;
+  }
+
+  .intro-carousel-desc {
+    font-size: 1rem;
+  }
+
+  .intro-carousel-button {
+    font-size: 0.75rem;
+  }
+
+}
+
 /*==============================================================================================*/
 /*==============================================SNAP 6==========================================*/
 /*==============================================================================================*/
@@ -199,6 +226,7 @@
   align-items: center;
   /* text-align: center; */
 }
+
 .brand-title,
 .brand-title-white {
   position: relative;
@@ -253,14 +281,35 @@
   flex-wrap: wrap;
 }
 
-.brand-card > div:nth-child(2) {
+.brand-card>div:nth-child(2) {
   color: black;
 }
 
-.brand-card-white > div:nth-child(2) {
+.brand-card-white>div:nth-child(2) {
   color: white;
 }
 
-.brand-card-white > div:nth-child(3) {
+.brand-card-white>div:nth-child(3) {
   color: #eee;
+}
+
+@media (max-width: 1160px) {
+  .brand-card-container>div:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 748px) {
+  .brand-card-container>div:nth-child(2) {
+    display: none;
+  }
+
+  .brand-container {
+    padding: 0 1rem;
+  }
+
+  #ci_kebhana_m {
+    width: auto;
+    height: 33vh;
+  }
 }

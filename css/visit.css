@@ -51,3 +51,9 @@
     aspect-ratio: 2/2;
   }
 }
+
+@media (max-width: 1024px) {
+  .main-visit {
+    padding: 0 1rem;
+  }
+}
