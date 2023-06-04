@@ -67,6 +67,8 @@ function scrollToResult(event) {
 
       accordionTitles[i].classList.toggle("active");
       accordionContents[i].classList.toggle("active");
+      accordionContents[i].style.maxHeight =
+        accordionContents[i].scrollHeight + "px";
 
       break;
     }
