@@ -1,112 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>하나은행 | 응원카드 만들기</title>
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/my-challenge.css" />
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
-    <meta name="author" content="helloalpaca" />
-    <meta
-      name="keywords"
-      content="MZ하나은행, 하나은행, 은행, 예금, 대출, 연금, 통장, 이자"
-    />
-    <meta name="description" content="1020과 함께하는 MZ 하나은행" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하나은행 | 응원카드 만들기</title>
+  <link rel="stylesheet" href="../global.css" />
+  <link rel="stylesheet" href="../css/default.css" />
+  <link rel="stylesheet" href="../css/my-challenge.css" />
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
-    <!-- common meta tag -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:title" content="MZ하나은행" />
-    <meta property="og:description" content="1020과 함께하는 MZ 하나은행" />
-    <meta property="og:image" content="../img/hanabank_model.jpg" />
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="315" />
+  <meta name="author" content="helloalpaca" />
+  <meta name="keywords" content="MZ하나은행, 하나은행, 은행, 예금, 대출, 연금, 통장, 이자" />
+  <meta name="description" content="1020과 함께하는 MZ 하나은행" />
 
-    <!-- twitter meta tag -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="" />
-    <meta property="twitter:title" content="MZ하나은행" />
-    <meta
-      property="twitter:description"
-      content="1020과 함께하는 MZ 하나은행"
-    />
-    <meta property="twitter:image" content="../img/hanabank_model.jpg" />
-    <!-- og 이미지는 최상단에 -->
+  <!-- common meta tag -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:title" content="MZ하나은행" />
+  <meta property="og:description" content="1020과 함께하는 MZ 하나은행" />
+  <meta property="og:image" content="../img/hanabank_model.jpg" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="315" />
 
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
-    <!-- Chrome, Safari, IE (.ico) -->
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
-    <!-- Firefox, Opera (.png) -->
-  </head>
+  <!-- twitter meta tag -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta property="twitter:title" content="MZ하나은행" />
+  <meta property="twitter:description" content="1020과 함께하는 MZ 하나은행" />
+  <meta property="twitter:image" content="../img/hanabank_model.jpg" />
+  <!-- og 이미지는 최상단에 -->
 
-  <body>
-    <div class="my-scene-0">
-      <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
-      <h1>새로운 도전을 시작할<br />준비됐나요?</h1>
-      <p>
-        작은 습관 만들기도 좋고, 10년 뒤 계획도 좋아요.<br />
-        그게 무엇이든 당신의 도전을 응원하고 싶어요!
-      </p>
-      <button class="btn-challenge" id="challenge-btn1">응원카드 뽑기</button>
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+  <!-- Chrome, Safari, IE (.ico) -->
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
+  <!-- Firefox, Opera (.png) -->
+</head>
+
+<body>
+  <div class="my-scene-0">
+    <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
+    <h1>새로운 도전을 시작할<br />준비됐나요?</h1>
+    <p>
+      작은 습관 만들기도 좋고, 10년 뒤 계획도 좋아요.<br />
+      그게 무엇이든 당신의 도전을 응원하고 싶어요!
+    </p>
+    <button class="btn-challenge" id="challenge-btn1">응원카드 뽑기</button>
+  </div>
+  <div class="my-scene-1">
+    <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
+    <h2>이름이 무엇인가요?</h2>
+    <input type="text" id="cheerName" maxlength="6" />
+    <button class="btn-challenge" id="challenge-btn2">다음으로</button>
+  </div>
+  <div class="my-scene-2">
+    <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
+    <h2>님의 성격을 이모지로 표현한다면?</h2>
+    <div class="challenge-container">
+      <button id="card-1" class="challenge-card"></button>
+      <button id="card-2" class="challenge-card"></button>
+      <button id="card-3" class="challenge-card"></button>
+      <button id="card-4" class="challenge-card"></button>
+      <button id="card-5" class="challenge-card"></button>
+      <button id="card-6" class="challenge-card"></button>
+      <button id="card-7" class="challenge-card"></button>
+      <button id="card-8" class="challenge-card"></button>
     </div>
-    <div class="my-scene-1">
-      <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
-      <h2>이름이 무엇인가요?</h2>
-      <input type="text" id="cheerName" maxlength="6" />
-      <button class="btn-challenge" id="challenge-btn2">다음으로</button>
+  </div>
+  <div class="my-scene-3">
+    <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
+    <h2 class="content"></h2>
+    <div class="circle">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <div class="my-scene-2">
-      <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
-      <h2>님의 성격을 이모지로 표현한다면?</h2>
-      <div class="challenge-container">
-        <button id="card-1" class="challenge-card"></button>
-        <button id="card-2" class="challenge-card"></button>
-        <button id="card-3" class="challenge-card"></button>
-        <button id="card-4" class="challenge-card"></button>
-        <button id="card-5" class="challenge-card"></button>
-        <button id="card-6" class="challenge-card"></button>
-        <button id="card-7" class="challenge-card"></button>
-        <button id="card-8" class="challenge-card"></button>
-      </div>
-    </div>
-    <div class="my-scene-3">
-      <img alt="무지개처럼 카드가 펼쳐져 있는 이미지" />
-      <h2 class="content"></h2>
-      <div class="circle">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div class="my-scene-4">
-      <div class="temp2-container">
-        <img />
-        <h1>님을 위한<br />응원카드</h1>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
-          sapiente, dolorum quaerat nam quidem ea maxime eius minima corrupti
-          ipsum optio. At aut earum commodi quia quibusdam temporibus doloremque
-          facere.
-        </div>
-        <div>
-          <button id="btn-down" class="btn-challenge">이미지 저장</button>
-          <button id="btn-share" class="btn-challenge">페이지 공유</button>
-          <button id="btn-again" class="btn-challenge">다시하기</button>
-        </div>
+  </div>
+  <div class="my-scene-4">
+    <div class="temp2-container">
+      <img />
+      <h1>님을 위한<br />응원카드</h1>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+        sapiente, dolorum quaerat nam quidem ea maxime eius minima corrupti
+        ipsum optio. At aut earum commodi quia quibusdam temporibus doloremque
+        facere.
       </div>
       <div>
-        <div>
-          <div class="card-text">님의 낭만적인 도전</div>
-        </div>
+        <button id="btn-down" class="btn-challenge">이미지 저장</button>
+        <button id="btn-share" class="btn-challenge">페이지 공유</button>
+        <button id="btn-again" class="btn-challenge">다시하기</button>
       </div>
     </div>
-    <script src="../js/my-challenge.js"></script>
-  </body>
+    <div>
+      <div>
+        <div class="card-text">님의 낭만적인 도전</div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/my-challenge.js"></script>
+</body>
+
 </html>
