@@ -241,6 +241,7 @@
 
     return rv;
   }
+
   function animation(object, type, values, currentYOffset, scrollRatio) {
     const timing = values[2].end;
     if (type === "opacity") {
