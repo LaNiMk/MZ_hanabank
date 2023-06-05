@@ -1,4 +1,3 @@
-// import { sceneInfo } from "./homeSceneInformation";
 (() => {
   let yOffset = 0; // window.pageYOffset 대신 쓸 변수
   let prevScrollHeight = 0; // 현재 스크롤 위치(yOffset)보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
@@ -280,6 +279,7 @@
       }
     }
   }
+
   function playAnimation() {
     const objs = sceneInfo[currentScene].objs;
     const values = sceneInfo[currentScene].values;
@@ -303,6 +303,7 @@
       document.body.classList.remove("local-nav-sticky");
     }
   }
+
   function setLayout() {
     for (let i = 0; i < sceneInfo.length; i++) {
       if (sceneInfo[i].type === "sticky") {
@@ -366,6 +367,7 @@
 
     playAnimation();
   }
+
   function loop() {
     delayedYOffset = delayedYOffset + (yOffset - delayedYOffset) * acc;
 
@@ -402,6 +404,7 @@
       rafState = false;
     }
   }
+
   window.addEventListener("load", () => {
     document.body.classList.remove("before-load");
     setLayout();
@@ -456,6 +459,7 @@
       title.style.opacity = 1;
     }
   }
+
   function setCanvasImages() {
     let imgElem;
     for (let i = 0; i < sceneInfo[0].videoImageCount; i++) {
@@ -466,6 +470,7 @@
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
   }
+
   setCanvasImages();
   initiate();
 })();
