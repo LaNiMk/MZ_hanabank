@@ -7,7 +7,7 @@
   opacity: 1 !important;
 }
 
-#messsage-z {
+#message-z {
   opacity: 1;
 }
 
@@ -104,21 +104,21 @@ a {
   margin: auto;
 }
 
-#messsage-a {
+#message-a {
   top: 47vh;
 }
-#messsage-b {
+#message-b {
   top: 35vh;
 }
-#messsage-c {
+#message-c {
   top: 45vh;
 }
-#messsage-d {
+#message-d {
   top: 55vh;
 }
-#messsage-z2,
-#messsage-a2,
-#messsage-b2 {
+#message-z2,
+#message-a2,
+#message-b2 {
   top: 40vh;
 }
 .main-message p {
@@ -291,11 +291,11 @@ invisible {
 #sticky-box-5 {
   height: 100%;
 }
-#messsage-z5 {
+#message-z5 {
   top: 40vh;
   font-size: 2.7rem;
 }
-#messsage-a5 {
+#message-a5 {
   top: 53vh;
   font-size: 7rem;
   line-height: 1.6;
@@ -309,13 +309,13 @@ invisible {
 /* #sticky-box-6 {
   height: 100%;
 } */
-#messsage-z6 {
+#message-z6 {
   display: flex;
   justify-self: center;
   align-items: center;
 }
-#messsage-a6,
-#messsage-b6 {
+#message-a6,
+#message-b6 {
   margin-top: -5vh;
   font-size: 1.2rem;
   font-weight: 600;
@@ -370,16 +370,16 @@ invisible {
   border-radius: 42px;
   padding: 12px 20px;
 }
-#messsage-a7,
-#messsage-b7 {
+#message-a7,
+#message-b7 {
   box-sizing: border-box;
   margin-top: 17vh;
   padding: 18px 32px;
 }
-#messsage-a7 {
+#message-a7 {
   top: 20vh;
 }
-#messsage-b7 {
+#message-b7 {
   top: 42vh;
 }
 .s-7-video-box {
@@ -456,7 +456,7 @@ invisible {
   .s-5-dp-none {
     display: none;
   }
-  #messsage-z5 {
+  #message-z5 {
     font-size: 5rem;
   }
 
@@ -560,10 +560,10 @@ invisible {
     display: none;
   }
 
-  #messsage-z5 {
+  #message-z5 {
     font-size: 3rem;
   }
-  #messsage-a5 {
+  #message-a5 {
     margin-top: 1rem;
     line-height: 1.2;
   }
@@ -586,7 +586,7 @@ invisible {
     margin-top: 0.5rem;
     font-size: 1.5rem;
   }
-  #messsage-b7 {
+  #message-b7 {
     top: 37vh;
   }
   .section-7-button-box {
@@ -631,10 +631,10 @@ invisible {
     display: inline-block;
   }
 
-  #messsage-z5 {
+  #message-z5 {
     font-size: 3rem;
   }
-  #messsage-a5 {
+  #message-a5 {
     margin-top: 1rem;
     line-height: 1.2;
   }
@@ -660,7 +660,7 @@ invisible {
     margin-top: 0.7rem;
     font-size: 1.2rem;
   }
-  #messsage-b7 {
+  #message-b7 {
     top: 35vh;
   }
 }
@@ -672,8 +672,8 @@ invisible {
   .section-7-button-box {
     margin-top: 20px;
   }
-  #messsage-a6,
-  #messsage-b6 {
+  #message-a6,
+  #message-b6 {
     margin-top: 20px;
   }
 }
