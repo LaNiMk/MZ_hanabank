@@ -25,10 +25,10 @@ Html, css, javascript를 이용해 만들 예정입니다
 
 이름 | 맡은 역할
 ------------|------|
-[강민경(팀장)](https://github.com/LaNiMk) | 1. FAQ(자주 묻는 질문) 페이지 구축<br />2. 이벤트 페이지(진행 중인 이벤트, 종료된 이벤트) 구축<br /> 3. 보고서 작성 |
-[곽동현](https://github.com/alivejuicy) | 1. 로그인 페이지 구축<br />2. 회원가입 페이지 구축<br />3. 발표 |
-[권민선](https://github.com/helloalpaca) | 1. 회사 소개 페이지 구축<br />2. 오시는 길 페이지 구축<br />3. 응원카드 만들기 페이지 구축 |
-[김민재](https://github.com/lake041) | 1. 홈 메인 페이지 구축<br />2. 상품소개 페이지 구축<br />3. 헤더/푸터<br />4. 발표 |
+[LaNiMk(팀장)](https://github.com/LaNiMk) | 1. FAQ(자주 묻는 질문) 페이지 구축<br />2. 이벤트 페이지(진행 중인 이벤트, 종료된 이벤트) 구축<br /> 3. 보고서 작성 |
+[alivejuicy](https://github.com/alivejuicy) | 1. 로그인 페이지 구축<br />2. 회원가입 페이지 구축<br />3. 발표 |
+[helloalpaca](https://github.com/helloalpaca) | 1. 회사 소개 페이지 구축<br />2. 오시는 길 페이지 구축<br />3. 응원카드 만들기 페이지 구축 |
+[lake041](https://github.com/lake041) | 1. 홈 메인 페이지 구축<br />2. 상품소개 페이지 구축<br />3. 헤더/푸터<br />4. 발표 |
 
 ## 3. 프로젝트 수행 절차 및 방법
 #### 3-1. 일정 계획
