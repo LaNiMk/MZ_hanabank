@@ -2,6 +2,8 @@
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <br />
 디지털 하나로 첫번째 과제 - HTML, CSS, JS로 웹 페이지 만들기
+<br />
+**[mz-hana.com](mz-hana.com)**
 
 ## 1. 프로젝트 배경
 
@@ -84,7 +86,7 @@ Html, css, javascript를 이용해 구현
 <br />
 
 #### 3-2. 배포 환경
-[MZ 하나은행 바로가기](https://mz-hana.com)
+[MZ 하나은행 바로가기](mz-hana.com)
 <br />
 <img src="./img/readme-githubpages.png" width="600"> 
 <br>
